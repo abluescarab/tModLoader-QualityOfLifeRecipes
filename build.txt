@@ -1,0 +1,12 @@
+﻿displayName=Quality of Life: Recipes
+author=abluescarab, INFINITE POWER, Ardosos
+version=1.0.0
+dllReferences=
+modReferences=
+noCompile=false
+homepage=https://github.com/abluescarab/tModLoader-QualityOfLifeRecipes
+hideCode=false
+hideResources=false
+includeSource=true
+buildIgnore=*.csproj, *.user, obj\*, bin\*, .vs\*, .git*, *.md, *.xcf, readme\*
+includePDB=true
