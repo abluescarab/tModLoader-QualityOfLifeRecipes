@@ -68,9 +68,15 @@
     <Compile Include="Items\Armor\MiningGear.cs" />
     <Compile Include="Items\Armor\OrangeTintedGoggles.cs" />
     <Compile Include="Items\Armor\UtilityHelmet.cs" />
+    <Compile Include="Items\Placeable\Banners\Slimes\ElementalSlimeBanner.cs" />
+    <Compile Include="Items\Placeable\Banners\Slimes\SupremeSlimeBanner.cs" />
+    <Compile Include="Items\Placeable\Banners\Slimes\UltimateSlimeBanner.cs" />
     <Compile Include="QualityOfLifeRecipes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tiles\AlterationStation.cs" />
+    <Compile Include="Tiles\Banners\Slimes\ElementalSlimeBanner.cs" />
+    <Compile Include="Tiles\Banners\Slimes\SupremeSlimeBanner.cs" />
+    <Compile Include="Tiles\Banners\Slimes\UltimateSlimeBanner.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="build.txt" />
@@ -96,7 +102,13 @@
     <Content Include="Items\Armor\OrangeTintedGoggles_Head.png" />
     <Content Include="Items\Armor\UtilityHelmet.png" />
     <Content Include="Items\Armor\UtilityHelmet_Head.png" />
+    <Content Include="Items\Placeable\Banners\Slimes\ElementalSlimeBanner.png" />
+    <Content Include="Items\Placeable\Banners\Slimes\SupremeSlimeBanner.png" />
+    <Content Include="Items\Placeable\Banners\Slimes\UltimateSlimeBanner.png" />
     <Content Include="Tiles\AlterationStation.png" />
+    <Content Include="Tiles\Banners\Slimes\ElementalSlimeBanner.png" />
+    <Content Include="Tiles\Banners\Slimes\SupremeSlimeBanner.png" />
+    <Content Include="Tiles\Banners\Slimes\UltimateSlimeBanner.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
