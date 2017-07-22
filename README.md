@@ -27,3 +27,8 @@ Quality of Life: Recipes intends to recreate, add to, and improve the recipes in
 | Lava Waders | Frostspark Boots | | Elemental Boots |
 | Elemental Boots | Master Ninja Gear | | Elemental Ninja Boots |
 | Elemental Ninja Boots | Flower Boots | Gravity Globe | Atomic Ninja Boots |
+
+## Credits
+* [INFINITE POWER](https://forums.terraria.org/index.php?members/infinite-power.30898/) for the original QOL and sprites
+* [Ardosos](https://forums.terraria.org/index.php?members/ardosos.50173/) for the code for the Alteration Station
+* Re-Logic for the item sprites
