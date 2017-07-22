@@ -23,7 +23,6 @@ Quality of Life: Recipes intends to recreate, add to, and improve the recipes in
 | Goggles | Hunter Potion (x20) | Dangersense Potion (x20) | Orange-Tinted Goggles |
 | Orange-Tinted Goggles | Mining Gear | | Utility Helmet |
 | Extractinator | Alchemy Table | | Alteration Station |
-| Night Vision Helmet | Spelunker Potion (x20) | | Caving Gear |
 | Mana Flower | Celestial Cuffs | | Celestial Flower Cuffs |
 | Lava Waders | Frostspark Boots | | Elemental Boots |
 | Elemental Boots | Master Ninja Gear | | Elemental Ninja Boots |
