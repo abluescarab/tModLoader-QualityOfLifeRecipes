@@ -1,0 +1,13 @@
+﻿Quality of Life: Recipes intends to recreate, add to, and improve the recipes introduced by Quality of Life.
+
+Changes:
+* Caving Gear uses 20 Spelunker Potions instead of 25.
+* Celestial Flower has been removed in favor of the Celestial Flower Cuffs.
+* Added recipe for Elemental Ninja Boots.
+* Atomic Boots have been changed to Atomic Ninja Boots.
+
+Visit the mod homepage to see the included recipes.
+
+[Credits]
+* INFINITE POWER for the original QOL and sprites
+* Ardosos for the code for the Alteration Station
