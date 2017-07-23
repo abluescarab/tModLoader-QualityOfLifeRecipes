@@ -9,6 +9,8 @@ Quality of Life: Recipes intends to recreate, add to, and improve the recipes in
 * ![](Tiles/Banners/Slimes/SupremeSlimeBanner.png) Supreme Slime Banner uses the ![](readme/Banners/Slimes/BlackSlimeBanner.png) Black Slime Banner.
 * ![](Tiles/Banners/Slimes/ElementalSlimeBanner.png) Elemental Slime Banner uses the ![](readme/Banners/Slimes/LavaSlimeBanner.png) Lava Slime Banner.
 * ![](readme/TheGrandDesign.png) The Grand Design requires the ![](readme/MechanicalRuler.png) Mechanical Ruler.
+* Master Fishing Gear has been removed.
+* Sharp Sea Necklace has been removed.
 
 ## Recipes
 ### Accessories

@@ -8,6 +8,8 @@ Changes:
 * Supreme Slime Banner uses the Black Slime Banner.
 * Elemental Slime Banner uses the Lava Slime Banner.
 * The Grand Design requires the Mechanical Ruler.
+* Master Fishing Gear has been removed.
+* Sharp Sea Necklace has been removed.
 
 Visit the mod homepage to see the included recipes.
 
