@@ -15,8 +15,8 @@ Quality of Life: Recipes intends to recreate, add to, and improve the recipes in
 
 ## Recipes
 ### Accessories
-| Ingredient 1 | Ingredient 2 | Ingredient 3 | Result |
-| ------------ | ------------ | ------------ | ------ |
+| Ingredients  |   |   | Result |
+| ------------ | - | - | ------ |
 | ![](readme/SweetheartNecklace.png) Sweetheart Necklace | ![](readme/StarVeil.png) Star Veil | | ![](Items/Accessories/SweetStarVeil.png) Sweet Star Veil |
 | ![](readme/FrogLeg.png) Frog Leg | ![](readme/LuckyHorseshoe.png) Lucky Horseshoe | | ![](Items/Accessories/Frogshoe.png) Frogshoe |
 | ![](readme/FartinaBalloon.png) Fart in a Balloon | ![](readme/HoneyBalloon.png) Honey Balloon | ![](readme/SharkronBalloon.png) Sharkron Balloon | ![](Items/Accessories/BunchOfBalloons.png) Bunch of Balloons |
@@ -32,16 +32,16 @@ Quality of Life: Recipes intends to recreate, add to, and improve the recipes in
 | ![](Items/Armor/UtilityHelmet.png) Utility Helmet | ![](readme/Nanites.png) Nanites (x20) | | ![](Items/Accessories/CyberneticUtilityHelmet.png) Cybernetic Utility Helmet |
 
 ### Armor
-| Ingredient 1 | Ingredient 2 | Ingredient 3 | Result |
-| ------------ | ------------ | ------------ | ------ |
+| Ingredients  |   |   | Result |
+| ------------ | - | - | ------ |
 | ![](readme/NightVisionHelmet.png) Night Vision Helmet | ![](readme/SpelunkerPotion.png) Spelunker Potion (x20) | | ![](Items/Armor/CavingGear.png) Caving Gear |
 | ![](Items/Armor/CavingGear.png) Caving Gear | ![](readme/MiningHelmet.png) Mining Helmet | | ![](Items/Armor/MiningGear.png) Mining Gear |
 | ![](readme/Goggles.png) Goggles | ![](readme/HunterPotion.png) Hunter Potion (x20) | ![](readme/DangersensePotion.png) Dangersense Potion (x20) | ![](Items/Armor/OrangeTintedGoggles.png) Orange-Tinted Goggles |
 | ![](Items/Armor/OrangeTintedGoggles.png) Orange-Tinted Goggles | ![](Items/Armor/MiningGear.png) Mining Gear | | ![](Items/Armor/UtilityHelmet.png) Utility Helmet |
 
 ### Placeables
-| Ingredient 1 | Ingredient 2 | Result |
-| ------------ | ------------ | ------ |
+| Ingredients  |   | Result |
+| ------------ | - | ------ |
 | ![](readme/Extractinator.png) Extractinator | ![](readme/AlchemyTable.png) Alchemy Table | ![](Items/Placeable/AlterationStation.png) Alteration Station |
 | ![](readme/Banners/Slimes/BlackSlimeBanner.png) ![](readme/Banners/Slimes/BlueSlimeBanner.png) ![](readme/Banners/Slimes/GreenSlimeBanner.png) ![](readme/Banners/Slimes/PurpleSlimeBanner.png) ![](readme/Banners/Slimes/RedSlimeBanner.png) ![](readme/Banners/Slimes/YellowSlimeBanner.png) Colored Slime Banners | | ![](Tiles/Banners/Slimes/SupremeSlimeBanner.png) Supreme Slime Banner |
 | ![](readme/Banners/Slimes/IceSlimeBanner.png) ![](readme/Banners/Slimes/JungleSlimeBanner.png) ![](readme/Banners/Slimes/LavaSlimeBanner.png) ![](readme/Banners/Slimes/SandSlimeBanner.png) ![](readme/Banners/Slimes/SpikedIceSlimeBanner.png) ![](readme/Banners/Slimes/SpikedJungleSlimeBanner.png) Elemental Slime Banners | | ![](Tiles/Banners/Slimes/ElementalSlimeBanner.png) Elemental Slime Banner |
