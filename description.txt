@@ -8,6 +8,7 @@ Changes:
 * Supreme Slime Banner uses the Black Slime Banner.
 * Elemental Slime Banner uses the Lava Slime Banner.
 * The Grand Design requires the Mechanical Ruler.
+* Undead Banner requires Raincoat Zombie Banner.
 * Master Fishing Gear has been removed.
 * Sharp Sea Necklace has been removed.
 
