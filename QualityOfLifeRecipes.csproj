@@ -59,6 +59,7 @@
     <Compile Include="Items\Accessories\ElementalBoots.cs" />
     <Compile Include="Items\Accessories\ElementalNinjaBoots.cs" />
     <Compile Include="Items\Accessories\Frogshoe.cs" />
+    <Compile Include="Items\Accessories\GlobalTheGrandDesign.cs" />
     <Compile Include="Items\Accessories\HeavyDutyToolbox.cs" />
     <Compile Include="Items\Accessories\LavaOrb.cs" />
     <Compile Include="Items\Accessories\LifeforceBracelet.cs" />
