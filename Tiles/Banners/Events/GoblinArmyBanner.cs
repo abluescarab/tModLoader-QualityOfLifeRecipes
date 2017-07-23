@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -44,7 +39,7 @@ namespace QualityOfLifeRecipes.Tiles.Banners.Events {
                 player.NPCBannerBuff[Item.NPCtoBanner(NPCID.GoblinSorcerer)] = true;
                 player.NPCBannerBuff[Item.NPCtoBanner(NPCID.GoblinThief)] = true;
                 player.NPCBannerBuff[Item.NPCtoBanner(NPCID.GoblinWarrior)] = true;
-                
+
                 player.hasBanner = true;
             }
         }

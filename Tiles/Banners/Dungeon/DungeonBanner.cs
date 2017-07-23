@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -38,7 +33,7 @@ namespace QualityOfLifeRecipes.Tiles.Banners.Dungeon {
         public override void NearbyEffects(int i, int j, bool closer) {
             if(closer) {
                 Player player = Main.LocalPlayer;
-                
+
                 // angry bones
                 player.NPCBannerBuff[Item.NPCtoBanner(NPCID.AngryBones)] = true;
                 player.NPCBannerBuff[Item.NPCtoBanner(NPCID.AngryBonesBig)] = true;
