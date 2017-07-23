@@ -73,6 +73,7 @@
     <Compile Include="Items\Placeable\Banners\Dungeon\DungeonBanner.cs" />
     <Compile Include="Items\Placeable\Banners\Dungeon\SupremeDungeonBanner.cs" />
     <Compile Include="Items\Placeable\Banners\Dungeon\UltimateDungeonBanner.cs" />
+    <Compile Include="Items\Placeable\Banners\Events\GoblinArmyBanner.cs" />
     <Compile Include="Items\Placeable\Banners\Slimes\ElementalSlimeBanner.cs" />
     <Compile Include="Items\Placeable\Banners\Slimes\SupremeSlimeBanner.cs" />
     <Compile Include="Items\Placeable\Banners\Slimes\UltimateSlimeBanner.cs" />
@@ -82,6 +83,7 @@
     <Compile Include="Tiles\Banners\Dungeon\DungeonBanner.cs" />
     <Compile Include="Tiles\Banners\Dungeon\SupremeDungeonBanner.cs" />
     <Compile Include="Tiles\Banners\Dungeon\UltimateDungeonBanner.cs" />
+    <Compile Include="Tiles\Banners\Events\GoblinArmyBanner.cs" />
     <Compile Include="Tiles\Banners\Slimes\ElementalSlimeBanner.cs" />
     <Compile Include="Tiles\Banners\Slimes\SupremeSlimeBanner.cs" />
     <Compile Include="Tiles\Banners\Slimes\UltimateSlimeBanner.cs" />
