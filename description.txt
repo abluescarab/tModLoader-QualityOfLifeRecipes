@@ -2,9 +2,12 @@
 
 Changes:
 * Caving Gear uses 20 Spelunker Potions instead of 25.
-* Celestial Flower has been removed in favor of the Celestial Flower Cuffs.
+* Celestial Flower has been replaced with the Celestial Flower Cuffs.
 * Added recipe for Elemental Ninja Boots.
 * Atomic Boots have been changed to Atomic Ninja Boots.
+* Supreme Slime Banner uses the Black Slime Banner.
+* Elemental Slime Banner uses the Lava Slime Banner.
+* The Grand Design requires the Mechanical Ruler.
 
 Visit the mod homepage to see the included recipes.
 

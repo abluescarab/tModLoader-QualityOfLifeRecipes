@@ -2,10 +2,13 @@
 Quality of Life: Recipes intends to recreate, add to, and improve the recipes introduced by Quality of Life.
 
 ## Changes
-* Caving Gear uses 20 Spelunker Potions instead of 25.
-* Celestial Flower has been removed in favor of the Celestial Flower Cuffs.
-* Added recipe for Elemental Ninja Boots.
-* Atomic Boots have been changed to Atomic Ninja Boots.
+* ![](Items/Armor/CavingGear.png) Caving Gear uses 20 ![](readme/SpelunkerPotion.png) Spelunker Potions instead of 25.
+* Celestial Flower has been replaced with the ![](Items/Accessories/CelestialFlowerCuffs.png) Celestial Flower Cuffs.
+* Added recipe for ![](Items/Accessories/ElementalNinjaBoots.png) Elemental Ninja Boots.
+* Atomic Boots have been changed to ![](Items/Accessories/AtomicNinjaBoots.png) Atomic Ninja Boots.
+* ![](Tiles/Banners/Slimes/SupremeSlimeBanner.png) Supreme Slime Banner uses the ![](readme/Banners/Slimes/BlackSlimeBanner.png) Black Slime Banner.
+* ![](Tiles/Banners/Slimes/ElementalSlimeBanner.png) Elemental Slime Banner uses the ![](readme/Banners/Slimes/LavaSlimeBanner.png) Lava Slime Banner.
+* ![](readme/TheGrandDesign.png) The Grand Design requires the ![](readme/MechanicalRuler.png) Mechanical Ruler.
 
 ## Recipes
 ### Accessories
