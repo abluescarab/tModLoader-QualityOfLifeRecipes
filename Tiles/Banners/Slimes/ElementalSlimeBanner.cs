@@ -13,7 +13,7 @@ namespace QualityOfLifeRecipes.Tiles.Banners.Slimes {
 
             TileObjectData.newTile.CopyFrom(TileObjectData.Style1x2Top);
             TileObjectData.newTile.Height = 3;
-            TileObjectData.newTile.CoordinateHeights = new int[] { 16, 16, 16 };
+            TileObjectData.newTile.CoordinateHeights = new int[] { 16, 16, 12 };
             TileObjectData.newTile.StyleHorizontal = true;
 
             ModTranslation translation = CreateMapEntryName();
