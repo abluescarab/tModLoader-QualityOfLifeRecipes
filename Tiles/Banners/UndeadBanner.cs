@@ -4,7 +4,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace QualityOfLifeRecipes.Tiles.Banners.Events {
+namespace QualityOfLifeRecipes.Tiles.Banners {
     public class UndeadBanner : ModTile {
         public override void SetDefaults() {
             Main.tileFrameImportant[Type] = true;
