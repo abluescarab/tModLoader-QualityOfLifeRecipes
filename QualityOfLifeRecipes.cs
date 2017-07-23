@@ -75,7 +75,7 @@ namespace QualityOfLifeRecipes {
 
             // sextant
             rcp = new ModRecipe(this);
-            rcp.AddIngredient(ItemID.GoldBar, 15);
+            rcp.AddRecipeGroup(GROUP_GOLD_BAR, 15);
             rcp.AddIngredient(ItemID.Lens, 5);
             rcp.AddTile(TileID.Tables);
             rcp.SetResult(ItemID.Sextant);
