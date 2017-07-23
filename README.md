@@ -59,10 +59,9 @@ Quality of Life: Recipes intends to recreate, add to, and improve the recipes in
 | <ul><li>![](readme/Banners/ZombieBanner.png) Zombie Banner</li><li>![](readme/Banners/RaincoatZombieBanner.png) Raincoat Zombie Banner</li><li>![](readme/Banners/DemonEyeBanner.png) Demon Eye Banner</li></ul> | | ![](Tiles/Banners/UndeadBanner.png) Undead Banner |
 
 ## To-Do
-* Undead Banner
 * Biome banners
 * Solar Eclipse Banner
-* Martian Banner
+* Martian Madness Banner
 * Pumpkin Moon Banner
 * Frost Moon Banner
 
