@@ -18,3 +18,6 @@ Changes:
 * INFINITE POWER for the original QOL and sprites
 * Ardosos for the code for the Alteration Station
 * PyroSalamander for suggesting the Cybernetic Utility Helmet
+
+[Changelog]
+v1.0.0  2017-07-23
