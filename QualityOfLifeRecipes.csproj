@@ -74,6 +74,10 @@
     <Compile Include="Items\Placeable\Banners\Dungeon\SupremeDungeonBanner.cs" />
     <Compile Include="Items\Placeable\Banners\Dungeon\UltimateDungeonBanner.cs" />
     <Compile Include="Items\Placeable\Banners\Events\GoblinArmyBanner.cs" />
+    <Compile Include="Items\Placeable\Banners\Events\Pillars\NebulaPillarBanner.cs" />
+    <Compile Include="Items\Placeable\Banners\Events\Pillars\SolarPillarBanner.cs" />
+    <Compile Include="Items\Placeable\Banners\Events\Pillars\StardustPillarBanner.cs" />
+    <Compile Include="Items\Placeable\Banners\Events\Pillars\VortexPillarBanner.cs" />
     <Compile Include="Items\Placeable\Banners\Slimes\ElementalSlimeBanner.cs" />
     <Compile Include="Items\Placeable\Banners\Slimes\SupremeSlimeBanner.cs" />
     <Compile Include="Items\Placeable\Banners\Slimes\UltimateSlimeBanner.cs" />
@@ -84,6 +88,10 @@
     <Compile Include="Tiles\Banners\Dungeon\SupremeDungeonBanner.cs" />
     <Compile Include="Tiles\Banners\Dungeon\UltimateDungeonBanner.cs" />
     <Compile Include="Tiles\Banners\Events\GoblinArmyBanner.cs" />
+    <Compile Include="Tiles\Banners\Events\Pillars\NebulaPillarBanner.cs" />
+    <Compile Include="Tiles\Banners\Events\Pillars\SolarPillarBanner.cs" />
+    <Compile Include="Tiles\Banners\Events\Pillars\StardustPillarBanner.cs" />
+    <Compile Include="Tiles\Banners\Events\Pillars\VortexPillarBanner.cs" />
     <Compile Include="Tiles\Banners\Slimes\ElementalSlimeBanner.cs" />
     <Compile Include="Tiles\Banners\Slimes\SupremeSlimeBanner.cs" />
     <Compile Include="Tiles\Banners\Slimes\UltimateSlimeBanner.cs" />
