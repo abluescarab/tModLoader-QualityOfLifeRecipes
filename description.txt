@@ -20,4 +20,7 @@ Changes:
 * PyroSalamander for suggesting the Cybernetic Utility Helmet
 
 [Changelog]
+v1.1.0  2017-07-23
+* Added recipes for: heart/star/queen/king statues, sextant, weather radio, fisherman's guide
+
 v1.0.0  2017-07-23
