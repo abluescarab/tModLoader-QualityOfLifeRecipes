@@ -1,5 +1,7 @@
 ﻿Quality of Life: Recipes intends to recreate, add to, and improve the recipes introduced by Quality of Life.
 
+Visit the mod homepage to see the included recipes.
+
 Changes:
 * Caving Gear uses 20 Spelunker Potions instead of 25.
 * Celestial Flower has been replaced with the Celestial Flower Cuffs.
@@ -11,8 +13,6 @@ Changes:
 * Undead Banner requires Raincoat Zombie Banner.
 * Master Fishing Gear has been removed.
 * Sharp Sea Necklace has been removed.
-
-Visit the mod homepage to see the included recipes.
 
 [Credits]
 * INFINITE POWER for the original QOL and sprites
