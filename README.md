@@ -26,6 +26,7 @@ Quality of Life: Recipes intends to recreate, add to, and improve the recipes in
 | ![](readme/LavaWaders.png) Lava Waders | ![](readme/FrostsparkBoots.png) Frostspark Boots | | ![](Items/Accessories/ElementalBoots.png) Elemental Boots |
 | ![](Items/Accessories/ElementalBoots.png) Elemental Boots | ![](readme/MasterNinjaGear.png) Master Ninja Gear | | ![](Items/Accessories/ElementalNinjaBoots.png) Elemental Ninja Boots |
 | ![](Items/Accessories/ElementalNinjaBoots.png) Elemental Ninja Boots | ![](readme/FlowerBoots.png) Flower Boots | ![](readme/GravityGlobe.png) Gravity Globe | ![](Items/Accessories/AtomicNinjaBoots.png) Atomic Ninja Boots |
+| ![](Items/Armor/UtilityHelmet.png) Utility Helmet | ![](readme/Nanites.png) Nanites (x20) | | ![](Items/Accessories/CyberneticUtilityHelmet.png) Cybernetic Utility Helmet |
 
 ### Armor
 | Ingredient 1 | Ingredient 2 | Ingredient 3 | Result |
