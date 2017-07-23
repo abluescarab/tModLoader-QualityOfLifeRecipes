@@ -78,6 +78,8 @@
     <Compile Include="Items\Placeable\Banners\Events\Pillars\SolarPillarBanner.cs" />
     <Compile Include="Items\Placeable\Banners\Events\Pillars\StardustPillarBanner.cs" />
     <Compile Include="Items\Placeable\Banners\Events\Pillars\VortexPillarBanner.cs" />
+    <Compile Include="Items\Placeable\Banners\Events\PirateCrewBanner.cs" />
+    <Compile Include="Tiles\Banners\Events\PirateCrewBanner.cs" />
     <Compile Include="Items\Placeable\Banners\Slimes\ElementalSlimeBanner.cs" />
     <Compile Include="Items\Placeable\Banners\Slimes\SupremeSlimeBanner.cs" />
     <Compile Include="Items\Placeable\Banners\Slimes\UltimateSlimeBanner.cs" />
