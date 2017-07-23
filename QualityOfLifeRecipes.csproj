@@ -79,6 +79,7 @@
     <Compile Include="Items\Placeable\Banners\Events\Pillars\StardustPillarBanner.cs" />
     <Compile Include="Items\Placeable\Banners\Events\Pillars\VortexPillarBanner.cs" />
     <Compile Include="Items\Placeable\Banners\Events\PirateCrewBanner.cs" />
+    <Compile Include="Items\Placeable\Banners\UndeadBanner.cs" />
     <Compile Include="Tiles\Banners\Events\PirateCrewBanner.cs" />
     <Compile Include="Items\Placeable\Banners\Slimes\ElementalSlimeBanner.cs" />
     <Compile Include="Items\Placeable\Banners\Slimes\SupremeSlimeBanner.cs" />
@@ -97,6 +98,7 @@
     <Compile Include="Tiles\Banners\Slimes\ElementalSlimeBanner.cs" />
     <Compile Include="Tiles\Banners\Slimes\SupremeSlimeBanner.cs" />
     <Compile Include="Tiles\Banners\Slimes\UltimateSlimeBanner.cs" />
+    <Compile Include="Tiles\Banners\UndeadBanner.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="build.txt" />
