@@ -13,6 +13,7 @@ Changes:
 * Undead Banner requires Raincoat Zombie Banner.
 * Master Fishing Gear has been removed.
 * Sharp Sea Necklace has been removed.
+* Removed most crafting recipes for rare items obtained as drops.
 
 [Credits]
 * INFINITE POWER for the original QOL and sprites
