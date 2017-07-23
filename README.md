@@ -47,4 +47,5 @@ Quality of Life: Recipes intends to recreate, add to, and improve the recipes in
 ## Credits
 * [INFINITE POWER](https://forums.terraria.org/index.php?members/infinite-power.30898/) for the original QOL and sprites
 * [Ardosos](https://forums.terraria.org/index.php?members/ardosos.50173/) for the code for the Alteration Station
+* [PyroSalamander](https://forums.terraria.org/index.php?members/pyrosalamander.85695/) for suggesting the Cybernetic Utility Helmet
 * Re-Logic for the item sprites
