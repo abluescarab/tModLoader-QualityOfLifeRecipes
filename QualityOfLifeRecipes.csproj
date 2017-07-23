@@ -82,34 +82,6 @@
   <ItemGroup>
     <Content Include="build.txt" />
     <Content Include="description.txt" />
-    <Content Include="Items\Accessories\AtomicNinjaBoots.png" />
-    <Content Include="Items\Accessories\BunchOfBalloons.png" />
-    <Content Include="Items\Accessories\CelestialFlowerCuffs.png" />
-    <Content Include="Items\Accessories\CloudOfBalloons.png" />
-    <Content Include="Items\Accessories\CloudOfFrogshoeBalloons.png" />
-    <Content Include="Items\Accessories\ElementalBoots.png" />
-    <Content Include="Items\Accessories\ElementalNinjaBoots.png" />
-    <Content Include="Items\Accessories\Frogshoe.png" />
-    <Content Include="Items\Accessories\HeavyDutyToolbox.png" />
-    <Content Include="Items\Accessories\LavaOrb.png" />
-    <Content Include="Items\Accessories\LifeforceBracelet.png" />
-    <Content Include="Items\Accessories\SweetStarVeil.png" />
-    <Content Include="Items\Placeable\AlterationStation.png" />
-    <Content Include="Items\Armor\CavingGear.png" />
-    <Content Include="Items\Armor\CavingGear_Head.png" />
-    <Content Include="Items\Armor\MiningGear.png" />
-    <Content Include="Items\Armor\MiningGear_Head.png" />
-    <Content Include="Items\Armor\OrangeTintedGoggles.png" />
-    <Content Include="Items\Armor\OrangeTintedGoggles_Head.png" />
-    <Content Include="Items\Armor\UtilityHelmet.png" />
-    <Content Include="Items\Armor\UtilityHelmet_Head.png" />
-    <Content Include="Items\Placeable\Banners\Slimes\ElementalSlimeBanner.png" />
-    <Content Include="Items\Placeable\Banners\Slimes\SupremeSlimeBanner.png" />
-    <Content Include="Items\Placeable\Banners\Slimes\UltimateSlimeBanner.png" />
-    <Content Include="Tiles\AlterationStation.png" />
-    <Content Include="Tiles\Banners\Slimes\ElementalSlimeBanner.png" />
-    <Content Include="Tiles\Banners\Slimes\SupremeSlimeBanner.png" />
-    <Content Include="Tiles\Banners\Slimes\UltimateSlimeBanner.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
