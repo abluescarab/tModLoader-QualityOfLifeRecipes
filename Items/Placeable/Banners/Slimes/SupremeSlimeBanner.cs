@@ -7,7 +7,7 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Slimes {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault("Supreme Slime Banner");
             Tooltip.SetDefault(
-                "Nearby players get a bonus against: Green/Blue/Purple/Red/Yellow/Black Slimes");
+                "Nearby players get a bonus against: Green/Blue/Purple/Red/Yellow/Black Slime");
         }
 
         public override void SetDefaults() {
