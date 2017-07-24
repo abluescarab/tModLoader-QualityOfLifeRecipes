@@ -1,5 +1,6 @@
 ﻿using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Armor {
@@ -8,8 +9,8 @@ namespace QualityOfLifeRecipes.Items.Armor {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault("Caving Gear");
             Tooltip.SetDefault(
-                "Improves vision\n" +
-                "Shows the location of treasure and ore");
+                Language.GetTextValue("ItemTooltip.NightVisionHelmet") + "\n" +
+                Language.GetTextValue("ItemTooltip.SpelunkerPotion"));
         }
 
         public override void SetDefaults() {

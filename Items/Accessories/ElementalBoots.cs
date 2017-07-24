@@ -1,5 +1,6 @@
 ﻿using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Accessories {
@@ -7,10 +8,8 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault("Elemental Boots");
             Tooltip.SetDefault(
-                "Allows flight, super fast running, and extra mobility on ice\n" +
-                "8% increased movement speed\n" +
-                "Provides the ability to walk on water and lava\n" +
-                "Grants immunity to fire blocks and 7 seconds of immunity to lava");
+                Language.GetTextValue("ItemTooltip.FrostsparkBoots") + "\n" +
+                Language.GetTextValue("ItemTooltip.LavaWaders"));
         }
 
         public override void SetDefaults() {

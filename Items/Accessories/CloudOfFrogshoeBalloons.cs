@@ -1,5 +1,6 @@
 ﻿using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Accessories {
@@ -7,11 +8,10 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault("Cloud of Frogshoe Balloons");
             Tooltip.SetDefault(
-                "Increases jump speed and allows auto-jump\n" +
-                "Increases fall resistance\n" +
-                "Negates fall damage\n" +
+                Language.GetTextValue("ItemTooltip.FrogLeg") + "\n" +
+                Language.GetTextValue("ItemTooltip.LuckyHorseshoe") + "\n" +
                 "Sextuple jump and increases jump height\n" +
-                "Releases bees when damaged");
+                Language.GetTextValue("ItemTooltip.HoneyComb"));
         }
 
         public override void SetDefaults() {

@@ -1,5 +1,6 @@
 ﻿using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Accessories {
@@ -8,7 +9,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
             DisplayName.SetDefault("Bunch of Balloons");
             Tooltip.SetDefault(
                 "Triple jump and increases jump height\n" +
-                "Releases bees when damaged");
+                Language.GetTextValue("ItemTooltip.HoneyComb"));
         }
 
         public override void SetDefaults() {

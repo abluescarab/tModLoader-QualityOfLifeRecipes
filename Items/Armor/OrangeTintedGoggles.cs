@@ -1,5 +1,6 @@
 ﻿using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Armor {
@@ -8,8 +9,8 @@ namespace QualityOfLifeRecipes.Items.Armor {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault("Oranged-Tinted Goggles");
             Tooltip.SetDefault(
-                "Shows the location of enemies\n" +
-                "Allows you to see nearby traps");
+                Language.GetTextValue("ItemTooltip.HunterPotion") + "\n" +
+                Language.GetTextValue("ItemTooltip.TrapsightPotion"));
         }
 
         public override void SetDefaults() {
