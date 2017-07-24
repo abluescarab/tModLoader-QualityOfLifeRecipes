@@ -1,5 +1,6 @@
 ﻿using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Accessories {
@@ -7,11 +8,11 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault("Cybernetic Utility Helmet");
             Tooltip.SetDefault(
-                "Shows the location of enemies\n" +
-                "Allows you to see nearby traps\n" +
-                "Improves vision\n" +
-                "Shows the location of treasure and ore\n" +
-                "Provides light when worn");
+                Language.GetTextValue("ItemTooltip.HunterPotion") + "\n" +
+                Language.GetTextValue("ItemTooltip.TrapsightPotion") + "\n" +
+                Language.GetTextValue("ItemTooltip.NightVisionHelmet") + "\n" +
+                Language.GetTextValue("ItemTooltip.SpelunkerPotion") + "\n" +
+                Language.GetTextValue("ItemTooltip.MiningHelmet"));
         }
 
         public override void SetDefaults() {

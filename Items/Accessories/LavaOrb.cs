@@ -1,5 +1,6 @@
 ﻿using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Accessories {
@@ -7,8 +8,8 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault("Lava Orb");
             Tooltip.SetDefault(
-                "Provides 7 seconds of immunity to lava\n" +
-                "Reduced damage from touching lava");
+                Language.GetTextValue("ItemTooltip.LavaCharm") + "\n" +
+                Language.GetTextValue("ItemTooltip.ObsidianRose"));
         }
 
         public override void SetDefaults() {

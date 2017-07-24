@@ -1,5 +1,6 @@
 ﻿using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Accessories {
@@ -7,10 +8,8 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault("Celestial Flower Cuffs");
             Tooltip.SetDefault(
-                "Restores mana when damaged\n" +
-                "Increases pickup range for stars\n" + 
-                "8% reduced mana usage\n" +
-                "Automatically use mana potions when needed");
+                Language.GetTextValue("ItemTooltip.CelestialCuffs") + "\n" +
+                Language.GetTextValue("ItemTooltip.ManaFlower"));
         }
 
         public override void SetDefaults() {

@@ -1,5 +1,6 @@
 ﻿using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Accessories {
@@ -7,9 +8,8 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault("Lifeforce Bracelet");
             Tooltip.SetDefault(
-                "Provides life regeneration and reduces the cooldown of healing potions\n" +
-                "Increases maximum mana by 20\n" +
-                "Increases mana regeneration rate");
+                Language.GetTextValue("ItemTooltip.CharmofMyths") + "\n" +
+                Language.GetTextValue("ItemTooltip.ManaRegenerationBand"));
         }
 
         public override void SetDefaults() {

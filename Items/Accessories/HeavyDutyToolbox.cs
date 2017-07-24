@@ -1,5 +1,6 @@
 ﻿using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Accessories {
@@ -7,8 +8,8 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault("Heavy-Duty Toolbox");
             Tooltip.SetDefault(
-                "Increases item placement and tool range by 1\n" +
-                "Increases block placement range");
+                Language.GetTextValue("ItemTooltip.Toolbox") + "\n" +
+                Language.GetTextValue("ItemTooltip.Toolbelt"));
         }
 
         public override void SetDefaults() {

@@ -1,5 +1,6 @@
 ﻿using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Armor {
@@ -8,9 +9,9 @@ namespace QualityOfLifeRecipes.Items.Armor {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault("Mining Gear");
             Tooltip.SetDefault(
-                "Improves vision\n" +
-                "Shows the location of treasure and ore\n" +
-                "Provides light when worn");
+                Language.GetTextValue("ItemTooltip.NightVisionHelmet") + "\n" +
+                Language.GetTextValue("ItemTooltip.SpelunkerPotion") + "\n" +
+                Language.GetTextValue("ItemTooltip.MiningHelmet"));
         }
 
         public override void SetDefaults() {

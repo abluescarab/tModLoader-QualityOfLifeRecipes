@@ -1,5 +1,6 @@
 ﻿using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Accessories {
@@ -7,8 +8,8 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault("Sweet Star Veil");
             Tooltip.SetDefault(
-                "Releases bees and increases movement speed when damaged\n" +
-                "Causes stars to fall and increases length of invincibility after taking damage");
+                Language.GetTextValue("ItemTooltip.SweetheartNecklace") + "\n" +
+                Language.GetTextValue("ItemTooltip.StarVeil"));
         }
 
         public override void SetDefaults() {

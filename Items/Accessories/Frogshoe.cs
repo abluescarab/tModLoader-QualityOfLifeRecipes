@@ -1,5 +1,6 @@
 ﻿using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Accessories {
@@ -7,9 +8,8 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault("Frogshoe");
             Tooltip.SetDefault(
-                "Increases jump speed and allows auto-jump\n" +
-                "Increases fall resistance\n" +
-                "Negates fall damage");
+                Language.GetTextValue("ItemTooltip.FrogLeg") + "\n" +
+                Language.GetTextValue("ItemTooltip.LuckyHorseshoe"));
         }
 
         public override void SetDefaults() {
