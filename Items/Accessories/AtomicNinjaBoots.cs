@@ -13,7 +13,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         }
 
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("Atomic Boots");
+            DisplayName.SetDefault("Atomic Ninja Boots");
             Tooltip.SetDefault(
                 Language.GetTextValue("ItemTooltip.FrostsparkBoots") + "\n" +
                 Language.GetTextValue("ItemTooltip.LavaWaders") + "\n" +
