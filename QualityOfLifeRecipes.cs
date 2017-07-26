@@ -78,6 +78,7 @@ namespace QualityOfLifeRecipes {
             rcp.AddRecipeGroup(GROUP_GOLD_BAR, 15);
             rcp.AddIngredient(ItemID.Lens, 5);
             rcp.AddTile(TileID.Tables);
+            rcp.AddTile(TileID.Chairs);
             rcp.SetResult(ItemID.Sextant);
             rcp.AddRecipe();
 
@@ -88,6 +89,7 @@ namespace QualityOfLifeRecipes {
             rcp.AddIngredient(ItemID.Cloud, 15);
             rcp.AddIngredient(ItemID.SnowBlock, 15);
             rcp.AddTile(TileID.Tables);
+            rcp.AddTile(TileID.Chairs);
             rcp.SetResult(ItemID.WeatherRadio);
             rcp.AddRecipe();
 
