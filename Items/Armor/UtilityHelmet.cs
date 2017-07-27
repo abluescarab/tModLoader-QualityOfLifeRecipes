@@ -36,6 +36,16 @@ namespace QualityOfLifeRecipes.Items.Armor {
             player.dangerSense = true;
         }
 
+        public override bool IsArmorSet(Item head, Item body, Item legs) {
+            return body.type == ItemID.MiningShirt &&
+                   legs.type == ItemID.MiningPants;
+        }
+
+        public override void UpdateArmorSet(Player player) {
+            player.setBonus = Language.GetTextValue("ArmorSetBonus.Mining");
+            player.pickSpeed -= 0.3f;
+        }
+
         public override void AddRecipes() {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(mod, "MiningGear");
