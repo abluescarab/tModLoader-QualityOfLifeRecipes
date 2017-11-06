@@ -21,6 +21,9 @@ Changes:
 * PyroSalamander for suggesting the Cybernetic Utility Helmet
 
 [Changelog]
+v1.2.1  2017-11-06
+* Compiled for tModLoader v0.10.1
+
 v1.2.0  2017-07-27
 * Added mining armor bonus for Utility Helmet
 
