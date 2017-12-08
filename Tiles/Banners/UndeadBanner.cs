@@ -48,6 +48,14 @@ namespace QualityOfLifeRecipes.Tiles.Banners {
                 player.NPCBannerBuff[Item.NPCtoBanner(NPCID.FemaleZombie)] = true;
                 player.NPCBannerBuff[Item.NPCtoBanner(NPCID.ArmedZombieCenx)] = true;
                 player.NPCBannerBuff[Item.NPCtoBanner(NPCID.ZombieRaincoat)] = true;
+                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.DemonEye)] = true;
+                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.CataractEye)] = true;
+                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.DialatedEye)] = true;
+                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.GreenEye)] = true;
+                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.SleepyEye)] = true;
+                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.PurpleEye)] = true;
+                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.DemonEyeOwl)] = true;
+                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.DemonEyeSpaceship)] = true;
 
                 player.hasBanner = true;
             }
