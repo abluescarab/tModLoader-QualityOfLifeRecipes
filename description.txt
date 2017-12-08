@@ -21,6 +21,9 @@ Changes:
 * PyroSalamander for suggesting the Cybernetic Utility Helmet
 
 [Changelog]
+v1.2.2  2017-12-08
+* Fix: Undead Banner including Demon Eyes
+
 v1.2.1  2017-11-06
 * Compiled for tModLoader v0.10.1
 
