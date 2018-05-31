@@ -7,7 +7,7 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault("Goblin Army Banner");
             Tooltip.SetDefault(
-                "Nearby players get a bonus against: Goblin Archers/Peons/Sorcerers/Thieves/Warriors");
+                "Nearby players get a bonus against: Goblin Archers, Goblin Peons, Goblin Sorcerers, Goblin Thieves, Goblin Warriors");
         }
 
         public override void SetDefaults() {

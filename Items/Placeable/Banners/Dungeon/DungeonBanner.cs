@@ -7,7 +7,7 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Dungeon {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault("Dungeon Banner");
             Tooltip.SetDefault(
-                "Nearby players get a bonus against: Angry Bones/Dark Caster/Cursed Skull");
+                "Nearby players get a bonus against: Angry Bones, Dark Caster, Cursed Skull");
         }
 
         public override void SetDefaults() {
