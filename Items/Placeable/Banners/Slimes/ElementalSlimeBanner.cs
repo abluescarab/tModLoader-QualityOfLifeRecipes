@@ -7,7 +7,7 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Slimes {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault("Elemental Slime Banner");
             Tooltip.SetDefault(
-                "Nearby players get a bonus against: Sand/Ice/Jungle/Lava/Spiked Slime");
+                "Nearby players get a bonus against: Sand Slime, Ice Slime, Jungle Slime, Lava Slime, Spiked Slime");
         }
 
         public override void SetDefaults() {

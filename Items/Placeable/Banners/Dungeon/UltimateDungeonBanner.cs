@@ -7,7 +7,9 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Dungeon {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault("Ultimate Dungeon Banner");
             Tooltip.SetDefault(
-                "Nearby players get a bonus against: Dungeon Enemies");
+                "Nearby players get a bonus against: Angry Bones, Dark Caster, Cursed Skull Armored Bones, Necromancer,\n" +
+                "Ragged Caster, Diabolist, Giant Cursed Skull, Dungeon Slime, Paladin, Skeleton Commando, Skeleton Sniper,\n" +
+                "Tactical Skeleton, Bone Lee, Dungeon Spirit");
         }
 
         public override void SetDefaults() {

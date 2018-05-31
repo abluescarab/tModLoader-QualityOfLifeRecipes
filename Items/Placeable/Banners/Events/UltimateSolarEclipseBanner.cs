@@ -7,7 +7,8 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault("Ultimate Solar Eclipse Banner");
             Tooltip.SetDefault(
-                "Nearby players get a bonus against: Solar Eclipse Enemies");
+                "Nearby players get a bonus against: Frankenstein, Swamp Thing, Vampire, Creature from the Deep, Fritz,\n" +
+                "The Possessed, Eyezor, Reaper, Butcher, Deadly Sphere, Dr. Man Fly, Nailhead, Psycho, Mothron");
         }
 
         public override void SetDefaults() {
