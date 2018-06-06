@@ -13,14 +13,21 @@ Changes:
 * Undead Banner requires Raincoat Zombie Banner.
 * Master Fishing Gear has been removed.
 * Sharp Sea Necklace has been removed.
-* Removed most crafting recipes for rare items obtained as drops.
+* Removed most crafting recipes for rare item drops.
 
 [Credits]
+* Freedbot for Solar Eclipse, Frost Moon, Pumpkin Moon, Martian Madness event banner sprites
 * INFINITE POWER for the original QOL and sprites
 * Ardosos for the code for the Alteration Station
 * PyroSalamander for suggesting the Cybernetic Utility Helmet
 
 [Changelog]
+v1.3.0  2018-06-06
+* Added Atomic Cloud Boots
+* Added Angler's Fishing Gear
+* Added Frost Moon, Martian Madness, Pumpkin Moon, Solar Eclipse banners (thanks, Freedbot!)
+* Expanded banner tooltips
+
 v1.2.2  2017-12-08
 * Fix: Undead Banner including Demon Eyes
 
