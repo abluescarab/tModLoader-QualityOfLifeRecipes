@@ -31,6 +31,8 @@ All of the items below are crafted at the Tinkerer's Workshop.
 | Lava Waders | Frostspark Boots | | <img src="Items/Accessories/ElementalBoots.png" height="15px"/> Elemental Boots |
 | <img src="Items/Accessories/ElementalBoots.png" height="15px"/> Elemental Boots | Master Ninja Gear | | <img src="Items/Accessories/ElementalNinjaBoots.png" height="15px"/> Elemental Ninja Boots |
 | <img src="Items/Accessories/ElementalNinjaBoots.png" height="15px"/> Elemental Ninja Boots | Flower Boots | Gravity Globe | <img src="Items/Accessories/AtomicNinjaBoots.png" height="15px"/> Atomic Ninja Boots |
+| Angler Tackle Bag | <ul><li>Angler Hat</li><li>Angler Pants</li><li>Angler Vest</li></ul> | | <img src="Items/Accessories/AnglersFishingGear.png" height="15px"/> Angler's Fishing Gear |
+| <img src="Items/Accessories/AtomicNinjaBoots.png" height="15px"/> Atomic Ninja Boots | <img src="Items/Accessories/CloudOfFrogshoeBalloons.png" height="15px"/> Cloud of Frogshoe Balloons | | <img src="Items/Accessories/AtomicCloudBoots.png" height="15px"/> Atomic Cloud Boots |
 | <img src="Items/Armor/UtilityHelmet.png" height="15px"/> Utility Helmet | Nanites (x20) | | <img src="Items/Accessories/CyberneticUtilityHelmet.png" height="15px"/> Cybernetic Utility Helmet |
 
 ### Armor
