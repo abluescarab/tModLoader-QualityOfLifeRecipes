@@ -73,6 +73,12 @@
     <Compile Include="Items\Placeable\Banners\Dungeon\DungeonBanner.cs" />
     <Compile Include="Items\Placeable\Banners\Dungeon\SupremeDungeonBanner.cs" />
     <Compile Include="Items\Placeable\Banners\Dungeon\UltimateDungeonBanner.cs" />
+    <Compile Include="Items\Placeable\Banners\Events\FrostMoonBanner.cs" />
+    <Compile Include="Items\Placeable\Banners\Events\MartianMadnessBanner.cs" />
+    <Compile Include="Items\Placeable\Banners\Events\PumpkinMoonBanner.cs" />
+    <Compile Include="Items\Placeable\Banners\Events\UltimateSolarEclipseBanner.cs" />
+    <Compile Include="Items\Placeable\Banners\Events\SupremeSolarEclipseBanner.cs" />
+    <Compile Include="Items\Placeable\Banners\Events\SolarEclipseBanner.cs" />
     <Compile Include="Items\Placeable\Banners\Events\GoblinArmyBanner.cs" />
     <Compile Include="Items\Placeable\Banners\Events\Pillars\NebulaPillarBanner.cs" />
     <Compile Include="Items\Placeable\Banners\Events\Pillars\SolarPillarBanner.cs" />
@@ -80,6 +86,12 @@
     <Compile Include="Items\Placeable\Banners\Events\Pillars\VortexPillarBanner.cs" />
     <Compile Include="Items\Placeable\Banners\Events\PirateCrewBanner.cs" />
     <Compile Include="Items\Placeable\Banners\UndeadBanner.cs" />
+    <Compile Include="Tiles\Banners\Events\FrostMoonBanner.cs" />
+    <Compile Include="Tiles\Banners\Events\MartianMadnessBanner.cs" />
+    <Compile Include="Tiles\Banners\Events\PumpkinMoonBanner.cs" />
+    <Compile Include="Tiles\Banners\Events\UltimateSolarEclipseBanner.cs" />
+    <Compile Include="Tiles\Banners\Events\SupremeSolarEclipseBanner.cs" />
+    <Compile Include="Tiles\Banners\Events\SolarEclipseBanner.cs" />
     <Compile Include="Tiles\Banners\Events\PirateCrewBanner.cs" />
     <Compile Include="Items\Placeable\Banners\Slimes\ElementalSlimeBanner.cs" />
     <Compile Include="Items\Placeable\Banners\Slimes\SupremeSlimeBanner.cs" />
