@@ -51,6 +51,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Items\Accessories\AnglersFishingGear.cs" />
+    <Compile Include="Items\Accessories\AtomicCloudBoots.cs" />
     <Compile Include="Items\Accessories\AtomicNinjaBoots.cs" />
     <Compile Include="Items\Accessories\BunchOfBalloons.cs" />
     <Compile Include="Items\Accessories\CelestialFlowerCuffs.cs" />
