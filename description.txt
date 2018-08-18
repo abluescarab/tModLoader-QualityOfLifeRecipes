@@ -16,12 +16,16 @@ Changes:
 * Removed most crafting recipes for rare item drops.
 
 [Credits]
-* Freedbot for Solar Eclipse, Frost Moon, Pumpkin Moon, Martian Madness event banner sprites
+* Freedbot for Solar Eclipse, Frost Moon, Pumpkin Moon, Martian Madness event banners and Cybernetic Mining Multi-Tool sprite
 * INFINITE POWER for the original QOL and sprites
 * Ardosos for the code for the Alteration Station
 * PyroSalamander for suggesting the Cybernetic Utility Helmet
 
 [Changelog]
+v1.3.1  2018-08-17
+* Changed Cybernetic Utility Helmet to Cybernetic Mining Multi-Tool (thanks, Freedbot!)
+* Applied mining set bonus to Mining Gear
+
 v1.3.0  2018-06-06
 * Added Atomic Cloud Boots
 * Added Angler's Fishing Gear
