@@ -4,9 +4,9 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Accessories {
-    public class CyberneticUtilityHelmet : ModItem {
+    public class CyberneticMiningMultiTool : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("Cybernetic Utility Helmet");
+            DisplayName.SetDefault("Cybernetic Mining Multi-Tool");
             Tooltip.SetDefault(
                 Language.GetTextValue("ItemTooltip.HunterPotion") + "\n" +
                 Language.GetTextValue("ItemTooltip.TrapsightPotion") + "\n" +
