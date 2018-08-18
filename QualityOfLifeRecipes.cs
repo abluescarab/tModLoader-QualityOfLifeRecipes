@@ -5,9 +5,9 @@ using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes {
     public class QualityOfLifeRecipes : Mod {
-        private const string GROUP_GOLD_CROWN = "QOLR:GoldCrown";
-        private const string GROUP_GOLD_BAR = "QOLR:GoldBar";
-        private const string GROUP_IRON_BAR = "QOLR:IronBar";
+        private const string GroupGoldCrown = "QOLR:GoldCrown";
+        private const string GroupGoldBar = "QOLR:GoldBar";
+        private const string GroupIronBar = "QOLR:IronBar";
 
         public QualityOfLifeRecipes() {
             Properties = new ModProperties() {
@@ -20,16 +20,16 @@ namespace QualityOfLifeRecipes {
         public override void AddRecipeGroups() {
             string any = Language.GetText("LegacyMisc.37").Value;
 
-            RecipeGroup GoldCrown = new RecipeGroup(() => any + Language.GetText("ItemName.GoldCrown"),
-                new int[] { ItemID.GoldCrown, ItemID.PlatinumCrown });
-            RecipeGroup GoldBar = new RecipeGroup(() => any + " " + Language.GetText("ItemName.GoldBar"),
-                new int[] { ItemID.GoldBar, ItemID.PlatinumBar });
-            RecipeGroup IronBar = new RecipeGroup(() => any + " " + Language.GetText("ItemName.IronBar"),
-                new int[] { ItemID.IronBar, ItemID.LeadBar });
+            RecipeGroup goldCrown = new RecipeGroup(() => any + Language.GetText("ItemName.GoldCrown"), 
+                ItemID.GoldCrown, ItemID.PlatinumCrown);
+            RecipeGroup goldBar = new RecipeGroup(() => any + " " + Language.GetText("ItemName.GoldBar"), 
+                ItemID.GoldBar, ItemID.PlatinumBar);
+            RecipeGroup ironBar = new RecipeGroup(() => any + " " + Language.GetText("ItemName.IronBar"), 
+                ItemID.IronBar, ItemID.LeadBar);
 
-            RecipeGroup.RegisterGroup(GROUP_GOLD_CROWN, GoldCrown);
-            RecipeGroup.RegisterGroup(GROUP_GOLD_BAR, GoldBar);
-            RecipeGroup.RegisterGroup(GROUP_IRON_BAR, IronBar);
+            RecipeGroup.RegisterGroup(GroupGoldCrown, goldCrown);
+            RecipeGroup.RegisterGroup(GroupGoldBar, goldBar);
+            RecipeGroup.RegisterGroup(GroupIronBar, ironBar);
         }
 
         public override void AddRecipes() {
@@ -59,7 +59,7 @@ namespace QualityOfLifeRecipes {
 
             // queen statue
             rcp = new ModRecipe(this);
-            rcp.AddRecipeGroup(GROUP_GOLD_CROWN);
+            rcp.AddRecipeGroup(GroupGoldCrown);
             rcp.AddIngredient(ItemID.StoneBlock, 50);
             rcp.AddTile(TileID.HeavyWorkBench);
             rcp.SetResult(ItemID.QueenStatue);
@@ -67,7 +67,7 @@ namespace QualityOfLifeRecipes {
 
             // king statue
             rcp = new ModRecipe(this);
-            rcp.AddRecipeGroup(GROUP_GOLD_CROWN);
+            rcp.AddRecipeGroup(GroupGoldCrown);
             rcp.AddIngredient(ItemID.StoneBlock, 50);
             rcp.AddTile(TileID.HeavyWorkBench);
             rcp.SetResult(ItemID.KingStatue);
@@ -75,7 +75,7 @@ namespace QualityOfLifeRecipes {
 
             // sextant
             rcp = new ModRecipe(this);
-            rcp.AddRecipeGroup(GROUP_GOLD_BAR, 15);
+            rcp.AddRecipeGroup(GroupGoldBar, 15);
             rcp.AddIngredient(ItemID.Lens, 5);
             rcp.AddTile(TileID.Tables);
             rcp.AddTile(TileID.Chairs);
@@ -84,8 +84,8 @@ namespace QualityOfLifeRecipes {
 
             // weather radio
             rcp = new ModRecipe(this);
-            rcp.AddRecipeGroup(GROUP_GOLD_BAR, 8);
-            rcp.AddRecipeGroup(GROUP_IRON_BAR, 15);
+            rcp.AddRecipeGroup(GroupGoldBar, 8);
+            rcp.AddRecipeGroup(GroupIronBar, 15);
             rcp.AddIngredient(ItemID.Cloud, 15);
             rcp.AddIngredient(ItemID.SnowBlock, 15);
             rcp.AddTile(TileID.Tables);
