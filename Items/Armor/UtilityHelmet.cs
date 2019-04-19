@@ -20,7 +20,6 @@ namespace QualityOfLifeRecipes.Items.Armor {
             item.value = Item.sellPrice(0, 8, 0, 0);
             item.rare = 6;
             item.defense = 12;
-            item.accessory = true;
         }
 
         public override void UpdateEquip(Player player) {
