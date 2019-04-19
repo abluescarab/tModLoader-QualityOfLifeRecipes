@@ -22,6 +22,9 @@ Changes:
 * PyroSalamander for suggesting the Cybernetic Utility Helmet
 
 [Changelog]
+v1.3.2  2019-04-19
+* Fix: restricted helmets/goggles to head slot only
+
 v1.3.1  2018-08-17
 * Changed Cybernetic Utility Helmet to Cybernetic Mining Multi-Tool (thanks, Freedbot!)
 * Applied mining set bonus to Mining Gear
