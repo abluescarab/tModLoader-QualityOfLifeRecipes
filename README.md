@@ -1,49 +1,7 @@
 # Quality of Life: Recipes
 Quality of Life: Recipes intends to recreate, add to, and improve the recipes introduced by Quality of Life.
 
-## Changes
-* <img src="Items/Armor/CavingGear.png" height="15px"/> Caving Gear uses 20 Spelunker Potions instead of 25.
-* Celestial Flower has been replaced with the <img src="Items/Accessories/CelestialFlowerCuffs.png" height="15px"/> Celestial Flower Cuffs.
-* Added recipe for <img src="Items/Accessories/ElementalNinjaBoots.png" height="15px"/> Elemental Ninja Boots.
-* Atomic Boots have been changed to <img src="Items/Accessories/AtomicNinjaBoots.png" height="15px"/> Atomic Ninja Boots.
-* <img src="Tiles/Banners/Slimes/SupremeSlimeBanner.png" height="15px"/> Supreme Slime Banner uses the Black Slime Banner.
-* <img src="Tiles/Banners/Slimes/ElementalSlimeBanner.png" height="15px"/> Elemental Slime Banner uses the Lava Slime Banner.
-* The Grand Design requires the Mechanical Ruler.
-* <img src="Tiles/Banners/UndeadBanner.png" height="15px"/> Undead Banner requires Raincoat Zombie Banner.
-* Master Fishing Gear has been removed.
-* Sharp Sea Necklace has been removed.
-
-## Recipes
-### Accessories
-All of the items below are crafted at the Tinkerer's Workshop.
-
-| Ingredients  |     |     | Result |
-| ------------ | --- | --- | ------ |
-| Sweetheart Necklace | Star Veil | | <img src="Items/Accessories/SweetStarVeil.png" height="15px"/> Sweet Star Veil |
-| Frog Leg | Lucky Horseshoe | | <img src="Items/Accessories/Frogshoe.png" height="15px"/> Frogshoe |
-| Fart in a Balloon | Honey Balloon | Sharkron Balloon | <img src="Items/Accessories/BunchOfBalloons.png" height="15px"/> Bunch of Balloons |
-| <img src="Items/Accessories/BunchOfBalloons.png" height="15px"/> Bunch of Balloons | Bundle of Balloons | | <img src="Items/Accessories/CloudOfBalloons.png" height="15px"/> Cloud of Balloons |
-| <img src="Items/Accessories/CloudOfBalloons.png" height="15px"/> Cloud of Balloons | <img src="Items/Accessories/Frogshoe.png" height="15px"/> Frogshoe | | <img src="Items/Accessories/CloudOfFrogshoeBalloons.png" height="15px"/> Cloud of Frogshoe Balloons |
-| Lava Charm | Obsidian Rose | | <img src="Items/Accessories/LavaOrb.png" height="15px"/> Lava Orb |
-| Charm of Myths | Mana Regeneration Band | | <img src="Items/Accessories/LifeforceBracelet.png" height="15px"/> Lifeforce Bracelet |
-| Toolbox | Toolbelt | | <img src="Items/Accessories/HeavyDutyToolbox.png" height="15px"/> Heavy-Duty Toolbox |
-| Mana Flower | Celestial Cuffs | | <img src="Items/Accessories/CelestialFlowerCuffs.png" height="15px"/> Celestial Flower Cuffs |
-| Lava Waders | Frostspark Boots | | <img src="Items/Accessories/ElementalBoots.png" height="15px"/> Elemental Boots |
-| <img src="Items/Accessories/ElementalBoots.png" height="15px"/> Elemental Boots | Master Ninja Gear | | <img src="Items/Accessories/ElementalNinjaBoots.png" height="15px"/> Elemental Ninja Boots |
-| <img src="Items/Accessories/ElementalNinjaBoots.png" height="15px"/> Elemental Ninja Boots | Flower Boots | Gravity Globe | <img src="Items/Accessories/AtomicNinjaBoots.png" height="15px"/> Atomic Ninja Boots |
-| <img src="Items/Accessories/AtomicNinjaBoots.png" height="15px"/> Atomic Ninja Boots | <img src="Items/Accessories/CloudOfFrogshoeBalloons.png" height="15px"/> Cloud of Frogshoe Balloons | | <img src="Items/Accessories/AtomicCloudBoots.png" height="15px"/> Atomic Cloud Boots |
-| Angler Tackle Bag | <ul><li>Angler Hat</li><li>Angler Pants</li><li>Angler Vest</li></ul> | | <img src="Items/Accessories/AnglersFishingGear.png" height="15px"/> Angler's Fishing Gear |
-| <img src="Items/Armor/UtilityHelmet.png" height="15px"/> Utility Helmet | Nanites (x20) | | <img src="Items/Accessories/CyberneticMiningMultiTool.png" height="15px"/> Cybernetic Mining Multi-Tool |
-
-### Armor
-All of the items below are crafted at the Tinkerer's Workshop.
-
-| Ingredients  |     |     | Result |
-| ------------ | --- | --- | ------ |
-| Night Vision Helmet | Spelunker Potion (x20) | | <img src="Items/Armor/CavingGear.png" height="15px"/> Caving Gear |
-| <img src="Items/Armor/CavingGear.png" height="15px"/> Caving Gear | Mining Helmet | | <img src="Items/Armor/MiningGear.png" height="15px"/> Mining Gear |
-| Goggles | Hunter Potion (x20) | Dangersense Potion (x20) | <img src="Items/Armor/OrangeTintedGoggles.png" height="15px"/> Orange-Tinted Goggles |
-| <img src="Items/Armor/OrangeTintedGoggles.png" height="15px"/> Orange-Tinted Goggles | <img src="Items/Armor/MiningGear.png" height="15px"/> Mining Gear | | <img src="Items/Armor/UtilityHelmet.png" height="15px"/> Utility Helmet |
+See the [wiki](https://github.com/abluescarab/tModLoader-QualityOfLifeRecipes/wiki) to view the changes.
 
 ### Placeables
 | Crafting Station | Ingredients  |     | Result |
