@@ -6,10 +6,6 @@ See the [wiki](https://github.com/abluescarab/tModLoader-QualityOfLifeRecipes/wi
 ### Placeables
 | Crafting Station | Ingredients  |     | Result |
 | ---------------- | ------------ | --- | ------ |
-| Heavy Work Bench | Life Crystal | Stone Block (x50) | Heart Statue |
-| Heavy Work Bench | Mana Crystal | Stone Block (x50) | Star Statue |
-| Heavy Work Bench | Any Gold Crown | Stone Block (x50) | Queen/King Statue |
-| Table and Chair | Any Gold Bar (x15) | Lens (x5) | Sextant |
 | Tinkerer's Workshop | Extractinator | Alchemy Table | <img src="Items/Placeable/AlterationStation.png" height="15px"/> Alteration Station |
 | Loom | Colored Slime Banners | | <img src="Tiles/Banners/Slimes/SupremeSlimeBanner.png" height="15px"/> Supreme Slime Banner |
 | Loom | Elemental Slime Banners | | <img src="Tiles/Banners/Slimes/ElementalSlimeBanner.png" height="15px"/> Elemental Slime Banner |
@@ -30,8 +26,6 @@ See the [wiki](https://github.com/abluescarab/tModLoader-QualityOfLifeRecipes/wi
 | Loom | <ul><li>Frankenstein Banner</li><li>Swamp Thing Banner</li><li>Vampire Banner</li><li>Creature from the Deep Banner</li><li>Fritz Banner</li><li>The Possessed Banner</li></ul> | | <img src="Tiles/Banners/Events/SolarEclipseBanner.png" height="15px"/> Solar Eclipse Banner |
 | Loom | <ul><li>Eyezor Banner</li><li>Reaper Banner</li><li>Butcher Banner</li><li>Deadly Sphere Banner</li><li>Dr. Man Fly Banner</li><li>Nailhead Banner</li><li>Psycho Banner</li></ul> | <img src="Tiles/Banners/Events/SolarEclipseBanner.png" height="15px"/> Solar Eclipse Banner | <img src="Tiles/Banners/Events/SupremeSolarEclipseBanner.png" height="15px"/> Supreme Solar Eclipse Banner |
 | Loom | Mothron Banner | <img src="Tiles/Banners/Events/SupremeSolarEclipseBanner.png" height="15px"/> Supreme Solar Eclipse Banner | <img src="Tiles/Banners/Events/UltimateSolarEclipseBanner.png" height="15px"/> Ultimate Solar Eclipse Banner |
-| Table and Chair | <ul><li>Any Gold Bar (x8)</li><li>Any Iron Bar (x15)</li><li>Cloud (x15)</li><li>Snow Block (x15)</li></ul> | | Weather Radio |
-| Bookcase | <ul><li>Book</li><li>Armored Cavefish</li><li>Specular Fish</li><li>Neon Tetra</li><li>Bass</li><li>Trout</li><li>Atlantic Cod</li></ul> | | Fisherman's Pocket Guide |
 
 ## To-Do
 * Biome banners
