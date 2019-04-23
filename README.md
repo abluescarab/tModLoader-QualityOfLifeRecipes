@@ -6,7 +6,6 @@ See the [wiki](https://github.com/abluescarab/tModLoader-QualityOfLifeRecipes/wi
 ### Placeables
 | Crafting Station | Ingredients  |     | Result |
 | ---------------- | ------------ | --- | ------ |
-| Tinkerer's Workshop | Extractinator | Alchemy Table | <img src="Items/Placeable/AlterationStation.png" height="15px"/> Alteration Station |
 | Loom | Colored Slime Banners | | <img src="Tiles/Banners/Slimes/SupremeSlimeBanner.png" height="15px"/> Supreme Slime Banner |
 | Loom | Elemental Slime Banners | | <img src="Tiles/Banners/Slimes/ElementalSlimeBanner.png" height="15px"/> Elemental Slime Banner |
 | Loom | <img src="Tiles/Banners/Slimes/ElementalSlimeBanner.png" height="15px"/> Elemental Slime Banner | <img src="Tiles/Banners/Slimes/SupremeSlimeBanner.png" height="15px"/> Supreme Slime Banner | <img src="Tiles/Banners/Slimes/UltimateSlimeBanner.png" height="15px"/> Ultimate Slime Banner
