@@ -22,6 +22,9 @@ Changes:
 * PyroSalamander for suggesting the Cybernetic Utility Helmet
 
 [Changelog]
+v1.4.0  2019-04-22
+* Added WikiSearch support
+
 v1.3.2  2019-04-19
 * Fix: restricted helmets/goggles to head slot only
 
