@@ -2,19 +2,6 @@
 
 Visit the mod homepage to see the included recipes.
 
-Changes:
-* Caving Gear uses 20 Spelunker Potions instead of 25.
-* Celestial Flower has been replaced with the Celestial Flower Cuffs.
-* Added recipe for Elemental Ninja Boots.
-* Atomic Boots have been changed to Atomic Ninja Boots.
-* Supreme Slime Banner uses the Black Slime Banner.
-* Elemental Slime Banner uses the Lava Slime Banner.
-* The Grand Design requires the Mechanical Ruler.
-* Undead Banner requires Raincoat Zombie Banner.
-* Master Fishing Gear has been removed.
-* Sharp Sea Necklace has been removed.
-* Removed most crafting recipes for rare item drops.
-
 [Credits]
 * Freedbot for Solar Eclipse, Frost Moon, Pumpkin Moon, Martian Madness event banners and Cybernetic Mining Multi-Tool sprite
 * INFINITE POWER for the original QOL and sprites
@@ -22,6 +9,9 @@ Changes:
 * PyroSalamander for suggesting the Cybernetic Utility Helmet
 
 [Changelog]
+v1.5.0  2019-04-23
+* Removed Gravity Globe from Atomic Ninja Boots
+
 v1.4.0  2019-04-22
 * Added WikiSearch support
 
