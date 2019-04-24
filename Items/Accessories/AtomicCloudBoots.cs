@@ -19,7 +19,6 @@ namespace QualityOfLifeRecipes.Items.Accessories {
                 Language.GetTextValue("ItemTooltip.LavaWaders") + "\n" +
                 Language.GetTextValue("ItemTooltip.MasterNinjaGear") + "\n" +
                 Language.GetTextValue("ItemTooltip.FlowerBoots") + "\n" +
-                Language.GetTextValue("ItemTooltip.GravityGlobe") + "\n" +
                 Language.GetTextValue("ItemTooltip.FrogLeg") + "\n" +
                 Language.GetTextValue("ItemTooltip.LuckyHorseshoe") + "\n" +
                 "Sextuple jump and increases jump height\n" +
@@ -46,8 +45,6 @@ namespace QualityOfLifeRecipes.Items.Accessories {
             player.blackBelt = true;
             player.dash = 1;
             player.spikedBoots = 2;
-            // gravity globe
-            player.gravControl = true;
             // frog leg
             player.autoJump = true;
             player.jumpSpeedBoost += 2.4f;

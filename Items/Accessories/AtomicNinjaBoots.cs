@@ -18,8 +18,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
                 Language.GetTextValue("ItemTooltip.FrostsparkBoots") + "\n" +
                 Language.GetTextValue("ItemTooltip.LavaWaders") + "\n" +
                 Language.GetTextValue("ItemTooltip.MasterNinjaGear") + "\n" +
-                Language.GetTextValue("ItemTooltip.FlowerBoots") + "\n" +
-                Language.GetTextValue("ItemTooltip.GravityGlobe"));
+                Language.GetTextValue("ItemTooltip.FlowerBoots"));
         }
 
         public override void SetDefaults() {
@@ -42,8 +41,6 @@ namespace QualityOfLifeRecipes.Items.Accessories {
             player.blackBelt = true;
             player.dash = 1;
             player.spikedBoots = 2;
-            // gravity globe
-            player.gravControl = true;
         }
 
         public override void UpdateEquip(Player player) {
@@ -55,7 +52,6 @@ namespace QualityOfLifeRecipes.Items.Accessories {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(mod, "ElementalNinjaBoots");
             recipe.AddIngredient(ItemID.FlowerBoots);
-            recipe.AddIngredient(ItemID.GravityGlobe);
             recipe.AddTile(TileID.TinkerersWorkbench);
             recipe.SetResult(this);
             recipe.AddRecipe();
