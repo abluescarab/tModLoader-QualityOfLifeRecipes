@@ -9,6 +9,10 @@ Visit the mod homepage to see the included recipes.
 * PyroSalamander for suggesting the Cybernetic Utility Helmet
 
 [Changelog]
+v1.5.1  2019-08-17
+* Build for tModLoader v0.11.4
+* Fix: Removed unfinished equipment
+
 v1.5.0  2019-04-23
 * Removed Gravity Globe from Atomic Ninja Boots
 
