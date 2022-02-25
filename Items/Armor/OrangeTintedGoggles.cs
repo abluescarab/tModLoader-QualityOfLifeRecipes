@@ -14,9 +14,9 @@ namespace QualityOfLifeRecipes.Items.Armor {
         }
 
         public override void SetDefaults() {
-            item.value = Item.sellPrice(0, 1, 0, 0);
-            item.rare = 2;
-            item.defense = 2;
+            Item.value = Item.sellPrice(0, 1, 0, 0);
+            Item.rare = ItemRarityID.Green;
+            Item.defense = 2;
         }
 
         public override void UpdateEquip(Player player) {
@@ -27,13 +27,12 @@ namespace QualityOfLifeRecipes.Items.Armor {
         }
 
         public override void AddRecipes() {
-            ModRecipe recipe = new ModRecipe(mod);
+            Recipe recipe = CreateRecipe();
             recipe.AddIngredient(ItemID.Goggles);
             recipe.AddIngredient(ItemID.HunterPotion, 20);
             recipe.AddIngredient(ItemID.TrapsightPotion, 20);
             recipe.AddTile(TileID.TinkerersWorkbench);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
+            recipe.Register();
         }
     }
 }

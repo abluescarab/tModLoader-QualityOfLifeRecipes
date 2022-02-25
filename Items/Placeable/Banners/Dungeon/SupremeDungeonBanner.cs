@@ -12,22 +12,22 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Dungeon {
         }
 
         public override void SetDefaults() {
-            item.value = Item.sellPrice(0, 0, 25, 0);
-            item.rare = 2;
-            item.maxStack = 99;
-            item.useTurn = true;
-            item.autoReuse = true;
-            item.useAnimation = 15;
-            item.useTime = 10;
-            item.useStyle = 1;
-            item.consumable = true;
-            item.createTile = mod.TileType("SupremeDungeonBanner");
-            item.placeStyle = 0;
+            Item.value = Item.sellPrice(0, 0, 25, 0);
+            Item.rare = ItemRarityID.Green;
+            Item.maxStack = 99;
+            Item.useTurn = true;
+            Item.autoReuse = true;
+            Item.useAnimation = 15;
+            Item.useTime = 10;
+            Item.useStyle = ItemUseStyleID.Swing;
+            Item.consumable = true;
+            Item.createTile = ModContent.TileType<Tiles.Banners.Dungeon.SupremeDungeonBanner>();
+            Item.placeStyle = 0;
         }
 
         public override void AddRecipes() {
-            ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(mod, "DungeonBanner");
+            Recipe recipe = CreateRecipe();
+            recipe.AddIngredient(Mod, "DungeonBanner");
             recipe.AddIngredient(ItemID.DungeonSlimeBanner);
             recipe.AddIngredient(ItemID.BlueArmoredBonesBanner);
             recipe.AddIngredient(ItemID.RustyArmoredBonesBanner);
@@ -37,8 +37,7 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Dungeon {
             recipe.AddIngredient(ItemID.DiablolistBanner);
             recipe.AddIngredient(ItemID.GiantCursedSkullBanner);
             recipe.AddTile(TileID.Loom);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
+            recipe.Register();
         }
     }
 }

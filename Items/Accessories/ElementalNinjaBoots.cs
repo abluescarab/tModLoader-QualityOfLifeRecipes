@@ -14,9 +14,9 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         }
 
         public override void SetDefaults() {
-            item.value = Item.sellPrice(0, 35, 0, 0);
-            item.rare = 9;
-            item.accessory = true;
+            Item.value = Item.sellPrice(0, 35, 0, 0);
+            Item.rare = ItemRarityID.Cyan;
+            Item.accessory = true;
         }
 
         public override void UpdateAccessory(Player player, bool hideVisual) {
@@ -31,17 +31,16 @@ namespace QualityOfLifeRecipes.Items.Accessories {
             player.iceSkate = true;
             // master ninja gear
             player.blackBelt = true;
-            player.dash = 1;
+            player.dashType = 1;
             player.spikedBoots = 2;
         }
 
         public override void AddRecipes() {
-            ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(mod, "ElementalBoots");
+            Recipe recipe = CreateRecipe();
+            recipe.AddIngredient(Mod, "ElementalBoots");
             recipe.AddIngredient(ItemID.MasterNinjaGear);
             recipe.AddTile(TileID.TinkerersWorkbench);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
+            recipe.Register();
         }
     }
 }

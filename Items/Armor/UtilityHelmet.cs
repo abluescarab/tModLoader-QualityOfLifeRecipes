@@ -17,9 +17,9 @@ namespace QualityOfLifeRecipes.Items.Armor {
         }
 
         public override void SetDefaults() {
-            item.value = Item.sellPrice(0, 8, 0, 0);
-            item.rare = 6;
-            item.defense = 12;
+            Item.value = Item.sellPrice(0, 8, 0, 0);
+            Item.rare = ItemRarityID.LightPurple;
+            Item.defense = 12;
         }
 
         public override void UpdateEquip(Player player) {
@@ -46,12 +46,11 @@ namespace QualityOfLifeRecipes.Items.Armor {
         }
 
         public override void AddRecipes() {
-            ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(mod, "MiningGear");
-            recipe.AddIngredient(mod, "OrangeTintedGoggles");
+            Recipe recipe = CreateRecipe();
+            recipe.AddIngredient(Mod, "MiningGear");
+            recipe.AddIngredient(Mod, "OrangeTintedGoggles");
             recipe.AddTile(TileID.TinkerersWorkbench);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
+            recipe.Register();
         }
     }
 }

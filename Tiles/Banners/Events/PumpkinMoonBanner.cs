@@ -6,7 +6,7 @@ using Terraria.ObjectData;
 
 namespace QualityOfLifeRecipes.Tiles.Banners.Events {
     public class PumpkinMoonBanner : ModTile {
-        public override void SetDefaults() {
+        public override void SetStaticDefaults() {
             Main.tileFrameImportant[Type] = true;
             Main.tileNoAttach[Type] = true;
             Main.tileLavaDeath[Type] = true;
@@ -21,35 +21,35 @@ namespace QualityOfLifeRecipes.Tiles.Banners.Events {
 
             AddMapEntry(new Color(200, 200, 200), translation);
 
-            disableSmartCursor = true;
+            TileID.Sets.DisableSmartCursor[Type] = true;
 
             TileObjectData.addTile(Type);
         }
 
         public override void KillMultiTile(int i, int j, int frameX, int frameY) {
-            Item.NewItem(i * 16, j * 16, 16, 48, mod.ItemType("PumpkinMoonBanner"));
+            Item.NewItem(i * 16, j * 16, 16, 48, ModContent.ItemType<Items.Placeable.Banners.Events.PumpkinMoonBanner>());
         }
 
         public override void NearbyEffects(int i, int j, bool closer) {
             if(closer) {
                 Player player = Main.LocalPlayer;
 
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.Scarecrow1)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.Scarecrow2)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.Scarecrow3)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.Scarecrow4)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.Scarecrow5)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.Scarecrow6)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.Scarecrow7)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.Scarecrow8)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.Scarecrow9)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.Scarecrow10)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.Splinterling)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.Hellhound)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.Poltergeist)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.HeadlessHorseman)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.Scarecrow1)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.Scarecrow2)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.Scarecrow3)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.Scarecrow4)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.Scarecrow5)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.Scarecrow6)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.Scarecrow7)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.Scarecrow8)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.Scarecrow9)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.Scarecrow10)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.Splinterling)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.Hellhound)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.Poltergeist)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.HeadlessHorseman)] = true;
 
-                player.hasBanner = true;
+                Main.SceneMetrics.hasBanner = true;
             }
         }
     }

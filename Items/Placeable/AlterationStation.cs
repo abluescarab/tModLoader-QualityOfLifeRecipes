@@ -10,128 +10,112 @@ namespace QualityOfLifeRecipes.Items.Placeable {
         }
 
         public override void SetDefaults() {
-            item.maxStack = 99;
-            item.useTurn = true;
-            item.autoReuse = false;
-            item.useTime = 10;
-            item.useStyle = 1;
-            item.consumable = true;
-            item.rare = 2;
-            item.value = Item.sellPrice(0, 5, 0, 0);
-            item.createTile = mod.TileType("AlterationStation");
+            Item.maxStack = 99;
+            Item.useTurn = true;
+            Item.autoReuse = false;
+            Item.useTime = 10;
+            Item.useStyle = ItemUseStyleID.Swing;
+            Item.consumable = true;
+            Item.rare = ItemRarityID.Green;
+            Item.value = Item.sellPrice(0, 5, 0, 0);
+            Item.createTile = ModContent.TileType<Tiles.AlterationStation>();
         }
 
         public override void AddRecipes() {
-            ModRecipe recipe = new ModRecipe(mod);
+            Recipe recipe = CreateRecipe();
             recipe.AddIngredient(ItemID.Extractinator);
             recipe.AddIngredient(ItemID.AlchemyTable);
             recipe.AddTile(TileID.HeavyWorkBench);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
+            recipe.Register();
 
             // copper -> tin
-            recipe = new ModRecipe(mod);
+            recipe = Mod.CreateRecipe(ItemID.TinOre);
             recipe.AddIngredient(ItemID.CopperOre);
-            recipe.AddTile(mod, "AlterationStation");
-            recipe.SetResult(ItemID.TinOre);
-            recipe.AddRecipe();
+            recipe.AddTile(Mod, "AlterationStation");
+            recipe.Register();
+
             // tin -> copper
-            recipe = new ModRecipe(mod);
+            recipe = Mod.CreateRecipe(ItemID.CopperOre);
             recipe.AddIngredient(ItemID.TinOre);
-            recipe.AddTile(mod, "AlterationStation");
-            recipe.SetResult(ItemID.CopperOre);
-            recipe.AddRecipe();
+            recipe.AddTile(Mod, "AlterationStation");
+            recipe.Register();
 
             // iron -> lead
-            recipe = new ModRecipe(mod);
+            recipe = Mod.CreateRecipe(ItemID.LeadOre);
             recipe.AddIngredient(ItemID.IronOre);
-            recipe.AddTile(mod, "AlterationStation");
-            recipe.SetResult(ItemID.LeadOre);
-            recipe.AddRecipe();
+            recipe.AddTile(Mod, "AlterationStation");
+            recipe.Register();
             // lead -> iron
-            recipe = new ModRecipe(mod);
+            recipe = Mod.CreateRecipe(ItemID.IronOre);
             recipe.AddIngredient(ItemID.LeadOre);
-            recipe.AddTile(mod, "AlterationStation");
-            recipe.SetResult(ItemID.IronOre);
-            recipe.AddRecipe();
+            recipe.AddTile(Mod, "AlterationStation");
+            recipe.Register();
 
             // silver -> tungsten
-            recipe = new ModRecipe(mod);
+            recipe = Mod.CreateRecipe(ItemID.TungstenOre);
             recipe.AddIngredient(ItemID.SilverOre);
-            recipe.AddTile(mod, "AlterationStation");
-            recipe.SetResult(ItemID.TungstenOre);
-            recipe.AddRecipe();
+            recipe.AddTile(Mod, "AlterationStation");
+            recipe.Register();
             // tungsten -> silver
-            recipe = new ModRecipe(mod);
+            recipe = Mod.CreateRecipe(ItemID.SilverOre);
             recipe.AddIngredient(ItemID.TungstenOre);
-            recipe.AddTile(mod, "AlterationStation");
-            recipe.SetResult(ItemID.SilverOre);
-            recipe.AddRecipe();
+            recipe.AddTile(Mod, "AlterationStation");
+            recipe.Register();
 
             // gold -> platinum
-            recipe = new ModRecipe(mod);
+            recipe = Mod.CreateRecipe(ItemID.PlatinumOre);
             recipe.AddIngredient(ItemID.GoldOre);
-            recipe.AddTile(mod, "AlterationStation");
-            recipe.SetResult(ItemID.PlatinumOre);
-            recipe.AddRecipe();
+            recipe.AddTile(Mod, "AlterationStation");
+            recipe.Register();
             // platinum -> gold
-            recipe = new ModRecipe(mod);
+            recipe = Mod.CreateRecipe(ItemID.GoldOre);
             recipe.AddIngredient(ItemID.PlatinumOre);
-            recipe.AddTile(mod, "AlterationStation");
-            recipe.SetResult(ItemID.GoldOre);
-            recipe.AddRecipe();
+            recipe.AddTile(Mod, "AlterationStation");
+            recipe.Register();
 
             // demonite -> crimtane
-            recipe = new ModRecipe(mod);
+            recipe = Mod.CreateRecipe(ItemID.CrimtaneOre);
             recipe.AddIngredient(ItemID.DemoniteOre);
-            recipe.AddTile(mod, "AlterationStation");
-            recipe.SetResult(ItemID.CrimtaneOre);
-            recipe.AddRecipe();
+            recipe.AddTile(Mod, "AlterationStation");
+            recipe.Register();
             // crimtane -> demonite
-            recipe = new ModRecipe(mod);
+            recipe = Mod.CreateRecipe(ItemID.DemoniteOre);
             recipe.AddIngredient(ItemID.CrimtaneOre);
-            recipe.AddTile(mod, "AlterationStation");
-            recipe.SetResult(ItemID.DemoniteOre);
-            recipe.AddRecipe();
+            recipe.AddTile(Mod, "AlterationStation");
+            recipe.Register();
 
             // cobalt -> palladium
-            recipe = new ModRecipe(mod);
+            recipe = Mod.CreateRecipe(ItemID.PalladiumOre);
             recipe.AddIngredient(ItemID.CobaltOre);
-            recipe.AddTile(mod, "AlterationStation");
-            recipe.SetResult(ItemID.PalladiumOre);
-            recipe.AddRecipe();
+            recipe.AddTile(Mod, "AlterationStation");
+            recipe.Register();
             // palladium -> cobalt
-            recipe = new ModRecipe(mod);
+            recipe = Mod.CreateRecipe(ItemID.CobaltOre);
             recipe.AddIngredient(ItemID.PalladiumOre);
-            recipe.AddTile(mod, "AlterationStation");
-            recipe.SetResult(ItemID.CobaltOre);
-            recipe.AddRecipe();
+            recipe.AddTile(Mod, "AlterationStation");
+            recipe.Register();
 
             // mythril -> orichalcum
-            recipe = new ModRecipe(mod);
+            recipe = CreateRecipe(ItemID.OrichalcumOre);
             recipe.AddIngredient(ItemID.MythrilOre);
-            recipe.AddTile(mod, "AlterationStation");
-            recipe.SetResult(ItemID.OrichalcumOre);
-            recipe.AddRecipe();
+            recipe.AddTile(Mod, "AlterationStation");
+            recipe.Register();
             // orichalcum -> mythril
-            recipe = new ModRecipe(mod);
+            recipe = Mod.CreateRecipe(ItemID.MythrilOre);
             recipe.AddIngredient(ItemID.OrichalcumOre);
-            recipe.AddTile(mod, "AlterationStation");
-            recipe.SetResult(ItemID.MythrilOre);
-            recipe.AddRecipe();
+            recipe.AddTile(Mod, "AlterationStation");
+            recipe.Register();
 
             // adamantite -> titanium
-            recipe = new ModRecipe(mod);
+            recipe = Mod.CreateRecipe(ItemID.TitaniumOre);
             recipe.AddIngredient(ItemID.AdamantiteOre);
-            recipe.AddTile(mod, "AlterationStation");
-            recipe.SetResult(ItemID.TitaniumOre);
-            recipe.AddRecipe();
+            recipe.AddTile(Mod, "AlterationStation");
+            recipe.Register();
             // titanium -> adamantite
-            recipe = new ModRecipe(mod);
+            recipe = Mod.CreateRecipe(ItemID.AdamantiteOre);
             recipe.AddIngredient(ItemID.TitaniumOre);
-            recipe.AddTile(mod, "AlterationStation");
-            recipe.SetResult(ItemID.AdamantiteOre);
-            recipe.AddRecipe();
+            recipe.AddTile(Mod, "AlterationStation");
+            recipe.Register();
         }
     }
 }

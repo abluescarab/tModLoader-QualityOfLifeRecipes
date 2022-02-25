@@ -13,28 +13,27 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         }
 
         public override void SetDefaults() {
-            item.value = Item.sellPrice(0, 20, 0, 0);
-            item.rare = 7;
-            item.defense = 4;
-            item.accessory = true;
+            Item.value = Item.sellPrice(0, 20, 0, 0);
+            Item.rare = ItemRarityID.Lime;
+            Item.defense = 4;
+            Item.accessory = true;
         }
 
         public override void UpdateAccessory(Player player, bool hideVisual) {
             // star veil
-            player.starCloak = true;
+            player.starCloakItem = Item;
             player.longInvince = true;
             // sweetheart necklace
-            player.bee = true;
+            player.honeyCombItem = Item;
             player.panic = true;
         }
 
         public override void AddRecipes() {
-            ModRecipe recipe = new ModRecipe(mod);
+            Recipe recipe = CreateRecipe();
             recipe.AddIngredient(ItemID.SweetheartNecklace);
             recipe.AddIngredient(ItemID.StarVeil);
             recipe.AddTile(TileID.TinkerersWorkbench);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
+            recipe.Register();
         }
     }
 }

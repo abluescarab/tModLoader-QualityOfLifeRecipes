@@ -6,7 +6,7 @@ using Terraria.ObjectData;
 
 namespace QualityOfLifeRecipes.Tiles.Banners.Events.Pillars {
     public class NebulaPillarBanner : ModTile {
-        public override void SetDefaults() {
+        public override void SetStaticDefaults() {
             Main.tileFrameImportant[Type] = true;
             Main.tileNoAttach[Type] = true;
             Main.tileLavaDeath[Type] = true;
@@ -21,25 +21,25 @@ namespace QualityOfLifeRecipes.Tiles.Banners.Events.Pillars {
 
             AddMapEntry(new Color(200, 200, 200), translation);
 
-            disableSmartCursor = true;
+            TileID.Sets.DisableSmartCursor[Type] = true;
 
             TileObjectData.addTile(Type);
         }
 
         public override void KillMultiTile(int i, int j, int frameX, int frameY) {
-            Item.NewItem(i * 16, j * 16, 16, 48, mod.ItemType("NebulaPillarBanner"));
+            Item.NewItem(i * 16, j * 16, 16, 48, ModContent.ItemType < Items.Placeable.Banners.Events.Pillars.NebulaPillarBanner>());
         }
 
         public override void NearbyEffects(int i, int j, bool closer) {
             if(closer) {
                 Player player = Main.LocalPlayer;
 
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.NebulaBeast)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.NebulaBrain)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.NebulaHeadcrab)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.NebulaSoldier)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.NebulaBeast)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.NebulaBrain)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.NebulaHeadcrab)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.NebulaSoldier)] = true;
 
-                player.hasBanner = true;
+                Main.SceneMetrics.hasBanner = true;
             }
         }
     }

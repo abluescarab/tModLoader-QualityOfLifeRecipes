@@ -6,7 +6,7 @@ using Terraria.ObjectData;
 
 namespace QualityOfLifeRecipes.Tiles.Banners.Dungeon {
     public class SupremeDungeonBanner : ModTile {
-        public override void SetDefaults() {
+        public override void SetStaticDefaults() {
             Main.tileFrameImportant[Type] = true;
             Main.tileNoAttach[Type] = true;
             Main.tileLavaDeath[Type] = true;
@@ -21,13 +21,13 @@ namespace QualityOfLifeRecipes.Tiles.Banners.Dungeon {
 
             AddMapEntry(new Color(200, 200, 200), translation);
 
-            disableSmartCursor = true;
+            TileID.Sets.DisableSmartCursor[Type] = true;
 
             TileObjectData.addTile(Type);
         }
 
         public override void KillMultiTile(int i, int j, int frameX, int frameY) {
-            Item.NewItem(i * 16, j * 16, 16, 48, mod.ItemType("SupremeDungeonBanner"));
+            Item.NewItem(i * 16, j * 16, 16, 48, ModContent.ItemType<Items.Placeable.Banners.Dungeon.SupremeDungeonBanner>());
         }
 
         public override void NearbyEffects(int i, int j, bool closer) {
@@ -35,41 +35,41 @@ namespace QualityOfLifeRecipes.Tiles.Banners.Dungeon {
                 Player player = Main.LocalPlayer;
 
                 // angry bones
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.AngryBones)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.AngryBonesBig)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.AngryBonesBigHelmet)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.AngryBonesBigMuscle)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.AngryBones)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.AngryBonesBig)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.AngryBonesBigHelmet)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.AngryBonesBigMuscle)] = true;
                 // blue armored bones
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.BlueArmoredBones)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.BlueArmoredBonesMace)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.BlueArmoredBonesNoPants)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.BlueArmoredBonesSword)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.BlueArmoredBones)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.BlueArmoredBonesMace)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.BlueArmoredBonesNoPants)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.BlueArmoredBonesSword)] = true;
                 // rusty armored bones
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.RustyArmoredBonesAxe)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.RustyArmoredBonesFlail)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.RustyArmoredBonesSword)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.RustyArmoredBonesSwordNoArmor)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.RustyArmoredBonesAxe)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.RustyArmoredBonesFlail)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.RustyArmoredBonesSword)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.RustyArmoredBonesSwordNoArmor)] = true;
                 // hell armored bones
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.HellArmoredBones)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.HellArmoredBonesMace)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.HellArmoredBonesSpikeShield)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.HellArmoredBonesSword)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.HellArmoredBones)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.HellArmoredBonesMace)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.HellArmoredBonesSpikeShield)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.HellArmoredBonesSword)] = true;
                 // necromancer
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.Necromancer)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.NecromancerArmored)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.Necromancer)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.NecromancerArmored)] = true;
                 // ragged caster
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.RaggedCaster)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.RaggedCasterOpenCoat)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.RaggedCaster)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.RaggedCasterOpenCoat)] = true;
                 // diabolist
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.DiabolistRed)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.DiabolistWhite)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.DiabolistRed)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.DiabolistWhite)] = true;
                 // other
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.DarkCaster)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.CursedSkull)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.DungeonSlime)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.GiantCursedSkull)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.DarkCaster)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.CursedSkull)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.DungeonSlime)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.GiantCursedSkull)] = true;
 
-                player.hasBanner = true;
+                Main.SceneMetrics.hasBanner = true;
             }
         }
     }

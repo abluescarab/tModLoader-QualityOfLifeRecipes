@@ -6,7 +6,7 @@ using Terraria.ObjectData;
 
 namespace QualityOfLifeRecipes.Tiles.Banners.Events {
     public class FrostMoonBanner : ModTile {
-        public override void SetDefaults() {
+        public override void SetStaticDefaults() {
             Main.tileFrameImportant[Type] = true;
             Main.tileNoAttach[Type] = true;
             Main.tileLavaDeath[Type] = true;
@@ -21,30 +21,30 @@ namespace QualityOfLifeRecipes.Tiles.Banners.Events {
 
             AddMapEntry(new Color(200, 200, 200), translation);
 
-            disableSmartCursor = true;
+            TileID.Sets.DisableSmartCursor[Type] = true;
 
             TileObjectData.addTile(Type);
         }
 
         public override void KillMultiTile(int i, int j, int frameX, int frameY) {
-            Item.NewItem(i * 16, j * 16, 16, 48, mod.ItemType("FrostMoonBanner"));
+            Item.NewItem(i * 16, j * 16, 16, 48, ModContent.ItemType < Items.Placeable.Banners.Events.FrostMoonBanner>());
         }
 
         public override void NearbyEffects(int i, int j, bool closer) {
             if(closer) {
                 Player player = Main.LocalPlayer;
 
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.PresentMimic)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.Flocko)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.GingerbreadMan)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.ZombieElf)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.ZombieElfBeard)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.ZombieElfGirl)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.ElfArcher)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.Nutcracker)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.NutcrackerSpinning)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.PresentMimic)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.Flocko)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.GingerbreadMan)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.ZombieElf)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.ZombieElfBeard)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.ZombieElfGirl)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.ElfArcher)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.Nutcracker)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.NutcrackerSpinning)] = true;
 
-                player.hasBanner = true;
+                Main.SceneMetrics.hasBanner = true;
             }
         }
     }

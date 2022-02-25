@@ -6,7 +6,7 @@ using Terraria.ObjectData;
 
 namespace QualityOfLifeRecipes.Tiles.Banners.Slimes {
     public class ElementalSlimeBanner : ModTile {
-        public override void SetDefaults() {
+        public override void SetStaticDefaults() {
             Main.tileFrameImportant[Type] = true;
             Main.tileNoAttach[Type] = true;
             Main.tileLavaDeath[Type] = true;
@@ -21,27 +21,27 @@ namespace QualityOfLifeRecipes.Tiles.Banners.Slimes {
 
             AddMapEntry(new Color(200, 200, 200), translation);
 
-            disableSmartCursor = true;
+            TileID.Sets.DisableSmartCursor[Type] = true;
 
             TileObjectData.addTile(Type);
         }
 
         public override void KillMultiTile(int i, int j, int frameX, int frameY) {
-            Item.NewItem(i * 16, j * 16, 16, 48, mod.ItemType("ElementalSlimeBanner"));
+            Item.NewItem(i * 16, j * 16, 16, 48, ModContent.ItemType < Items.Placeable.Banners.Slimes.ElementalSlimeBanner>());
         }
 
         public override void NearbyEffects(int i, int j, bool closer) {
             if(closer) {
                 Player player = Main.LocalPlayer;
 
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.SandSlime)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.IceSlime)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.JungleSlime)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.LavaSlime)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.SpikedIceSlime)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.SpikedJungleSlime)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.SandSlime)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.IceSlime)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.JungleSlime)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.LavaSlime)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.SpikedIceSlime)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.SpikedJungleSlime)] = true;
 
-                player.hasBanner = true;
+                Main.SceneMetrics.hasBanner = true;
             }
         }
     }

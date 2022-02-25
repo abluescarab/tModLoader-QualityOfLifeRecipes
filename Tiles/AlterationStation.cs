@@ -3,10 +3,11 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
+using QualityOfLifeRecipes.Items.Placeable;
 
 namespace QualityOfLifeRecipes.Tiles {
     public class AlterationStation : ModTile {
-        public override void SetDefaults() {
+        public override void SetStaticDefaults() {
             ModTranslation translation = CreateMapEntryName();
             translation.SetDefault("Alteration Station");
 
@@ -22,9 +23,10 @@ namespace QualityOfLifeRecipes.Tiles {
             AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTable);
             AddMapEntry(new Color(100, 100, 100), translation);
 
-            dustType = mod.DustType("Sparkle");
-            disableSmartCursor = true;
-            adjTiles = new int[] { TileID.WorkBenches };
+            // DustType =  ModContent.DustType<Sparkle>();
+
+            TileID.Sets.DisableSmartCursor[Type]=true;
+            AdjTiles = new int[] { TileID.WorkBenches };
 
             TileObjectData.addTile(Type);
         }
@@ -34,7 +36,7 @@ namespace QualityOfLifeRecipes.Tiles {
         }
 
         public override void KillMultiTile(int i, int j, int frameX, int frameY) {
-            Item.NewItem(i * 16, j * 16, 48, 32, mod.ItemType("AlterationStation"));
+            Item.NewItem(i * 16, j * 16, 48, 32,ModContent.ItemType<Items.Placeable.AlterationStation>());
         }
     }
 }
