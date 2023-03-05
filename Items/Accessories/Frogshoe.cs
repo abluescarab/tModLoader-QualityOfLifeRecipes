@@ -13,9 +13,9 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         }
 
         public override void SetDefaults() {
-            item.value = Item.sellPrice(0, 2, 0, 0);
-            item.rare = 2;
-            item.accessory = true;
+            Item.value = Item.sellPrice(0, 2, 0, 0);
+            Item.rare = ItemRarityID.Green;
+            Item.accessory = true;
         }
 
         public override void UpdateAccessory(Player player, bool hideVisual) {
@@ -28,12 +28,11 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         }
 
         public override void AddRecipes() {
-            ModRecipe recipe = new ModRecipe(mod);
+            Recipe recipe = CreateRecipe();
             recipe.AddIngredient(ItemID.FrogLeg);
             recipe.AddIngredient(ItemID.LuckyHorseshoe);
             recipe.AddTile(TileID.TinkerersWorkbench);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
+            recipe.Register();
         }
     }
 }

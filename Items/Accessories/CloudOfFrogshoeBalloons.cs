@@ -15,9 +15,9 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         }
 
         public override void SetDefaults() {
-            item.value = Item.sellPrice(0, 15, 0, 0);
-            item.rare = 10;
-            item.accessory = true;
+            Item.value = Item.sellPrice(0, 15, 0, 0);
+            Item.rare = ItemRarityID.Red;
+            Item.accessory = true;
         }
 
         public override void UpdateAccessory(Player player, bool hideVisual) {
@@ -31,24 +31,24 @@ namespace QualityOfLifeRecipes.Items.Accessories {
             player.jumpBoost = true;
 
             // fart in a balloon
-            player.doubleJumpFart = true;
+            player.hasJumpOption_Fart = true;
             // honey balloon
-            player.bee = true;
+            player.jumpBoost = true;
+            player.honeyCombItem = Item;
             // sharkron balloon
-            player.doubleJumpSail = true;
+            player.hasJumpOption_Sail = true;
             // bundle of balloons
-            player.doubleJumpCloud = true;
-            player.doubleJumpSandstorm = true;
-            player.doubleJumpBlizzard = true;
+            player.hasJumpOption_Cloud = true;
+            player.hasJumpOption_Sandstorm = true;
+            player.hasJumpOption_Blizzard = true;
         }
 
         public override void AddRecipes() {
-            ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(mod, "Frogshoe");
-            recipe.AddIngredient(mod, "CloudOfBalloons");
+            Recipe recipe = CreateRecipe();
+            recipe.AddIngredient(Mod, "Frogshoe");
+            recipe.AddIngredient(Mod, "CloudOfBalloons");
             recipe.AddTile(TileID.TinkerersWorkbench);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
+            recipe.Register();
         }
     }
 }

@@ -11,27 +11,26 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners {
         }
 
         public override void SetDefaults() {
-            item.value = Item.sellPrice(0, 0, 5, 0);
-            item.rare = 2;
-            item.maxStack = 99;
-            item.useTurn = true;
-            item.autoReuse = true;
-            item.useAnimation = 15;
-            item.useTime = 10;
-            item.useStyle = 1;
-            item.consumable = true;
-            item.createTile = mod.TileType("UndeadBanner");
-            item.placeStyle = 0;
+            Item.value = Item.sellPrice(0, 0, 5, 0);
+            Item.rare = ItemRarityID.Green;
+            Item.maxStack = 99;
+            Item.useTurn = true;
+            Item.autoReuse = true;
+            Item.useAnimation = 15;
+            Item.useTime = 10;
+            Item.useStyle = ItemUseStyleID.Swing;
+            Item.consumable = true;
+            Item.createTile = ModContent.TileType<Tiles.Banners.UndeadBanner>();
+            Item.placeStyle = 0;
         }
 
         public override void AddRecipes() {
-            ModRecipe recipe = new ModRecipe(mod);
+            Recipe recipe = CreateRecipe();
             recipe.AddIngredient(ItemID.ZombieBanner);
             recipe.AddIngredient(ItemID.DemonEyeBanner);
             recipe.AddIngredient(ItemID.RaincoatZombieBanner);
             recipe.AddTile(TileID.Loom);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
+            recipe.Register();
         }
     }
 }

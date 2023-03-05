@@ -1,12 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Terraria;
+using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
 namespace QualityOfLifeRecipes.Tiles.Banners.Events {
     public class GoblinArmyBanner : ModTile {
-        public override void SetDefaults() {
+        public override void SetStaticDefaults() {
             Main.tileFrameImportant[Type] = true;
             Main.tileNoAttach[Type] = true;
             Main.tileLavaDeath[Type] = true;
@@ -21,26 +22,24 @@ namespace QualityOfLifeRecipes.Tiles.Banners.Events {
 
             AddMapEntry(new Color(200, 200, 200), translation);
 
-            disableSmartCursor = true;
+            TileID.Sets.DisableSmartCursor[Type] = true;
 
             TileObjectData.addTile(Type);
         }
 
         public override void KillMultiTile(int i, int j, int frameX, int frameY) {
-            Item.NewItem(i * 16, j * 16, 16, 48, mod.ItemType("GoblinArmyBanner"));
+            Item.NewItem(new EntitySource_TileBreak(i, j), i * 16, j * 16, 16, 48, ModContent.ItemType<Items.Placeable.Banners.Events.GoblinArmyBanner>());
         }
 
         public override void NearbyEffects(int i, int j, bool closer) {
             if(closer) {
-                Player player = Main.LocalPlayer;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.GoblinArcher)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.GoblinPeon)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.GoblinSorcerer)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.GoblinThief)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.GoblinWarrior)] = true;
 
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.GoblinArcher)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.GoblinPeon)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.GoblinSorcerer)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.GoblinThief)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.GoblinWarrior)] = true;
-
-                player.hasBanner = true;
+                Main.SceneMetrics.hasBanner = true;
             }
         }
     }

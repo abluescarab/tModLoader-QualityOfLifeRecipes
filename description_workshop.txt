@@ -1,0 +1,99 @@
+﻿[h1]Quality of Life: Recipes intends to recreate, add to, and improve the recipes introduced by Quality of Life.[/h1]
+
+[b]Features:[/b]
+[list]
+    [*]Adds the Laser Ruler to The Grand Design
+    [*]Adds Alteration Station to convert between ore types
+    [*]New banners and combined banners
+    [*]New combined accessories
+    [*]New mining helmets
+[/list]
+
+[b]Full list:[/b]
+[i]New banners:[/i]
+[list]
+    [*]Combined slime banners
+    [*]Combined event/pillar banners
+    [*]Missing banners for enemies
+[/list] 
+
+[i]New armor:[/i]
+[list]
+    [*]Orange-Tinted Goggles (Hunter Potion and Dangersense Potion)
+    [*]Caving Gear (Night Vision Helmet, Spelunker Potion)
+    [*]Mining Gear (Caving Gear, Mining Helmet)
+    [*]Utility Helmet (Orange-Tinted Goggles, Mining Gear)
+[/list]
+
+[i]New accessories:[/i]
+[list]
+    [*]Angler's Fishing Gear (Angler Tackle Bag, Angler outfit)
+    [*]Celestial Flower Cuffs (Celestial Cuffs, Mana Flower)
+    [*]Cybernetic Mining Multi Tool (convert Utility Helmet to accessory)
+    [*]Heavy-Duty Toolbox (Toolbox, Toolbelt)
+    [*]Lava Orb (Lava Charm, Obsidian Rose)
+    [*]Lifeforce Bracelet (Charm of Myths, Mana Regeneration Band)
+    [*]Sweet Star Veil (Star Veil, Sweetheart Necklace)
+    [*]Frogshoe (Frog Leg, Lucky Horseshoe)
+    [*]Bunch of Balloons (Fart in a Balloon, Honey Balloon, Sharkron Balloon, Honey Comb)
+    [*]Cloud of Balloons (Bunch of Balloons, Bundle of Balloons)
+    [*]Cloud of Frogshoe Balloons (Frogshoe, Cloud of Balloons)
+    [*]Elemental Boots (Frostspark Boots, Lava Waders)
+    [*]Elemental Ninja Boots (Elemental Boots, Master Ninja Gear)
+    [*]Atomic Ninja Boots (Elemental Ninja Boots, Flower Boots)
+    [*]Atomic Cloud Boots (Atomic Ninja Boots, Cloud of Frogshoe Balloons)
+[/list]
+
+[Credits]
+* Freedbot for Solar Eclipse, Frost Moon, Pumpkin Moon, Martian Madness event banners and Cybernetic Mining Multi-Tool sprite
+* INFINITE POWER for the original QOL and sprites
+* Ardosos for the code for the Alteration Station
+* PyroSalamander for suggesting the Cybernetic Utility Helmet
+
+[Changelog]
+v1.6.0  2023-03-05
+* Updated for tModLoader 1.4
+
+v1.5.1  2019-08-17
+* Build for tModLoader v0.11.4
+* Fix: Removed unfinished equipment
+
+v1.5.0  2019-04-23
+* Removed Gravity Globe from Atomic Ninja Boots
+
+v1.4.0  2019-04-22
+* Added WikiSearch support
+
+v1.3.2  2019-04-19
+* Fix: restricted helmets/goggles to head slot only
+
+v1.3.1  2018-08-17
+* Changed Cybernetic Utility Helmet to Cybernetic Mining Multi-Tool (thanks, Freedbot!)
+* Applied mining set bonus to Mining Gear
+
+v1.3.0  2018-06-06
+* Added Atomic Cloud Boots
+* Added Angler's Fishing Gear
+* Added Frost Moon, Martian Madness, Pumpkin Moon, Solar Eclipse banners (thanks, Freedbot!)
+* Expanded banner tooltips
+
+v1.2.2  2017-12-08
+* Fix: Undead Banner including Demon Eyes
+
+v1.2.1  2017-11-06
+* Compiled for tModLoader v0.10.1
+
+v1.2.0  2017-07-27
+* Added mining armor bonus for Utility Helmet
+
+v1.1.2  2017-07-26
+* Changed sextant and weather radio crafting stations to table and chair
+
+v1.1.1  2017-07-24
+* Item descriptions are set using built-in game languages
+* Fix: Atomic Boots are now called Atomic Ninja Boots
+
+v1.1.0  2017-07-23
+* Added recipes for: heart/star/queen/king statues, sextant, weather radio, fisherman's guide
+
+v1.0.0  2017-07-23

@@ -1,12 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Terraria;
+using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
 namespace QualityOfLifeRecipes.Tiles.Banners {
     public class UndeadBanner : ModTile {
-        public override void SetDefaults() {
+        public override void SetStaticDefaults() {
             Main.tileFrameImportant[Type] = true;
             Main.tileNoAttach[Type] = true;
             Main.tileLavaDeath[Type] = true;
@@ -21,43 +22,41 @@ namespace QualityOfLifeRecipes.Tiles.Banners {
 
             AddMapEntry(new Color(200, 200, 200), translation);
 
-            disableSmartCursor = true;
+            TileID.Sets.DisableSmartCursor[Type] = true;
 
             TileObjectData.addTile(Type);
         }
 
         public override void KillMultiTile(int i, int j, int frameX, int frameY) {
-            Item.NewItem(i * 16, j * 16, 16, 48, mod.ItemType("UndeadBanner"));
+            Item.NewItem(new EntitySource_TileBreak(i, j), i * 16, j * 16, 16, 48, ModContent.ItemType<Items.Placeable.Banners.UndeadBanner>());
         }
 
         public override void NearbyEffects(int i, int j, bool closer) {
             if(closer) {
-                Player player = Main.LocalPlayer;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.Zombie)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.ArmedZombie)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.BaldZombie)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.PincushionZombie)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.ArmedZombiePincussion)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.SlimedZombie)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.ArmedZombieSlimed)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.SwampZombie)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.ArmedZombieSwamp)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.TwiggyZombie)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.ArmedZombieTwiggy)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.FemaleZombie)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.ArmedZombieCenx)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.ZombieRaincoat)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.DemonEye)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.CataractEye)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.DialatedEye)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.GreenEye)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.SleepyEye)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.PurpleEye)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.DemonEyeOwl)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.DemonEyeSpaceship)] = true;
 
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.Zombie)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.ArmedZombie)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.BaldZombie)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.PincushionZombie)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.ArmedZombiePincussion)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.SlimedZombie)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.ArmedZombieSlimed)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.SwampZombie)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.ArmedZombieSwamp)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.TwiggyZombie)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.ArmedZombieTwiggy)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.FemaleZombie)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.ArmedZombieCenx)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.ZombieRaincoat)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.DemonEye)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.CataractEye)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.DialatedEye)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.GreenEye)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.SleepyEye)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.PurpleEye)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.DemonEyeOwl)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.DemonEyeSpaceship)] = true;
-
-                player.hasBanner = true;
+                Main.SceneMetrics.hasBanner = true;
             }
         }
     }

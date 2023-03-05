@@ -1,12 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Terraria;
+using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
 namespace QualityOfLifeRecipes.Tiles.Banners.Events.Pillars {
     public class VortexPillarBanner : ModTile {
-        public override void SetDefaults() {
+        public override void SetStaticDefaults() {
             Main.tileFrameImportant[Type] = true;
             Main.tileNoAttach[Type] = true;
             Main.tileLavaDeath[Type] = true;
@@ -21,26 +22,24 @@ namespace QualityOfLifeRecipes.Tiles.Banners.Events.Pillars {
 
             AddMapEntry(new Color(200, 200, 200), translation);
 
-            disableSmartCursor = true;
+            TileID.Sets.DisableSmartCursor[Type] = true;
 
             TileObjectData.addTile(Type);
         }
 
         public override void KillMultiTile(int i, int j, int frameX, int frameY) {
-            Item.NewItem(i * 16, j * 16, 16, 48, mod.ItemType("VortexPillarBanner"));
+            Item.NewItem(new EntitySource_TileBreak(i, j), i * 16, j * 16, 16, 48, ModContent.ItemType<Items.Placeable.Banners.Events.Pillars.VortexPillarBanner>());
         }
 
         public override void NearbyEffects(int i, int j, bool closer) {
             if(closer) {
-                Player player = Main.LocalPlayer;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.VortexHornet)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.VortexHornetQueen)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.VortexLarva)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.VortexRifleman)] = true;
+                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.VortexSoldier)] = true;
 
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.VortexHornet)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.VortexHornetQueen)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.VortexLarva)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.VortexRifleman)] = true;
-                player.NPCBannerBuff[Item.NPCtoBanner(NPCID.VortexSoldier)] = true;
-
-                player.hasBanner = true;
+                Main.SceneMetrics.hasBanner = true;
             }
         }
     }

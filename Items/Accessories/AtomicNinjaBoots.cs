@@ -22,9 +22,9 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         }
 
         public override void SetDefaults() {
-            item.value = Item.sellPrice(0, 35, 0, 0);
-            item.rare = 11;
-            item.accessory = true;
+            Item.value = Item.sellPrice(0, 35, 0, 0);
+            Item.rare = ItemRarityID.Purple;
+            Item.accessory = true;
         }
 
         public override void UpdateAccessory(Player player, bool hideVisual) {
@@ -49,12 +49,11 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         }
 
         public override void AddRecipes() {
-            ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(mod, "ElementalNinjaBoots");
+            Recipe recipe = CreateRecipe();
+            recipe.AddIngredient(Mod, "ElementalNinjaBoots");
             recipe.AddIngredient(ItemID.FlowerBoots);
             recipe.AddTile(TileID.TinkerersWorkbench);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
+            recipe.Register();
         }
     }
 }

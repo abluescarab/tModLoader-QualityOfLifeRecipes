@@ -13,30 +13,30 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         }
 
         public override void SetDefaults() {
-            item.value = Item.sellPrice(0, 5, 0, 0);
-            item.rare = 5;
-            item.accessory = true;
+            Item.value = Item.sellPrice(0, 5, 0, 0);
+            Item.rare = ItemRarityID.Pink;
+            Item.accessory = true;
         }
 
         public override void UpdateAccessory(Player player, bool hideVisual) {
             player.jumpBoost = true;
 
             // fart in a balloon
-            player.doubleJumpFart = true;
+            player.hasJumpOption_Fart = true;
             // honey balloon
-            player.bee = true;
+            player.jumpBoost = true;
+            player.honeyCombItem = Item;
             // sharkron balloon
-            player.doubleJumpSail = true;
+            player.hasJumpOption_Sail = true;
         }
 
         public override void AddRecipes() {
-            ModRecipe recipe = new ModRecipe(mod);
+            Recipe recipe = CreateRecipe();
             recipe.AddIngredient(ItemID.FartInABalloon);
             recipe.AddIngredient(ItemID.HoneyBalloon);
             recipe.AddIngredient(ItemID.SharkronBalloon);
             recipe.AddTile(TileID.TinkerersWorkbench);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
+            recipe.Register();
         }
     }
 }
