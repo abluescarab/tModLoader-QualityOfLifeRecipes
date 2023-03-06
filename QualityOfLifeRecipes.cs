@@ -3,11 +3,6 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-/*
- * todo: combine fishing gear
- * todo: convert crimson blocks <-> corruption blocks
- */
-
 namespace QualityOfLifeRecipes {
     public class QualityOfLifeRecipes : Mod {
         public QualityOfLifeRecipes() {
