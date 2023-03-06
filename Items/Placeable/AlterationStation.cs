@@ -219,17 +219,6 @@ namespace QualityOfLifeRecipes.Items.Placeable {
             recipe.AddTile<Tiles.AlterationStation>();
             recipe.Register();
 
-            // corrupt growth wall -> crimson growth wall
-            recipe = Recipe.Create(ItemID.CrimsonGrassEcho);
-            recipe.AddIngredient(ItemID.CorruptGrassEcho);
-            recipe.AddTile<Tiles.AlterationStation>();
-            recipe.Register();
-            // crimson growth wall -> corrupt growth wall
-            recipe = Recipe.Create(ItemID.CorruptGrassEcho);
-            recipe.AddIngredient(ItemID.CrimsonGrassEcho);
-            recipe.AddTile<Tiles.AlterationStation>();
-            recipe.Register();
-
             // natural corrupt walls -> natural crimson walls
             recipe = Recipe.Create(ItemID.Crimson1Echo);
             recipe.AddIngredient(ItemID.Corruption1Echo);
