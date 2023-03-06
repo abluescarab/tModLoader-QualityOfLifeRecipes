@@ -11,6 +11,9 @@ Visit the mod homepage to see the included recipes.
 * PyroSalamander for suggesting the Cybernetic Utility Helmet
 
 [Changelog]
+v1.7.1  2023-03-05
+* Hotfix: Remove duplicate recipe
+
 v1.7.0  2023-03-05
 * Added Corruption <-> Crimson conversions to Alteration Station
 

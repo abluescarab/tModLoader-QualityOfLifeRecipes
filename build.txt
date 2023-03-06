@@ -1,6 +1,6 @@
 ﻿displayName=Quality of Life: Recipes
 author=abluescarab, INFINITE POWER, Ardosos
-version=1.7.0
+version=1.7.1
 dllReferences=
 modReferences=
 noCompile=false
