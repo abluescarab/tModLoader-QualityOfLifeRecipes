@@ -1,4 +1,6 @@
-﻿Quality of Life: Recipes intends to recreate, add to, and improve the recipes introduced by Quality of Life.
+﻿Quality of Life: Recipes adds a ton of new recipes intended to combined accessories and improved quality of life.
+
+This mod intends to recreate, add to, and improve the recipes introduced by Quality of Life.
 
 Visit the mod homepage to see the included recipes.
 
@@ -9,6 +11,9 @@ Visit the mod homepage to see the included recipes.
 * PyroSalamander for suggesting the Cybernetic Utility Helmet
 
 [Changelog]
+v1.7.0  2023-03-05
+* Added Corruption <-> Crimson conversions to Alteration Station
+
 v1.6.0  2023-03-05
 * Updated for tModLoader 1.4
 

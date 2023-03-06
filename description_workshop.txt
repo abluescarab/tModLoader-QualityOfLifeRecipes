@@ -1,15 +1,17 @@
-﻿[h1]Quality of Life: Recipes intends to recreate, add to, and improve the recipes introduced by Quality of Life.[/h1]
+﻿[h1]Quality of Life: Recipes adds recipes for new combined accessories, banners, and ore/block conversions.[/h1]
+
+[i]This mod intends to recreate, add to, and improve the recipes introduced by Quality of Life.[/i]
 
 [b]Features:[/b]
 [list]
     [*]Adds the Laser Ruler to The Grand Design
-    [*]Adds Alteration Station to convert between ore types
+    [*]Adds Alteration Station to convert between ore/block types
     [*]New banners and combined banners
     [*]New combined accessories
     [*]New mining helmets
 [/list]
 
-[b]Full list:[/b]
+[b]New items:[/b]
 [i]New banners:[/i]
 [list]
     [*]Combined slime banners
@@ -51,6 +53,9 @@
 * PyroSalamander for suggesting the Cybernetic Utility Helmet
 
 [Changelog]
+v1.7.0  2023-03-05
+* Added Corruption <-> Crimson conversions to Alteration Station
+
 v1.6.0  2023-03-05
 * Updated for tModLoader 1.4
 
