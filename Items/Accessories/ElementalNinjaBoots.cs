@@ -8,8 +8,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault("Elemental Ninja Boots");
             Tooltip.SetDefault(
-                Language.GetTextValue("ItemTooltip.FrostsparkBoots") + "\n" +
-                Language.GetTextValue("ItemTooltip.LavaWaders") + "\n" +
+                Language.GetTextValue("ItemTooltip.TerrasparkBoots") + "\n" +
                 Language.GetTextValue("ItemTooltip.MasterNinjaGear"));
         }
 
@@ -20,13 +19,13 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         }
 
         public override void UpdateAccessory(Player player, bool hideVisual) {
-            // lava waders
+            // terraspark boots
             player.waterWalk = true;
             player.fireWalk = true;
             player.lavaMax += 420;
-            // frostspark boots
+            player.lavaRose = true;
             player.accRunSpeed = 6.75f;
-            player.rocketBoots = 3;
+            player.rocketBoots = (player.vanityRocketBoots = 4);
             player.moveSpeed += 0.08f;
             player.iceSkate = true;
             // master ninja gear
@@ -37,7 +36,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
 
         public override void AddRecipes() {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(Mod, "ElementalBoots");
+            recipe.AddIngredient(ItemID.TerrasparkBoots);
             recipe.AddIngredient(ItemID.MasterNinjaGear);
             recipe.AddTile(TileID.TinkerersWorkbench);
             recipe.Register();
