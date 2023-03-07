@@ -53,6 +53,16 @@
 * PyroSalamander for suggesting the Cybernetic Utility Helmet
 
 [Changelog]
+v1.8.0  2023-03-07
+* Adjusted sell prices
+* Replaced Elemental Boots in recipes with Terraspark Boots
+* Added Obsidian Rose to all boot effects
+* Removed Lava Orb recipe (will be converted to base components on load)
+* Removed Elemental Boots recipe (will be converted to Terraspark boots on load)
+
+v1.7.1  2023-03-05
+* Hotfix: Remove duplicate recipe
+
 v1.7.0  2023-03-05
 * Added Corruption <-> Crimson conversions to Alteration Station
 
