@@ -36,7 +36,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
 
         public override void AddRecipes() {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(Mod, "BunchOfBalloons");
+            recipe.AddIngredient<BunchOfBalloons>();
             recipe.AddIngredient(ItemID.BundleofBalloons);
             recipe.AddTile(TileID.TinkerersWorkbench);
             recipe.Register();

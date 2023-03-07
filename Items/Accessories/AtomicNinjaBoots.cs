@@ -49,7 +49,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
 
         public override void AddRecipes() {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(Mod, "ElementalNinjaBoots");
+            recipe.AddIngredient<ElementalNinjaBoots>();
             recipe.AddIngredient(ItemID.FlowerBoots);
             recipe.AddTile(TileID.TinkerersWorkbench);
             recipe.Register();

@@ -45,8 +45,8 @@ namespace QualityOfLifeRecipes.Items.Accessories {
 
         public override void AddRecipes() {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(Mod, "Frogshoe");
-            recipe.AddIngredient(Mod, "CloudOfBalloons");
+            recipe.AddIngredient<Frogshoe>();
+            recipe.AddIngredient<CloudOfBalloons>();
             recipe.AddTile(TileID.TinkerersWorkbench);
             recipe.Register();
         }

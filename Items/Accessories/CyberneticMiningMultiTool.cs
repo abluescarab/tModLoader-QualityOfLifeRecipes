@@ -1,4 +1,5 @@
-﻿using Terraria;
+﻿using QualityOfLifeRecipes.Items.Armor;
+using Terraria;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
@@ -36,7 +37,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
 
         public override void AddRecipes() {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(Mod, "UtilityHelmet");
+            recipe.AddIngredient<UtilityHelmet>();
             recipe.AddIngredient(ItemID.Nanites, 20);
             recipe.AddTile(TileID.TinkerersWorkbench);
             recipe.Register();
