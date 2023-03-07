@@ -1,10 +1,14 @@
 ﻿using Terraria;
 using Terraria.ID;
 using Terraria.Localization;
-using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Accessories {
-    public class LavaOrb : ModItem {
+    public class LavaOrb : DeprecatedItem {
+        protected override ReplacementItem[] Replacements => new ReplacementItem[] {
+            new ReplacementItem(ItemID.LavaCharm, prefix: Item.prefix),
+            new ReplacementItem(ItemID.ObsidianRose, prefix: Item.prefix)
+        };
+
         public override void SetStaticDefaults() {
             DisplayName.SetDefault("Lava Orb");
             Tooltip.SetDefault(
@@ -16,21 +20,6 @@ namespace QualityOfLifeRecipes.Items.Accessories {
             Item.value = Item.sellPrice(0, 10, 0, 0);
             Item.rare = ItemRarityID.LightRed;
             Item.accessory = true;
-        }
-
-        public override void UpdateAccessory(Player player, bool hideVisual) {
-            // lava charm
-            player.lavaMax += 420;
-            // obsidian rose
-            player.lavaRose = true;
-        }
-
-        public override void AddRecipes() {
-            Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.LavaCharm);
-            recipe.AddIngredient(ItemID.ObsidianRose);
-            recipe.AddTile(TileID.TinkerersWorkbench);
-            recipe.Register();
         }
     }
 }
