@@ -21,7 +21,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         }
 
         public override void SetDefaults() {
-            Item.value = Item.sellPrice(0, 35, 0, 0);
+            Item.value = Item.sellPrice(0, 29, 0, 0);
             Item.rare = ItemRarityID.Purple;
             Item.accessory = true;
         }
