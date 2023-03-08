@@ -1,0 +1,120 @@
+Mods: {
+	QualityOfLifeRecipes: {
+		General: {
+			DeprecatedMessage: "{0} has been removed from Quality of Life: Recipes. Right-click to receive {1}."
+			JumpThreeTimes: Allows the holder to triple jump
+			JumpSixTimes: Allows the holder to sextuple jump
+		}
+
+		Accessories: {
+			AnglersFishingGear_Name: Angler's Fishing Gear
+			AtomicCloudBoots_Name: Atomic Cloud Boots
+			AtomicNinjaBoots_Name: Atomic Ninja Boots
+			BunchOfBalloons_Name: Bunch of Balloons
+			CloudOfBalloons_Name: Cloud of Balloons
+			CloudOfFrogshoeBalloons_Name: Cloud of Frogshoe Balloons
+			CyberneticMiningMultiTool_Name: Cybernetic Mining Multi-Tool
+			ElementalBoots_Name: Elemental Boots
+			ElementalNinjaBoots_Name: Elemental Ninja Boots
+			Frogshoe_Name: Frogshoe
+			HeavyDutyToolbox_Name: Heavy-Duty Toolbox
+			LavaOrb_Name: Lava Orb
+			LifeforceBracelet_Name: Lifeforce Bracelet
+			SweetStarVeil_Name: Sweet Star Veil
+		}
+
+		Armor: {
+			CavingGear_Name: Caving Gear
+			MiningGear_Name: Mining Gear
+			OrangeTintedGoggles_Name: Oranged-Tinted Goggles
+			UtilityHelmet_Name: Utility Helmet
+		}
+
+		Placeable: {
+			AlterationStation_Name: Alteration Station
+			AlterationStation_Tooltip: Transmutes ore and block varieties
+
+			Banners: {
+				UndeadBanner_Name: Undead Banner
+				UndeadBanner_Tooltip: Nearby players get a bonus against: Zombie, Raincoat Zombie, Demon Eye
+
+				Dungeon: {
+					DungeonBanner_Name: Dungeon Banner
+					DungeonBanner_Tooltip: Nearby players get a bonus against: Angry Bones, Dark Caster, Cursed Skull
+					SupremeDungeonBanner_Name: Supreme Dungeon Banner
+					SupremeDungeonBanner_Tooltip:
+						'''
+						Nearby players get a bonus against: Angry Bones, Dark Caster, Cursed Skull Armored Bones, Necromancer,
+                		Ragged Caster, Diabolist, Giant Cursed Skull, Dungeon Slime
+						'''
+					UltimateDungeonBanner_Name: Ultimate Dungeon Banner
+					UltimateDungeonBanner_Tooltip:
+						'''
+						Nearby players get a bonus against: Angry Bones, Dark Caster, Cursed Skull Armored Bones, Necromancer,
+						Ragged Caster, Diabolist, Giant Cursed Skull, Dungeon Slime, Paladin, Skeleton Commando, Skeleton Sniper,
+						Tactical Skeleton, Bone Lee, Dungeon Spirit
+						'''
+				}
+
+				Events: {
+					FrostMoonBanner_Name: Frost Moon Banner
+					FrostMoonBanner_Tooltip:
+						'''
+						Nearby players get a bonus against: Present Mimic, Flocko, Gingerbread Man, Zombie Elf, Elf Archer,
+                		Nutcracker, Yeti, Elf Copter, Krampus
+						'''
+					GoblinArmyBanner_Name: Goblin Army Banner
+					GoblinArmyBanner_Tooltip: Nearby players get a bonus against: Goblin Archers, Goblin Peons, Goblin Sorcerers, Goblin Thieves, Goblin Warriors
+					MartianMadnessBanner_Name: Martian Madness Banner
+					MartianMadnessBanner_Tooltip:
+						'''
+						Nearby players get a bonus against: Scutlix, Tesla Turret, Gigazapper, Ray Gunner, Gray Grunt, Brain Scrambler,
+                		Martian Walker, Martian Drone, Martian Engineer, Martian Officer
+						'''
+					PirateCrewBanner_Name: Pirate Crew Banner
+					PirateCrewBanner_Tooltip: Nearby players get a bonus against: Parrot, Pirate Captain, Pirate Corsair, Pirate Crossbower, Pirate Deadeye, Pirate Deckhand
+					PumpkinMoonBanner_Name: Pumpkin Moon Banner
+					PumpkinMoonBanner_Tooltip: Nearby players get a bonus against: Scarecrow, Splinterling, Hellhound, Poltergeist, Headless Horseman
+					SolarEclipseBanner_Name: Solar Eclipse Banner
+					SolarEclipseBanner_Tooltip: Nearby players get a bonus against: Frankenstein, Swamp Thing, Vampire, Creature from the Deep, Fritz, The Possessed
+					SupremeSolarEclipseBanner_Name: Supreme Solar Eclipse Banner
+					SupremeSolarEclipseBanner_Tooltip:
+						'''
+						Nearby players get a bonus against: Frankenstein, Swamp Thing, Vampire, Creature from the Deep, Fritz,
+						The Possessed Eyezor, Reaper, Butcher, Deadly Sphere, Dr. Man Fly, Nailhead, Psycho
+						'''
+					UltimateSolarEclipseBanner_Name: Ultimate Solar Eclipse Banner
+					UltimateSolarEclipseBanner_Tooltip:
+						'''
+						Nearby players get a bonus against: Frankenstein, Swamp Thing, Vampire, Creature from the Deep, Fritz,
+						The Possessed, Eyezor, Reaper, Butcher, Deadly Sphere, Dr. Man Fly, Nailhead, Psycho, Mothron
+						'''
+
+					Pillars: {
+						NebulaPillarBanner_Name: Nebula Pillar Banner
+						NebulaPillarBanner_Tooltip: Nearby players get a bonus against: Brain Suckler, Evolution Beast, Nebula Floater, Predictor
+						SolarPillarBanner_Name: Solar Pillar Banner
+						SolarPillarBanner_Tooltip: Nearby players get a bonus against: Corite, Crawltipede, Drakomire, Drakomire Rider, Solenian, Sroller
+						StardustPillarBanner_Name: Stardust Pillar Banner
+						StardustPillarBanner_Tooltip: Nearby players get a bonus against: Star Cell, Flow Invader, Twinkle Popper, Milyway Weaver, Stargazer
+						VortexPillarBanner_Name: Vortex Pillar Banner
+						VortexPillarBanner_Tooltip: Nearby players get a bonus against: Storm Diver, Vortexian, Alien Queen, Alien Hornet, Alien Larva
+					}
+				}
+
+				Slimes: {
+					ElementalSlimeBanner_Name: Elemental Slime Banner
+					ElementalSlimeBanner_Tooltip: Nearby players get a bonus against: Sand Slime, Ice Slime, Jungle Slime, Lava Slime, Spiked Slime
+					SupremeSlimeBanner_Name: Supreme Slime Banner
+					SupremeSlimeBanner_Tooltip: Nearby players get a bonus against: Green Slime, Blue Slime, Purple Slime, Red Slime, Yellow Slime, Black Slime
+					UltimateSlimeBanner_Name: Ultimate Slime Banner
+					UltimateSlimeBanner_Tooltip:
+						'''
+						Nearby players get a bonus against: Sand Slime, Ice Slime, Jungle Slime, Lava Slime, Spiked Slime,
+						Green Slime, Blue Slime, Purple Slime, Red Slime, Yellow Slime, Black Slime
+						'''
+				}
+			}
+		}
+	}
+}
