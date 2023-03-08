@@ -1,7 +1,7 @@
 ﻿using Terraria.ID;
 
-namespace QualityOfLifeRecipes.Tiles.Banners.Undead {
-    public class UndeadBanner : BannerTile<Items.Placeable.Banners.Undead.UndeadBanner, UndeadBanner> {
+namespace QualityOfLifeRecipes.Tiles.Banners {
+    public class UndeadBanner : BannerTile<Items.Placeable.Banners.UndeadBanner, UndeadBanner> {
         protected override string Translation => 
             "{$Mods.QualityOfLifeRecipes.Placeable.Banners.Undead.UndeadBanner}";
         

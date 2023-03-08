@@ -1,8 +1,8 @@
 ﻿using Terraria;
 using Terraria.ID;
 
-namespace QualityOfLifeRecipes.Items.Placeable.Banners.Undead {
-    public class UndeadBanner : BannerItem<UndeadBanner, Tiles.Banners.Undead.UndeadBanner> {
+namespace QualityOfLifeRecipes.Items.Placeable.Banners {
+    public class UndeadBanner : BannerItem<UndeadBanner, Tiles.Banners.UndeadBanner> {
         protected override string DisplayNameTranslation =>
             "{$Mods.QualityOfLifeRecipes.Placeable.Banners.Undead.UndeadBanner}";
 
@@ -16,6 +16,7 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Undead {
         
         protected override int[] Ingredients => new int[] {
             ItemID.ZombieBanner,
+            ItemID.RaincoatZombieBanner,
             ItemID.DemonEyeBanner
         };
     }
