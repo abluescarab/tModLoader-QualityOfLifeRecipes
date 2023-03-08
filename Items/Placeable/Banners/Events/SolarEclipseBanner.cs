@@ -1,42 +1,27 @@
 ﻿using Terraria;
 using Terraria.ID;
-using Terraria.Localization;
-using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events {
-    public class SolarEclipseBanner : ModItem {
-        public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.SolarEclipseBanner}");
-            Tooltip.SetDefault(
-                "{$CommonItemTooltip.BannerBonus}\n" +
+    public class SolarEclipseBanner : BannerItem<SolarEclipseBanner, Tiles.Banners.Events.SolarEclipseBanner> {
+        protected override string DisplayNameTranslation =>
+            "{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.SolarEclipseBanner}";
+
+        protected override string TooltipTranslation =>
+            "{$CommonItemTooltip.BannerBonus}\n" +
                 "{$NPCName.Frankenstein}, {$NPCName.SwampThing}, {$NPCName.Vampire}, {$NPCName.CreatureFromTheDeep},\n" +
-                "{$NPCName.Fritz}, {$NPCName.ThePossessed}");
-        }
+                "{$NPCName.Fritz}, {$NPCName.ThePossessed}";
 
-        public override void SetDefaults() {
-            Item.value = Item.sellPrice(0, 0, 15, 0);
-            Item.rare = ItemRarityID.Green;
-            Item.maxStack = 99;
-            Item.useTurn = true;
-            Item.autoReuse = true;
-            Item.useAnimation = 15;
-            Item.useTime = 10;
-            Item.useStyle = ItemUseStyleID.Swing;
-            Item.consumable = true;
-            Item.createTile = ModContent.TileType<Tiles.Banners.Events.SolarEclipseBanner>();
-            Item.placeStyle = 0;
-        }
+        protected override int SellPrice => Item.sellPrice(0, 0, 15, 0);
 
-        public override void AddRecipes() {
-            Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.FrankensteinBanner);
-            recipe.AddIngredient(ItemID.SwampThingBanner);
-            recipe.AddIngredient(ItemID.VampireBanner);
-            recipe.AddIngredient(ItemID.CreatureFromTheDeepBanner);
-            recipe.AddIngredient(ItemID.FritzBanner);
-            recipe.AddIngredient(ItemID.ThePossessedBanner);
-            recipe.AddTile(TileID.Loom);
-            recipe.Register();
-        }
+        protected override int Rarity => ItemRarityID.Green;
+
+        protected override int[] Ingredients => new int[] {
+            ItemID.FrankensteinBanner,
+            ItemID.SwampThingBanner,
+            ItemID.VampireBanner,
+            ItemID.CreatureFromTheDeepBanner,
+            ItemID.FritzBanner,
+            ItemID.ThePossessedBanner
+        };
     }
 }

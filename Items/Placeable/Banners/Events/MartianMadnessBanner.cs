@@ -1,48 +1,33 @@
 ﻿using Terraria;
 using Terraria.ID;
-using Terraria.Localization;
-using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events {
-    public class MartianMadnessBanner : ModItem {
-        public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.MartianMadnessBanner}");
-            Tooltip.SetDefault(
-                "{$CommonItemTooltip.BannerBonus}\n" +
+    public class MartianMadnessBanner : BannerItem<MartianMadnessBanner, Tiles.Banners.Events.MartianMadnessBanner> {
+        protected override string DisplayNameTranslation =>
+            "{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.MartianMadnessBanner}";
+
+        protected override string TooltipTranslation =>
+            "{$CommonItemTooltip.BannerBonus}\n" +
                 "{$NPCName.Scutlix}, {$NPCName.MartianTurret}, {$NPCName.GigaZapper}, {$NPCName.RayGunner},\n" +
                 "{$NPCName.GrayGrunt}, {$NPCName.BrainScrambler}, {$NPCName.MartianWalker}, {$NPCName.MartianDrone},\n" +
-                "{$NPCName.MartianEngineer}, {$NPCName.MartianOfficer}");
-        }
+                "{$NPCName.MartianEngineer}, {$NPCName.MartianOfficer}";
 
-        public override void SetDefaults() {
-            Item.value = Item.sellPrice(0, 0, 25, 0);
-            Item.rare = ItemRarityID.Green;
-            Item.maxStack = 99;
-            Item.useTurn = true;
-            Item.autoReuse = true;
-            Item.useAnimation = 15;
-            Item.useTime = 10;
-            Item.useStyle = ItemUseStyleID.Swing;
-            Item.consumable = true;
-            Item.createTile = ModContent.TileType<Tiles.Banners.Events.MartianMadnessBanner>();
-            Item.placeStyle = 0;
-        }
+        protected override int SellPrice => Item.sellPrice(0, 0, 25, 0);
 
-        public override void AddRecipes() {
-            Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.ScutlixBanner);
-            recipe.AddIngredient(ItemID.MartianScutlixGunnerBanner);
-            recipe.AddIngredient(ItemID.MartianWalkerBanner);
-            recipe.AddIngredient(ItemID.MartianDroneBanner);
-            recipe.AddIngredient(ItemID.MartianTeslaTurretBanner);
-            recipe.AddIngredient(ItemID.MartianGigazapperBanner);
-            recipe.AddIngredient(ItemID.MartianEngineerBanner);
-            recipe.AddIngredient(ItemID.MartianOfficerBanner);
-            recipe.AddIngredient(ItemID.MartianRaygunnerBanner);
-            recipe.AddIngredient(ItemID.MartianGreyGruntBanner);
-            recipe.AddIngredient(ItemID.MartianBrainscramblerBanner);
-            recipe.AddTile(TileID.Loom);
-            recipe.Register();
-        }
+        protected override int Rarity => ItemRarityID.Green;
+
+        protected override int[] Ingredients => new int[] {
+            ItemID.ScutlixBanner,
+            ItemID.MartianScutlixGunnerBanner,
+            ItemID.MartianWalkerBanner,
+            ItemID.MartianDroneBanner,
+            ItemID.MartianTeslaTurretBanner,
+            ItemID.MartianGigazapperBanner,
+            ItemID.MartianEngineerBanner,
+            ItemID.MartianOfficerBanner,
+            ItemID.MartianRaygunnerBanner,
+            ItemID.MartianGreyGruntBanner,
+            ItemID.MartianBrainscramblerBanner
+        };
     }
 }

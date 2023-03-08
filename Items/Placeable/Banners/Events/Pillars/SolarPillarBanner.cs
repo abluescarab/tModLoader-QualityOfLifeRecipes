@@ -1,42 +1,27 @@
 ﻿using Terraria;
 using Terraria.ID;
-using Terraria.Localization;
-using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events.Pillars {
-    public class SolarPillarBanner : ModItem {
-        public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.Pillars.SolarPillarBanner}");
-            Tooltip.SetDefault(
-                "{$CommonItemTooltip.BannerBonus}\n" +
+    public class SolarPillarBanner : BannerItem<SolarPillarBanner, Tiles.Banners.Events.Pillars.SolarPillarBanner> {
+        protected override string DisplayNameTranslation =>
+            "{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.Pillars.SolarPillarBanner}";
+
+        protected override string TooltipTranslation =>
+            "{$CommonItemTooltip.BannerBonus}\n" +
                 "{$NPCName.SolarCorite}, {$NPCName.SolarCrawltipedeHead}, {$NPCName.SolarDrakomire}, {$NPCName.SolarDrakomireRider},\n" +
-                "{$NPCName.SolarSolenian}, {$NPCName.SolarSroller}");
-        }
+                "{$NPCName.SolarSolenian}, {$NPCName.SolarSroller}";
 
-        public override void SetDefaults() {
-            Item.value = Item.sellPrice(0, 0, 15, 0);
-            Item.rare = ItemRarityID.Green;
-            Item.maxStack = 99;
-            Item.useTurn = true;
-            Item.autoReuse = true;
-            Item.useAnimation = 15;
-            Item.useTime = 10;
-            Item.useStyle = ItemUseStyleID.Swing;
-            Item.consumable = true;
-            Item.createTile = ModContent.TileType<Tiles.Banners.Events.Pillars.SolarPillarBanner>();
-            Item.placeStyle = 0;
-        }
+        protected override int SellPrice => Item.sellPrice(0, 0, 15, 0);
 
-        public override void AddRecipes() {
-            Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.SolarCoriteBanner);
-            recipe.AddIngredient(ItemID.SolarCrawltipedeBanner);
-            recipe.AddIngredient(ItemID.SolarDrakomireBanner);
-            recipe.AddIngredient(ItemID.SolarDrakomireRiderBanner);
-            recipe.AddIngredient(ItemID.SolarSolenianBanner);
-            recipe.AddIngredient(ItemID.SolarSrollerBanner);
-            recipe.AddTile(TileID.Loom);
-            recipe.Register();
-        }
+        protected override int Rarity => ItemRarityID.Green;
+
+        protected override int[] Ingredients => new int[] {
+            ItemID.SolarCoriteBanner,
+            ItemID.SolarCrawltipedeBanner,
+            ItemID.SolarDrakomireBanner,
+            ItemID.SolarDrakomireRiderBanner,
+            ItemID.SolarSolenianBanner,
+            ItemID.SolarSrollerBanner
+        };
     }
 }

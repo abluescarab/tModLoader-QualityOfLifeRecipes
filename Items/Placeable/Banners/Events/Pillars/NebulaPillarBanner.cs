@@ -1,39 +1,24 @@
 ﻿using Terraria;
 using Terraria.ID;
-using Terraria.Localization;
-using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events.Pillars {
-    public class NebulaPillarBanner : ModItem {
-        public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.Pillars.NebulaPillarBanner}");
-            Tooltip.SetDefault(
-                "{$CommonItemTooltip.BannerBonus}\n" +
-                "{$NPCName.NebulaHeadcrab}, {$NPCName.NebulaBeast}, {$NPCName.NebulaBrain}, {$NPCName.NebulaSoldier}");
-        }
+    public class NebulaPillarBanner : BannerItem<NebulaPillarBanner, Tiles.Banners.Events.Pillars.NebulaPillarBanner> {
+        protected override string DisplayNameTranslation =>
+            "{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.Pillars.NebulaPillarBanner}";
 
-        public override void SetDefaults() {
-            Item.value = Item.sellPrice(0, 0, 10, 0);
-            Item.rare = ItemRarityID.Green;
-            Item.maxStack = 99;
-            Item.useTurn = true;
-            Item.autoReuse = true;
-            Item.useAnimation = 15;
-            Item.useTime = 10;
-            Item.useStyle = ItemUseStyleID.Swing;
-            Item.consumable = true;
-            Item.createTile = ModContent.TileType<Tiles.Banners.Events.Pillars.NebulaPillarBanner>();
-            Item.placeStyle = 0;
-        }
+        protected override string TooltipTranslation =>
+            "{$CommonItemTooltip.BannerBonus}\n" +
+                "{$NPCName.NebulaHeadcrab}, {$NPCName.NebulaBeast}, {$NPCName.NebulaBrain}, {$NPCName.NebulaSoldier}";
 
-        public override void AddRecipes() {
-            Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.NebulaBeastBanner);
-            recipe.AddIngredient(ItemID.NebulaBrainBanner);
-            recipe.AddIngredient(ItemID.NebulaHeadcrabBanner);
-            recipe.AddIngredient(ItemID.NebulaSoldierBanner);
-            recipe.AddTile(TileID.Loom);
-            recipe.Register();
-        }
+        protected override int SellPrice => Item.sellPrice(0, 0, 10, 0);
+
+        protected override int Rarity => ItemRarityID.Green;
+
+        protected override int[] Ingredients => new int[] {
+            ItemID.NebulaBeastBanner,
+            ItemID.NebulaBrainBanner,
+            ItemID.NebulaHeadcrabBanner,
+            ItemID.NebulaSoldierBanner
+        };
     }
 }

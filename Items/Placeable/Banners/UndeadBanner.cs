@@ -2,7 +2,7 @@
 using Terraria.ID;
 
 namespace QualityOfLifeRecipes.Items.Placeable.Banners {
-    public class UndeadBanner : BaseBanner<UndeadBanner, Tiles.Banners.UndeadBanner> {
+    public class UndeadBanner : BannerItem<UndeadBanner, Tiles.Banners.UndeadBanner> {
         protected override string DisplayNameTranslation => 
             "{$Mods.QualityOfLifeRecipes.Placeable.Banners.UndeadBanner}";
 
@@ -18,7 +18,5 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners {
             ItemID.ZombieBanner,
             ItemID.DemonEyeBanner
         };
-        
-        protected override int CraftingStation => TileID.Loom;
     }
 }

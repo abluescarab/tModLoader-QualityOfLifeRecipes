@@ -1,47 +1,17 @@
-﻿using Microsoft.Xna.Framework;
-using Terraria;
-using Terraria.DataStructures;
-using Terraria.ID;
-using Terraria.ModLoader;
-using Terraria.ObjectData;
+﻿using Terraria.ID;
 
 namespace QualityOfLifeRecipes.Tiles.Banners.Slimes {
-    public class SupremeSlimeBanner : ModTile {
-        public override void SetStaticDefaults() {
-            Main.tileFrameImportant[Type] = true;
-            Main.tileNoAttach[Type] = true;
-            Main.tileLavaDeath[Type] = true;
+    public class SupremeSlimeBanner : BannerTile<Items.Placeable.Banners.Slimes.SupremeSlimeBanner, SupremeSlimeBanner> {
+        protected override string Translation =>
+            "{$Mods.QualityOfLifeRecipes.Placeable.Banners.Slimes.SupremeSlimeBanner}";
 
-            TileObjectData.newTile.CopyFrom(TileObjectData.Style1x2Top);
-            TileObjectData.newTile.Height = 3;
-            TileObjectData.newTile.CoordinateHeights = new int[] { 16, 16, 12 };
-            TileObjectData.newTile.StyleHorizontal = true;
-
-            ModTranslation translation = CreateMapEntryName();
-            translation.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.Slimes.SupremeSlimeBanner}");
-
-            AddMapEntry(new Color(200, 200, 200), translation);
-
-            TileID.Sets.DisableSmartCursor[Type] = true;
-
-            TileObjectData.addTile(Type);
-        }
-
-        public override void KillMultiTile(int i, int j, int frameX, int frameY) {
-            Item.NewItem(new EntitySource_TileBreak(i, j), i * 16, j * 16, 16, 48, ModContent.ItemType<Items.Placeable.Banners.Slimes.SupremeSlimeBanner>());
-        }
-
-        public override void NearbyEffects(int i, int j, bool closer) {
-            if(closer) {
-                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.GreenSlime)] = true;
-                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.BlueSlime)] = true;
-                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.PurpleSlime)] = true;
-                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.RedSlime)] = true;
-                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.YellowSlime)] = true;
-                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.BlackSlime)] = true;
-
-                Main.SceneMetrics.hasBanner = true;
-            }
-        }
+        protected override int[] NPCs => new int[] {
+            NPCID.GreenSlime,
+            NPCID.BlueSlime,
+            NPCID.PurpleSlime,
+            NPCID.RedSlime,
+            NPCID.YellowSlime,
+            NPCID.BlackSlime
+        };
     }
 }

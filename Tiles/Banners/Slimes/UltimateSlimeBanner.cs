@@ -1,53 +1,23 @@
-﻿using Microsoft.Xna.Framework;
-using Terraria;
-using Terraria.DataStructures;
-using Terraria.ID;
-using Terraria.ModLoader;
-using Terraria.ObjectData;
+﻿using Terraria.ID;
 
 namespace QualityOfLifeRecipes.Tiles.Banners.Slimes {
-    public class UltimateSlimeBanner : ModTile {
-        public override void SetStaticDefaults() {
-            Main.tileFrameImportant[Type] = true;
-            Main.tileNoAttach[Type] = true;
-            Main.tileLavaDeath[Type] = true;
+    public class UltimateSlimeBanner : BannerTile<Items.Placeable.Banners.Slimes.UltimateSlimeBanner, UltimateSlimeBanner> {
+        protected override string Translation =>
+            "{$Mods.QualityOfLifeRecipes.Placeable.Banners.Slimes.UltimateSlimeBanner}";
 
-            TileObjectData.newTile.CopyFrom(TileObjectData.Style1x2Top);
-            TileObjectData.newTile.Height = 3;
-            TileObjectData.newTile.CoordinateHeights = new int[] { 16, 16, 12 };
-            TileObjectData.newTile.StyleHorizontal = true;
-
-            ModTranslation translation = CreateMapEntryName();
-            translation.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.Slimes.UltimateSlimeBanner}");
-
-            AddMapEntry(new Color(200, 200, 200), translation);
-
-            TileID.Sets.DisableSmartCursor[Type] = true;
-
-            TileObjectData.addTile(Type);
-        }
-
-        public override void KillMultiTile(int i, int j, int frameX, int frameY) {
-            Item.NewItem(new EntitySource_TileBreak(i, j), i * 16, j * 16, 16, 48, ModContent.ItemType<Items.Placeable.Banners.Slimes.UltimateSlimeBanner>());
-        }
-
-        public override void NearbyEffects(int i, int j, bool closer) {
-            if(closer) {
-                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.SandSlime)] = true;
-                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.IceSlime)] = true;
-                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.JungleSlime)] = true;
-                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.LavaSlime)] = true;
-                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.SpikedIceSlime)] = true;
-                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.SpikedJungleSlime)] = true;
-                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.GreenSlime)] = true;
-                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.BlueSlime)] = true;
-                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.PurpleSlime)] = true;
-                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.RedSlime)] = true;
-                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.YellowSlime)] = true;
-                Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.BlackSlime)] = true;
-
-                Main.SceneMetrics.hasBanner = true;
-            }
-        }
+        protected override int[] NPCs => new int[] {
+            NPCID.SandSlime,
+            NPCID.IceSlime,
+            NPCID.JungleSlime,
+            NPCID.LavaSlime,
+            NPCID.SpikedIceSlime,
+            NPCID.SpikedJungleSlime,
+            NPCID.GreenSlime,
+            NPCID.BlueSlime,
+            NPCID.PurpleSlime,
+            NPCID.RedSlime,
+            NPCID.YellowSlime,
+            NPCID.BlackSlime
+        };
     }
 }

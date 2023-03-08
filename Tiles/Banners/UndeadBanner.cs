@@ -1,10 +1,11 @@
 ﻿using Terraria.ID;
 
 namespace QualityOfLifeRecipes.Tiles.Banners {
-    public class UndeadBanner : BaseBanner<Items.Placeable.Banners.UndeadBanner, UndeadBanner> {
+    public class UndeadBanner : BannerTile<Items.Placeable.Banners.UndeadBanner, UndeadBanner> {
         protected override string Translation => "{$Mods.QualityOfLifeRecipes.Placeable.Banners.UndeadBanner}";
         
         protected override int[] NPCs => new int[] {
+            // zombie
             NPCID.Zombie,
             NPCID.ArmedZombie,
             NPCID.BaldZombie,
@@ -19,6 +20,7 @@ namespace QualityOfLifeRecipes.Tiles.Banners {
             NPCID.FemaleZombie,
             NPCID.ArmedZombieCenx,
             NPCID.ZombieRaincoat,
+            // demon eye
             NPCID.DemonEye,
             NPCID.CataractEye,
             NPCID.DialatedEye,

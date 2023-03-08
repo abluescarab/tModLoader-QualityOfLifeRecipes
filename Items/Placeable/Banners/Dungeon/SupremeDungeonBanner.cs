@@ -1,46 +1,30 @@
 ﻿using Terraria;
 using Terraria.ID;
-using Terraria.Localization;
-using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Placeable.Banners.Dungeon {
-    public class SupremeDungeonBanner : ModItem {
-        public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.Dungeon.SupremeDungeonBanner}");
-            Tooltip.SetDefault(
-                "{$CommonItemTooltip.BannerBonus}\n" +
+    public class SupremeDungeonBanner : BannerItem<SupremeDungeonBanner, Tiles.Banners.Dungeon.SupremeDungeonBanner> {
+        protected override string DisplayNameTranslation => 
+            "{$Mods.QualityOfLifeRecipes.Placeable.Banners.Dungeon.SupremeDungeonBanner}";
+
+        protected override string TooltipTranslation =>
+            "{$CommonItemTooltip.BannerBonus}\n" +
                 "{$NPCName.AngryBones}, {$NPCName.DarkCaster}, {$NPCName.CursedSkull}, {$NPCName.RustyArmoredBonesAxe},\n" +
                 "{$NPCName.BlueArmoredBones}, {$NPCName.HellArmoredBones}, {$NPCName.Necromancer}, {$NPCName.RaggedCaster},\n" +
-                "{$NPCName.DiabolistRed}, {$NPCName.GiantCursedSkull}, {$NPCName.DungeonSlime}");
-        }
+                "{$NPCName.DiabolistRed}, {$NPCName.GiantCursedSkull}, {$NPCName.DungeonSlime}";
 
-        public override void SetDefaults() {
-            Item.value = Item.sellPrice(0, 0, 25, 0);
-            Item.rare = ItemRarityID.Green;
-            Item.maxStack = 99;
-            Item.useTurn = true;
-            Item.autoReuse = true;
-            Item.useAnimation = 15;
-            Item.useTime = 10;
-            Item.useStyle = ItemUseStyleID.Swing;
-            Item.consumable = true;
-            Item.createTile = ModContent.TileType<Tiles.Banners.Dungeon.SupremeDungeonBanner>();
-            Item.placeStyle = 0;
-        }
+        protected override int SellPrice => Item.sellPrice(0, 0, 25, 0);
 
-        public override void AddRecipes() {
-            Recipe recipe = CreateRecipe();
-            recipe.AddIngredient<DungeonBanner>();
-            recipe.AddIngredient(ItemID.DungeonSlimeBanner);
-            recipe.AddIngredient(ItemID.BlueArmoredBonesBanner);
-            recipe.AddIngredient(ItemID.RustyArmoredBonesBanner);
-            recipe.AddIngredient(ItemID.HellArmoredBonesBanner);
-            recipe.AddIngredient(ItemID.NecromancerBanner);
-            recipe.AddIngredient(ItemID.RaggedCasterBanner);
-            recipe.AddIngredient(ItemID.DiablolistBanner);
-            recipe.AddIngredient(ItemID.GiantCursedSkullBanner);
-            recipe.AddTile(TileID.Loom);
-            recipe.Register();
-        }
+        protected override int Rarity => ItemRarityID.Green;
+
+        protected override int[] Ingredients => new int[] {
+            ItemID.DungeonSlimeBanner,
+            ItemID.BlueArmoredBonesBanner,
+            ItemID.RustyArmoredBonesBanner,
+            ItemID.HellArmoredBonesBanner,
+            ItemID.NecromancerBanner,
+            ItemID.RaggedCasterBanner,
+            ItemID.DiablolistBanner,
+            ItemID.GiantCursedSkullBanner
+        };
     }
 }

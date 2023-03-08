@@ -1,41 +1,26 @@
 ﻿using Terraria;
 using Terraria.ID;
-using Terraria.Localization;
-using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events {
-    public class PumpkinMoonBanner : ModItem {
-        public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.PumpkinMoonBanner}");
-            Tooltip.SetDefault(
-                "{$CommonItemTooltip.BannerBonus}\n" +
+    public class PumpkinMoonBanner : BannerItem<PumpkinMoonBanner, Tiles.Banners.Events.PumpkinMoonBanner> {
+        protected override string DisplayNameTranslation =>
+            "{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.PumpkinMoonBanner}";
+
+        protected override string TooltipTranslation =>
+            "{$CommonItemTooltip.BannerBonus}\n" +
                 "{$NPCName.Scarecrow1}, {$NPCName.Splinterling}, {$NPCName.Hellhound}, {$NPCName.Poltergeist},\n" +
-                "{$NPCName.HeadlessHorseman}");
-        }
+                "{$NPCName.HeadlessHorseman}";
 
-        public override void SetDefaults() {
-            Item.value = Item.sellPrice(0, 0, 12, 0);
-            Item.rare = ItemRarityID.Green;
-            Item.maxStack = 99;
-            Item.useTurn = true;
-            Item.autoReuse = true;
-            Item.useAnimation = 15;
-            Item.useTime = 10;
-            Item.useStyle = ItemUseStyleID.Swing;
-            Item.consumable = true;
-            Item.createTile = ModContent.TileType<Tiles.Banners.Events.PumpkinMoonBanner>();
-            Item.placeStyle = 0;
-        }
+        protected override int SellPrice => Item.sellPrice(0, 0, 12, 0);
 
-        public override void AddRecipes() {
-            Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.ScarecrowBanner);
-            recipe.AddIngredient(ItemID.SplinterlingBanner);
-            recipe.AddIngredient(ItemID.HellhoundBanner);
-            recipe.AddIngredient(ItemID.PoltergeistBanner);
-            recipe.AddIngredient(ItemID.HeadlessHorsemanBanner);
-            recipe.AddTile(TileID.Loom);
-            recipe.Register();
-        }
+        protected override int Rarity => ItemRarityID.Green;
+
+        protected override int[] Ingredients => new int[] {
+            ItemID.ScarecrowBanner,
+            ItemID.SplinterlingBanner,
+            ItemID.HellhoundBanner,
+            ItemID.PoltergeistBanner,
+            ItemID.HeadlessHorsemanBanner
+        };
     }
 }

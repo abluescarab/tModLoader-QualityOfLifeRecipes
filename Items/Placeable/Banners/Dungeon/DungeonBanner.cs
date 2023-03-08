@@ -1,37 +1,23 @@
 ﻿using Terraria;
 using Terraria.ID;
-using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Placeable.Banners.Dungeon {
-    public class DungeonBanner : ModItem {
-        public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.Dungeon.DungeonBanner}");
-            Tooltip.SetDefault(
-                "{$CommonItemTooltip.BannerBonus}\n" +
-                "{$NPCName.AngryBones}, {$NPCName.DarkCaster}, {$NPCName.CursedSkull}");
-        }
+    public class DungeonBanner : BannerItem<DungeonBanner, Tiles.Banners.Dungeon.DungeonBanner> {
+        protected override string DisplayNameTranslation =>
+            "{$Mods.QualityOfLifeRecipes.Placeable.Banners.Dungeon.DungeonBanner}";
 
-        public override void SetDefaults() {
-            Item.value = Item.sellPrice(0, 0, 10, 0);
-            Item.rare = ItemRarityID.Green;
-            Item.maxStack = 99;
-            Item.useTurn = true;
-            Item.autoReuse = true;
-            Item.useAnimation = 15;
-            Item.useTime = 10;
-            Item.useStyle = ItemUseStyleID.Swing;
-            Item.consumable = true;
-            Item.createTile = ModContent.TileType<Tiles.Banners.Dungeon.DungeonBanner>();
-            Item.placeStyle = 0;
-        }
+        protected override string TooltipTranslation =>
+            "{$CommonItemTooltip.BannerBonus}\n" +
+                "{$NPCName.AngryBones}, {$NPCName.DarkCaster}, {$NPCName.CursedSkull}";
 
-        public override void AddRecipes() {
-            Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.AngryBonesBanner);
-            recipe.AddIngredient(ItemID.SkeletonMageBanner);
-            recipe.AddIngredient(ItemID.CursedSkullBanner);
-            recipe.AddTile(TileID.Loom);
-            recipe.Register();
-        }
+        protected override int SellPrice => Item.sellPrice(0, 0, 10, 0);
+
+        protected override int Rarity => ItemRarityID.Green;
+
+        protected override int[] Ingredients => new int[] {
+            ItemID.AngryBonesBanner,
+            ItemID.SkeletonMageBanner,
+            ItemID.CursedSkullBanner
+        };
     }
 }

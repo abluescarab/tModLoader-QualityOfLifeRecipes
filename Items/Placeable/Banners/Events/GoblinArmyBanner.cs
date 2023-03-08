@@ -1,41 +1,26 @@
 ﻿using Terraria;
 using Terraria.ID;
-using Terraria.Localization;
-using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events {
-    public class GoblinArmyBanner : ModItem {
-        public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.GoblinArmyBanner}");
-            Tooltip.SetDefault(
-                "{$CommonItemTooltip.BannerBonus}\n" +
+    public class GoblinArmyBanner : BannerItem<GoblinArmyBanner, Tiles.Banners.Events.GoblinArmyBanner> {
+        protected override string DisplayNameTranslation =>
+            "{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.GoblinArmyBanner}";
+
+        protected override string TooltipTranslation =>
+            "{$CommonItemTooltip.BannerBonus}\n" +
                 "{$NPCName.GoblinArcher}, {$NPCName.GoblinPeon}, {$NPCName.GoblinSorcerer}, {$NPCName.GoblinThief},\n" +
-                "{$NPCName.GoblinWarrior}");
-        }
+                "{$NPCName.GoblinWarrior}";
 
-        public override void SetDefaults() {
-            Item.value = Item.sellPrice(0, 0, 12, 0);
-            Item.rare = ItemRarityID.Green;
-            Item.maxStack = 99;
-            Item.useTurn = true;
-            Item.autoReuse = true;
-            Item.useAnimation = 15;
-            Item.useTime = 10;
-            Item.useStyle = ItemUseStyleID.Swing;
-            Item.consumable = true;
-            Item.createTile = ModContent.TileType<Tiles.Banners.Events.GoblinArmyBanner>();
-            Item.placeStyle = 0;
-        }
+        protected override int SellPrice => Item.sellPrice(0, 0, 12, 0);
 
-        public override void AddRecipes() {
-            Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.GoblinArcherBanner);
-            recipe.AddIngredient(ItemID.GoblinPeonBanner);
-            recipe.AddIngredient(ItemID.GoblinSorcererBanner);
-            recipe.AddIngredient(ItemID.GoblinThiefBanner);
-            recipe.AddIngredient(ItemID.GoblinWarriorBanner);
-            recipe.AddTile(TileID.Loom);
-            recipe.Register();
-        }
+        protected override int Rarity => ItemRarityID.Green;
+
+        protected override int[] Ingredients => new int[] {
+            ItemID.GoblinArcherBanner,
+            ItemID.GoblinPeonBanner,
+            ItemID.GoblinSorcererBanner,
+            ItemID.GoblinThiefBanner,
+            ItemID.GoblinWarriorBanner
+        };
     }
 }

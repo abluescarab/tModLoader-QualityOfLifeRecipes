@@ -12,7 +12,6 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners {
         protected abstract int SellPrice { get; }
         protected abstract int Rarity { get; }
         protected abstract int[] Ingredients { get; }
-        protected abstract int CraftingStation { get; }
 
         public sealed override void SetStaticDefaults() {
             DisplayName.SetDefault(DisplayNameTranslation);
@@ -40,7 +39,7 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners {
                 recipe.AddIngredient(id);
             }
 
-            recipe.AddTile(CraftingStation);
+            recipe.AddTile(TileID.Loom);
             recipe.Register();
         }
     }
