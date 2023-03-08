@@ -9,7 +9,7 @@ namespace QualityOfLifeRecipes.Tiles {
     public class AlterationStation : ModTile {
         public override void SetStaticDefaults() {
             ModTranslation translation = CreateMapEntryName();
-            translation.SetDefault("Alteration Station");
+            translation.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.AlterationStation}");
 
             Main.tileSolidTop[Type] = true;
             Main.tileFrameImportant[Type] = true;

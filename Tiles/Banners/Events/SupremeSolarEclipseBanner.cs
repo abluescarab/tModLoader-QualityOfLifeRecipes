@@ -18,7 +18,7 @@ namespace QualityOfLifeRecipes.Tiles.Banners.Events {
             TileObjectData.newTile.StyleHorizontal = true;
 
             ModTranslation translation = CreateMapEntryName();
-            translation.SetDefault("Supreme Solar Eclipse Banner");
+            translation.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.SupremeSolarEclipseBanner}");
 
             AddMapEntry(new Color(200, 200, 200), translation);
 
@@ -40,7 +40,7 @@ namespace QualityOfLifeRecipes.Tiles.Banners.Events {
                 Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.CreatureFromTheDeep)] = true;
                 Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.Fritz)] = true;
                 Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.ThePossessed)] = true;
-                
+
                 Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.Eyezor)] = true;
                 Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.Reaper)] = true;
                 Main.SceneMetrics.NPCBannerBuff[Item.NPCtoBanner(NPCID.Butcher)] = true;

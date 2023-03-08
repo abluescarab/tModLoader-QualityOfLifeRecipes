@@ -18,7 +18,7 @@ namespace QualityOfLifeRecipes.Tiles.Banners.Dungeon {
             TileObjectData.newTile.StyleHorizontal = true;
 
             ModTranslation translation = CreateMapEntryName();
-            translation.SetDefault("Ultimate Dungeon Banner");
+            translation.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.Dungeon.UltimateDungeonBanner}");
 
             AddMapEntry(new Color(200, 200, 200), translation);
 

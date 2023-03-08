@@ -18,7 +18,7 @@ namespace QualityOfLifeRecipes.Tiles.Banners.Events.Pillars {
             TileObjectData.newTile.StyleHorizontal = true;
 
             ModTranslation translation = CreateMapEntryName();
-            translation.SetDefault("Stardust Pillar Banner");
+            translation.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.Pillars.StardustPillarBanner}");
 
             AddMapEntry(new Color(200, 200, 200), translation);
 

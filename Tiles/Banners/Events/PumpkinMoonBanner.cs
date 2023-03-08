@@ -18,7 +18,7 @@ namespace QualityOfLifeRecipes.Tiles.Banners.Events {
             TileObjectData.newTile.StyleHorizontal = true;
 
             ModTranslation translation = CreateMapEntryName();
-            translation.SetDefault("Pumpkin Moon Banner");
+            translation.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.PumpkinMoonBanner}");
 
             AddMapEntry(new Color(200, 200, 200), translation);
 

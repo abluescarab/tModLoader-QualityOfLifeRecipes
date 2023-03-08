@@ -18,7 +18,7 @@ namespace QualityOfLifeRecipes.Tiles.Banners.Events {
             TileObjectData.newTile.StyleHorizontal = true;
 
             ModTranslation translation = CreateMapEntryName();
-            translation.SetDefault("Martian Madness Banner");
+            translation.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.MartianMadnessBanner}");
 
             AddMapEntry(new Color(200, 200, 200), translation);
 

@@ -18,7 +18,7 @@ namespace QualityOfLifeRecipes.Tiles.Banners {
             TileObjectData.newTile.StyleHorizontal = true;
 
             ModTranslation translation = CreateMapEntryName();
-            translation.SetDefault("Undead Banner");
+            translation.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.UndeadBanner}");
 
             AddMapEntry(new Color(200, 200, 200), translation);
 

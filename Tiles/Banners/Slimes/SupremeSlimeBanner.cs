@@ -18,7 +18,7 @@ namespace QualityOfLifeRecipes.Tiles.Banners.Slimes {
             TileObjectData.newTile.StyleHorizontal = true;
 
             ModTranslation translation = CreateMapEntryName();
-            translation.SetDefault("Supreme Slime Banner");
+            translation.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.Slimes.SupremeSlimeBanner}");
 
             AddMapEntry(new Color(200, 200, 200), translation);
 
