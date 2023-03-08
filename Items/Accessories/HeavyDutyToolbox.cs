@@ -6,10 +6,10 @@ using Terraria.ModLoader;
 namespace QualityOfLifeRecipes.Items.Accessories {
     public class HeavyDutyToolbox : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Accessories.HeavyDutyToolbox_Name"));
+            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Accessories.HeavyDutyToolbox_Name}");
             Tooltip.SetDefault(
-                Language.GetTextValue("ItemTooltip.Toolbox") + "\n" +
-                Language.GetTextValue("ItemTooltip.Toolbelt"));
+                "{$ItemTooltip.Toolbox}" + "\n" +
+                "{$ItemTooltip.Toolbelt}");
         }
 
         public override void SetDefaults() {

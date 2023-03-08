@@ -7,8 +7,8 @@ namespace QualityOfLifeRecipes.Items.Accessories {
     [AutoloadEquip(EquipType.Back)]
     public class AnglersFishingGear : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Accessories.AnglersFishingGear_Name"));
-            Tooltip.SetDefault(Language.GetTextValue("ItemTooltip.AnglerTackleBag"));
+            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Accessories.AnglersFishingGear_Name}");
+            Tooltip.SetDefault("{$ItemTooltip.AnglerTackleBag}");
         }
 
         public override void SetDefaults() {

@@ -6,8 +6,8 @@ using Terraria.ModLoader;
 namespace QualityOfLifeRecipes.Items.Placeable {
     public class AlterationStation : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Placeable.AlterationStation_Name"));
-            Tooltip.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Placeable.AlterationStation_Tooltip"));
+            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.AlterationStation_Name}");
+            Tooltip.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.AlterationStation_Tooltip}");
         }
 
         public override void SetDefaults() {

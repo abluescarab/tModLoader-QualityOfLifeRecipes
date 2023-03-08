@@ -6,7 +6,7 @@ using Terraria.ModLoader;
 namespace QualityOfLifeRecipes.Items.Placeable.Banners.Dungeon {
     public class DungeonBanner : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Placeable.Banners.Dungeon.DungeonBanner_Name"));
+            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.Dungeon.DungeonBanner_Name}");
             Tooltip.SetDefault(
                 "{$CommonItemTooltip.BannerBonus}\n" +
                 "{$NPCName.AngryBones}, {$NPCName.DarkCaster}, {$NPCName.CursedSkull}");

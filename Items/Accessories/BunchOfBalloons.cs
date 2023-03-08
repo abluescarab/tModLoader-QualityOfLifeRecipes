@@ -6,11 +6,11 @@ using Terraria.ModLoader;
 namespace QualityOfLifeRecipes.Items.Accessories {
     public class BunchOfBalloons : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Accessories.BunchOfBalloons_Name"));
+            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Accessories.BunchOfBalloons_Name}");
             Tooltip.SetDefault(
-                Language.GetTextValue("Mods.QualityOfLifeRecipes.General.JumpThreeTimes") + "\n" +
-                Language.GetTextValue("ItemTooltip.ShinyRedBalloon") + "\n" +
-                Language.GetTextValue("ItemTooltip.HoneyComb"));
+                "{$Mods.QualityOfLifeRecipes.General.JumpThreeTimes}" + "\n" +
+                "{$ItemTooltip.ShinyRedBalloon}" + "\n" +
+                "{$ItemTooltip.HoneyComb}");
         }
 
         public override void SetDefaults() {

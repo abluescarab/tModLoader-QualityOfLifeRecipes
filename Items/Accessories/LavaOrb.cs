@@ -10,10 +10,10 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         };
 
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Accessories.LavaOrb_Name"));
+            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Accessories.LavaOrb_Name}");
             Tooltip.SetDefault(
-                Language.GetTextValue("ItemTooltip.LavaCharm") + "\n" +
-                Language.GetTextValue("ItemTooltip.ObsidianRose"));
+                "{$ItemTooltip.LavaCharm}" + "\n" +
+                "{$ItemTooltip.ObsidianRose}");
         }
 
         public override void SetDefaults() {

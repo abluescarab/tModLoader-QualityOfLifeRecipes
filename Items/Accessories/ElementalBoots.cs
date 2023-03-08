@@ -9,10 +9,10 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         };
 
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Accessories.ElementalBoots_Name"));
+            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Accessories.ElementalBoots_Name}");
             Tooltip.SetDefault(
-                Language.GetTextValue("ItemTooltip.FrostsparkBoots") + "\n" +
-                Language.GetTextValue("ItemTooltip.LavaWaders"));
+                "{$ItemTooltip.FrostsparkBoots}" + "\n" +
+                "{$ItemTooltip.LavaWaders}");
         }
 
         public override void SetDefaults() {

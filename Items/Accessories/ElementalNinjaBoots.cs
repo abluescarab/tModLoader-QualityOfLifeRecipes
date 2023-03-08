@@ -6,10 +6,10 @@ using Terraria.ModLoader;
 namespace QualityOfLifeRecipes.Items.Accessories {
     public class ElementalNinjaBoots : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Accessories.ElementalNinjaBoots_Name"));
+            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Accessories.ElementalNinjaBoots_Name}");
             Tooltip.SetDefault(
-                Language.GetTextValue("ItemTooltip.TerrasparkBoots") + "\n" +
-                Language.GetTextValue("ItemTooltip.MasterNinjaGear"));
+                "{$ItemTooltip.TerrasparkBoots}" + "\n" +
+                "{$ItemTooltip.MasterNinjaGear}");
         }
 
         public override void SetDefaults() {

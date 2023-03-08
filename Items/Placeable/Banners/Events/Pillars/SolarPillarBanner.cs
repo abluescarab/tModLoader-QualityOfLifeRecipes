@@ -6,7 +6,7 @@ using Terraria.ModLoader;
 namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events.Pillars {
     public class SolarPillarBanner : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Placeable.Banners.Events.Pillars.SolarPillarBanner_Name"));
+            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.Pillars.SolarPillarBanner_Name}");
             Tooltip.SetDefault(
                 "{$CommonItemTooltip.BannerBonus}\n" +
                 "{$NPCName.SolarCorite}, {$NPCName.SolarCrawltipedeHead}, {$NPCName.SolarDrakomire}, {$NPCName.SolarDrakomireRider},\n" +

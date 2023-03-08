@@ -4,12 +4,13 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Accessories {
+    // TODO: deprecate?
     public class CelestialFlowerCuffs : ModItem {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault("Celestial Flower Cuffs");
             Tooltip.SetDefault(
-                Language.GetTextValue("ItemTooltip.CelestialCuffs") + "\n" +
-                Language.GetTextValue("ItemTooltip.ManaFlower"));
+                "{$ItemTooltip.CelestialCuffs}" + "\n" +
+                "{$ItemTooltip.ManaFlower}");
         }
 
         public override void SetDefaults() {

@@ -13,11 +13,11 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         }
 
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Accessories.AtomicNinjaBoots_Name"));
+            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Accessories.AtomicNinjaBoots_Name}");
             Tooltip.SetDefault(
-                Language.GetTextValue("ItemTooltip.TerrasparkBoots") + "\n" +
-                Language.GetTextValue("ItemTooltip.MasterNinjaGear") + "\n" +
-                Language.GetTextValue("ItemTooltip.FlowerBoots"));
+                "{$ItemTooltip.TerrasparkBoots}" + "\n" +
+                "{$ItemTooltip.MasterNinjaGear}" + "\n" +
+                "{$ItemTooltip.FlowerBoots}");
         }
 
         public override void SetDefaults() {

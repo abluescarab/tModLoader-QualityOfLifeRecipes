@@ -7,11 +7,11 @@ namespace QualityOfLifeRecipes.Items.Armor {
     [AutoloadEquip(EquipType.Head)]
     public class MiningGear : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Armor.MiningGear_Name"));
+            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Armor.MiningGear_Name}");
             Tooltip.SetDefault(
-                Language.GetTextValue("ItemTooltip.NightVisionHelmet") + "\n" +
-                Language.GetTextValue("ItemTooltip.SpelunkerPotion") + "\n" +
-                Language.GetTextValue("ItemTooltip.MiningHelmet"));
+                "{$ItemTooltip.NightVisionHelmet}" + "\n" +
+                "{$ItemTooltip.SpelunkerPotion}" + "\n" +
+                "{$ItemTooltip.MiningHelmet}");
         }
 
         public override void SetDefaults() {
