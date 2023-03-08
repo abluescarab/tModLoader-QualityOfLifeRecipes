@@ -1,7 +1,7 @@
 ﻿using Terraria.ID;
 
-namespace QualityOfLifeRecipes.Tiles.Banners.Events {
-    public class SolarEclipseBanner : BannerTile<Items.Placeable.Banners.Events.SolarEclipseBanner, SolarEclipseBanner> {
+namespace QualityOfLifeRecipes.Tiles.Banners.Events.SolarEclipse {
+    public class SolarEclipseBanner : BannerTile<Items.Placeable.Banners.Events.SolarEclipse.SolarEclipseBanner, SolarEclipseBanner> {
         protected override string Translation =>
             "{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.SolarEclipseBanner}";
 

@@ -1,9 +1,9 @@
 ﻿using Terraria.ID;
 
-namespace QualityOfLifeRecipes.Tiles.Banners.Events {
-    public class SupremeSolarEclipseBanner : BannerTile<Items.Placeable.Banners.Events.SupremeSolarEclipseBanner, SupremeSolarEclipseBanner> {
+namespace QualityOfLifeRecipes.Tiles.Banners.Events.SolarEclipse {
+    public class UltimateSolarEclipseBanner : BannerTile<Items.Placeable.Banners.Events.SolarEclipse.UltimateSolarEclipseBanner, UltimateSolarEclipseBanner> {
         protected override string Translation =>
-            "{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.SupremeSolarEclipseBanner}";
+            "{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.UltimateSolarEclipseBanner}";
 
         protected override int[] NPCs => new int[] {
             NPCID.Frankenstein,
@@ -19,7 +19,10 @@ namespace QualityOfLifeRecipes.Tiles.Banners.Events {
             NPCID.DeadlySphere,
             NPCID.DrManFly,
             NPCID.Nailhead,
-            NPCID.Psycho
+            NPCID.Psycho,
+            NPCID.Mothron,
+            NPCID.MothronEgg,
+            NPCID.MothronSpawn
         };
     }
 }

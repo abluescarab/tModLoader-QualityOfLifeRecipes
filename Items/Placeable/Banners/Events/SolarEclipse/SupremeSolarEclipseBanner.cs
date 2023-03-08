@@ -2,8 +2,8 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events {
-    public class SupremeSolarEclipseBanner : BannerItem<SupremeSolarEclipseBanner, Tiles.Banners.Events.SupremeSolarEclipseBanner> {
+namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events.SolarEclipse {
+    public class SupremeSolarEclipseBanner : BannerItem<SupremeSolarEclipseBanner, Tiles.Banners.Events.SolarEclipse.SupremeSolarEclipseBanner> {
         protected override string DisplayNameTranslation =>
             "{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.SupremeSolarEclipseBanner}";
 

@@ -35,8 +35,10 @@ Mods: {
 			AlterationStation_Tooltip: Transmutes ore and block varieties
 
 			Banners: {
-				UndeadBanner: Undead Banner
-
+				Undead: {
+					UndeadBanner: Undead Banner
+				}
+				
 				Dungeon: {
 					DungeonBanner: Dungeon Banner
 					SupremeDungeonBanner: Supreme Dungeon Banner
