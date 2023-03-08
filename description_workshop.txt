@@ -46,14 +46,16 @@
     [*]Atomic Cloud Boots (Atomic Ninja Boots, Cloud of Frogshoe Balloons)
 [/list]
 
-[Credits]
+[b]Credits[/b]
 * Freedbot for Solar Eclipse, Frost Moon, Pumpkin Moon, Martian Madness event banners and Cybernetic Mining Multi-Tool sprite
 * INFINITE POWER for the original QOL and sprites
 * Ardosos for the code for the Alteration Station
 * PyroSalamander for suggesting the Cybernetic Utility Helmet
 
-[Changelog]
+[b]Changelog[/b]
 v1.8.0  2023-03-07
+* Improved banner tooltips
+* Added translation files/vanilla translations (translators welcome!)
 * Adjusted sell prices
 * Replaced Elemental Boots in recipes with Terraspark Boots
 * Added Obsidian Rose to all boot effects

@@ -1,5 +1,22 @@
 ﻿using Terraria.ModLoader;
 
+/*
+ * TODO:
+ * add banners:
+ *  ocean
+ *  cavern
+ *  granite cave
+ *  glowing mushroom
+ *  snow
+ *  jungle
+ *  desert
+ *  underworld
+ *  corruption/crimson
+ *  hallow
+ *  blood moon
+ *  old one's army
+ */
+
 namespace QualityOfLifeRecipes {
     public class QualityOfLifeRecipes : Mod {
         public QualityOfLifeRecipes() {

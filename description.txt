@@ -12,6 +12,8 @@ Visit the mod homepage to see the included recipes.
 
 [Changelog]
 v1.8.0  2023-03-07
+* Improved banner tooltips
+* Added translation files/vanilla translations (translators welcome!)
 * Adjusted sell prices
 * Replaced Elemental Boots in recipes with Terraspark Boots
 * Added Obsidian Rose to all boot effects
