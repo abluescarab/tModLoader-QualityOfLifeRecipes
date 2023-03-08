@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using Terraria;
 using Terraria.ID;
 using Terraria.Localization;
@@ -9,6 +11,8 @@ namespace QualityOfLifeRecipes {
         private const string GroupGoldCrown = "QOLR:GoldCrown";
         private const string GroupGoldBar = "QOLR:GoldBar";
         private const string GroupIronBar = "QOLR:IronBar";
+
+        public static Dictionary<Type, bool> DeprecatedMessageShown = new Dictionary<Type, bool>();
 
         public override void AddRecipeGroups() {
             string any = Language.GetText("LegacyMisc.37").Value;
