@@ -8,7 +8,8 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Placeable.Banners.UndeadBanner_Name"));
             Tooltip.SetDefault(
-                "Nearby players get a bonus against: Zombie, Raincoat Zombie, Demon Eye");
+                "{$CommonItemTooltip.BannerBonus}\n" +
+                "{$NPCName.Zombie}, {$NPCName.ZombieRaincoat}, {$NPCName.DemonEye}");
         }
 
         public override void SetDefaults() {

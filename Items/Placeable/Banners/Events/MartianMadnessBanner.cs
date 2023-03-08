@@ -8,8 +8,10 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Placeable.Banners.Events.MartianMadnessBanner_Name"));
             Tooltip.SetDefault(
-                "Nearby players get a bonus against: Scutlix, Tesla Turret, Gigazapper, Ray Gunner, Gray Grunt, Brain Scrambler,\n" +
-                "Martian Walker, Martian Drone, Martian Engineer, Martian Officer");
+                "{$CommonItemTooltip.BannerBonus}\n" +
+                "{$NPCName.Scutlix}, {$NPCName.MartianTurret}, {$NPCName.GigaZapper}, {$NPCName.RayGunner},\n" +
+                "{$NPCName.GrayGrunt}, {$NPCName.BrainScrambler}, {$NPCName.MartianWalker}, {$NPCName.MartianDrone},\n" +
+                "{$NPCName.MartianEngineer}, {$NPCName.MartianOfficer}");
         }
 
         public override void SetDefaults() {

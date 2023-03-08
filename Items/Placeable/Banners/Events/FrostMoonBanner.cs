@@ -8,8 +8,10 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Placeable.Banners.Events.FrostMoonBanner_Name"));
             Tooltip.SetDefault(
-                "Nearby players get a bonus against: Present Mimic, Flocko, Gingerbread Man, Zombie Elf, Elf Archer,\n" +
-                "Nutcracker, Yeti, Elf Copter, Krampus");
+                "{$CommonItemTooltip.BannerBonus}\n" +
+                "{$NPCName.PresentMimic}, {$NPCName.Flocko}, {$NPCName.GingerbreadMan}, {$NPCName.ZombieElf},\n" +
+                "{$NPCName.ElfArcher}, {$NPCName.Nutcracker}, {$NPCName.Yeti}, {$NPCName.ElfCopter},\n" +
+                "{$NPCName.Krampus}");
         }
 
         public override void SetDefaults() {

@@ -8,7 +8,9 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events.Pillars {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Placeable.Banners.Events.Pillars.VortexPillarBanner_Name"));
             Tooltip.SetDefault(
-                "Nearby players get a bonus against: Storm Diver, Vortexian, Alien Queen, Alien Hornet, Alien Larva");
+                "{$CommonItemTooltip.BannerBonus}\n" +
+                "{$NPCName.VortexRifleman}, {$NPCName.VortexSoldier}, {$NPCName.VortexHornetQueen}, {$NPCName.VortexHornet},\n" +
+                "{$NPCName.VortexLarva}");
         }
 
         public override void SetDefaults() {

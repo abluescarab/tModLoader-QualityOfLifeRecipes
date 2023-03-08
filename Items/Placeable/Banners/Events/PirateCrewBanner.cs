@@ -8,7 +8,9 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Placeable.Banners.Events.PirateCrewBanner_Name"));
             Tooltip.SetDefault(
-                "Nearby players get a bonus against: Parrot, Pirate Captain, Pirate Corsair, Pirate Crossbower, Pirate Deadeye, Pirate Deckhand");
+                "{$CommonItemTooltip.BannerBonus}\n" +
+                "{$NPCName.Parrot}, {$NPCName.PirateCaptain}, {$NPCName.PirateCorsair}, {$NPCName.PirateCrossbower},\n" +
+                "{$NPCName.PirateDeadeye}, {$NPCName.PirateDeckhand}");
         }
 
         public override void SetDefaults() {

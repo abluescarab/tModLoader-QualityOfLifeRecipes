@@ -8,7 +8,9 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events.Pillars {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Placeable.Banners.Events.Pillars.SolarPillarBanner_Name"));
             Tooltip.SetDefault(
-                "Nearby players get a bonus against: Corite, Crawltipede, Drakomire, Drakomire Rider, Solenian, Sroller");
+                "{$CommonItemTooltip.BannerBonus}\n" +
+                "{$NPCName.SolarCorite}, {$NPCName.SolarCrawltipedeHead}, {$NPCName.SolarDrakomire}, {$NPCName.SolarDrakomireRider},\n" +
+                "{$NPCName.SolarSolenian}, {$NPCName.SolarSroller}");
         }
 
         public override void SetDefaults() {

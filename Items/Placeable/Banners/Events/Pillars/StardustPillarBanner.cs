@@ -8,7 +8,9 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events.Pillars {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Placeable.Banners.Events.Pillars.StardustPillarBanner_Name"));
             Tooltip.SetDefault(
-                "Nearby players get a bonus against: Star Cell, Flow Invader, Twinkle Popper, Milyway Weaver, Stargazer");
+                "{$CommonItemTooltip.BannerBonus}\n" +
+                "{$NPCName.StardustCellBig}, {$NPCName.StardustJellyfishBig}, {$NPCName.StardustSpiderBig}, {$NPCName.StardustWormHead},\n" +
+                "{$NPCName.StardustSoldier}");
         }
 
         public override void SetDefaults() {

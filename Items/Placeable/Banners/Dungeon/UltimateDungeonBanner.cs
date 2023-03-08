@@ -8,9 +8,12 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Dungeon {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Placeable.Banners.Dungeon.UltimateDungeonBanner_Name"));
             Tooltip.SetDefault(
-                "Nearby players get a bonus against: Angry Bones, Dark Caster, Cursed Skull Armored Bones, Necromancer,\n" +
-                "Ragged Caster, Diabolist, Giant Cursed Skull, Dungeon Slime, Paladin, Skeleton Commando, Skeleton Sniper,\n" +
-                "Tactical Skeleton, Bone Lee, Dungeon Spirit");
+                "{$CommonItemTooltip.BannerBonus}\n" +
+                "{$NPCName.AngryBones}, {$NPCName.DarkCaster}, {$NPCName.CursedSkull}, {$NPCName.RustyArmoredBonesAxe},\n" +
+                "{$NPCName.BlueArmoredBones}, {$NPCName.HellArmoredBones}, {$NPCName.Necromancer}, {$NPCName.RaggedCaster},\n" +
+                "{$NPCName.DiabolistRed}, {$NPCName.GiantCursedSkull}, {$NPCName.DungeonSlime}, {$NPCName.Paladin},\n" +
+                "{$NPCName.SkeletonCommando}, {$NPCName.SkeletonSniper}, {$NPCName.TacticalSkeleton}, {$NPCName.BoneLee},\n" +
+                "{$NPCName.DungeonSpirit}");
         }
 
         public override void SetDefaults() {

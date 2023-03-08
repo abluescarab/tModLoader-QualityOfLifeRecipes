@@ -8,7 +8,8 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events.Pillars {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Placeable.Banners.Events.Pillars.NebulaPillarBanner_Name"));
             Tooltip.SetDefault(
-                "Nearby players get a bonus against: Brain Suckler, Evolution Beast, Nebula Floater, Predictor");
+                "{$CommonItemTooltip.BannerBonus}\n" +
+                "{$NPCName.NebulaHeadcrab}, {$NPCName.NebulaBeast}, {$NPCName.NebulaBrain}, {$NPCName.NebulaSoldier}");
         }
 
         public override void SetDefaults() {

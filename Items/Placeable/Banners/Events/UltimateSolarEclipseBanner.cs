@@ -8,8 +8,11 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Placeable.Banners.Events.UltimateSolarEclipseBanner_Name"));
             Tooltip.SetDefault(
-                "Nearby players get a bonus against: Frankenstein, Swamp Thing, Vampire, Creature from the Deep, Fritz,\n" +
-                "The Possessed, Eyezor, Reaper, Butcher, Deadly Sphere, Dr. Man Fly, Nailhead, Psycho, Mothron");
+                "{$CommonItemTooltip.BannerBonus}\n" +
+                "{$NPCName.Frankenstein}, {$NPCName.SwampThing}, {$NPCName.Vampire}, {$NPCName.CreatureFromTheDeep},\n" +
+                "{$NPCName.Fritz}, {$NPCName.ThePossessed}, {$NPCName.Eyezor}, {$NPCName.Reaper},\n" +
+                "{$NPCName.Butcher}, {$NPCName.DeadlySphere}, {$NPCName.DrManFly}, {$NPCName.Nailhead},\n" +
+                "{$NPCName.Psycho}, {$NPCName.Mothron}");
         }
 
         public override void SetDefaults() {

@@ -8,7 +8,9 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Placeable.Banners.Events.PumpkinMoonBanner_Name"));
             Tooltip.SetDefault(
-                "Nearby players get a bonus against: Scarecrow, Splinterling, Hellhound, Poltergeist, Headless Horseman");
+                "{$CommonItemTooltip.BannerBonus}\n" +
+                "{$NPCName.Scarecrow1}, {$NPCName.Splinterling}, {$NPCName.Hellhound}, {$NPCName.Poltergeist},\n" +
+                "{$NPCName.HeadlessHorseman}");
         }
 
         public override void SetDefaults() {

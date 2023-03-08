@@ -8,7 +8,9 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Slimes {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Placeable.Banners.Slimes.ElementalSlimeBanner_Name"));
             Tooltip.SetDefault(
-                "Nearby players get a bonus against: Sand Slime, Ice Slime, Jungle Slime, Lava Slime, Spiked Slime");
+                "{$CommonItemTooltip.BannerBonus}\n" +
+                "{$NPCName.SandSlime}, {$NPCName.IceSlime}, {$NPCName.JungleSlime}, {$NPCName.LavaSlime},\n" +
+                "{$NPCName.SlimeSpiked}");
         }
 
         public override void SetDefaults() {
