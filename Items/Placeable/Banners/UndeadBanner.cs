@@ -1,38 +1,24 @@
 ﻿using Terraria;
 using Terraria.ID;
-using Terraria.Localization;
-using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Placeable.Banners {
-    public class UndeadBanner : ModItem {
-        public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.UndeadBanner}");
-            Tooltip.SetDefault(
-                "{$CommonItemTooltip.BannerBonus}\n" +
-                "{$NPCName.Zombie}, {$NPCName.ZombieRaincoat}, {$NPCName.DemonEye}");
-        }
+    public class UndeadBanner : BaseBanner<UndeadBanner, Tiles.Banners.UndeadBanner> {
+        protected override string DisplayNameTranslation => 
+            "{$Mods.QualityOfLifeRecipes.Placeable.Banners.UndeadBanner}";
 
-        public override void SetDefaults() {
-            Item.value = Item.sellPrice(0, 0, 5, 0);
-            Item.rare = ItemRarityID.Green;
-            Item.maxStack = 99;
-            Item.useTurn = true;
-            Item.autoReuse = true;
-            Item.useAnimation = 15;
-            Item.useTime = 10;
-            Item.useStyle = ItemUseStyleID.Swing;
-            Item.consumable = true;
-            Item.createTile = ModContent.TileType<Tiles.Banners.UndeadBanner>();
-            Item.placeStyle = 0;
-        }
-
-        public override void AddRecipes() {
-            Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.ZombieBanner);
-            recipe.AddIngredient(ItemID.DemonEyeBanner);
-            recipe.AddIngredient(ItemID.RaincoatZombieBanner);
-            recipe.AddTile(TileID.Loom);
-            recipe.Register();
-        }
+        protected override string TooltipTranslation => 
+            "{$CommonItemTooltip.BannerBonus}\n" +
+                "{$NPCName.Zombie}, {$NPCName.ZombieRaincoat}, {$NPCName.DemonEye}";
+        
+        protected override int SellPrice => Item.sellPrice(0, 0, 5, 0);
+        
+        protected override int Rarity => ItemRarityID.Green;
+        
+        protected override int[] Ingredients => new int[] {
+            ItemID.ZombieBanner,
+            ItemID.DemonEyeBanner
+        };
+        
+        protected override int CraftingStation => TileID.Loom;
     }
 }
