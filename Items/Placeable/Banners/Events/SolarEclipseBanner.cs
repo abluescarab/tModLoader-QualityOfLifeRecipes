@@ -1,11 +1,12 @@
 ﻿using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events {
     public class SolarEclipseBanner : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("Solar Eclipse Banner");
+            DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Placeable.Banners.Events.SolarEclipseBanner_Name"));
             Tooltip.SetDefault(
                 "Nearby players get a bonus against: Frankenstein, Swamp Thing, Vampire, Creature from the Deep, Fritz, The Possessed");
         }

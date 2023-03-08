@@ -1,11 +1,12 @@
 ﻿using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events {
     public class FrostMoonBanner : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("Frost Moon Banner");
+            DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Placeable.Banners.Events.FrostMoonBanner_Name"));
             Tooltip.SetDefault(
                 "Nearby players get a bonus against: Present Mimic, Flocko, Gingerbread Man, Zombie Elf, Elf Archer,\n" +
                 "Nutcracker, Yeti, Elf Copter, Krampus");

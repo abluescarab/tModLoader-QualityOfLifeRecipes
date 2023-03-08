@@ -1,11 +1,12 @@
 ﻿using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events.Pillars {
     public class VortexPillarBanner : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("Vortex Pillar Banner");
+            DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Placeable.Banners.Events.Pillars.VortexPillarBanner_Name"));
             Tooltip.SetDefault(
                 "Nearby players get a bonus against: Storm Diver, Vortexian, Alien Queen, Alien Hornet, Alien Larva");
         }

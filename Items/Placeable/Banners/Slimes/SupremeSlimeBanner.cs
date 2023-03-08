@@ -1,11 +1,12 @@
 ﻿using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Placeable.Banners.Slimes {
     public class SupremeSlimeBanner : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("Supreme Slime Banner");
+            DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Placeable.Banners.Slimes.SupremeSlimeBanner_Name"));
             Tooltip.SetDefault(
                 "Nearby players get a bonus against: Green Slime, Blue Slime, Purple Slime, Red Slime, Yellow Slime, Black Slime");
         }

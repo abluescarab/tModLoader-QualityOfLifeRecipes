@@ -1,11 +1,12 @@
 ﻿using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events {
     public class MartianMadnessBanner : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("Martian Madness Banner");
+            DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Placeable.Banners.Events.MartianMadnessBanner_Name"));
             Tooltip.SetDefault(
                 "Nearby players get a bonus against: Scutlix, Tesla Turret, Gigazapper, Ray Gunner, Gray Grunt, Brain Scrambler,\n" +
                 "Martian Walker, Martian Drone, Martian Engineer, Martian Officer");

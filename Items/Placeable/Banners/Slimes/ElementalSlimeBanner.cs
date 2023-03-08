@@ -1,11 +1,12 @@
 ﻿using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Placeable.Banners.Slimes {
     public class ElementalSlimeBanner : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("Elemental Slime Banner");
+            DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Placeable.Banners.Slimes.ElementalSlimeBanner_Name"));
             Tooltip.SetDefault(
                 "Nearby players get a bonus against: Sand Slime, Ice Slime, Jungle Slime, Lava Slime, Spiked Slime");
         }

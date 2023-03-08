@@ -1,11 +1,12 @@
 ﻿using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events {
     public class PumpkinMoonBanner : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("Pumpkin Moon Banner");
+            DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Placeable.Banners.Events.PumpkinMoonBanner_Name"));
             Tooltip.SetDefault(
                 "Nearby players get a bonus against: Scarecrow, Splinterling, Hellhound, Poltergeist, Headless Horseman");
         }

@@ -1,11 +1,12 @@
 ﻿using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events.Pillars {
     public class NebulaPillarBanner : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("Nebula Pillar Banner");
+            DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Placeable.Banners.Events.Pillars.NebulaPillarBanner_Name"));
             Tooltip.SetDefault(
                 "Nearby players get a bonus against: Brain Suckler, Evolution Beast, Nebula Floater, Predictor");
         }

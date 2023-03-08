@@ -1,11 +1,12 @@
 ﻿using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events.Pillars {
     public class StardustPillarBanner : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("Stardust Pillar Banner");
+            DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Placeable.Banners.Events.Pillars.StardustPillarBanner_Name"));
             Tooltip.SetDefault(
                 "Nearby players get a bonus against: Star Cell, Flow Invader, Twinkle Popper, Milyway Weaver, Stargazer");
         }

@@ -1,11 +1,12 @@
 ﻿using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Placeable.Banners.Dungeon {
     public class SupremeDungeonBanner : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("Supreme Dungeon Banner");
+            DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Placeable.Banners.Dungeon.SupremeDungeonBanner_Name"));
             Tooltip.SetDefault(
                 "Nearby players get a bonus against: Angry Bones, Dark Caster, Cursed Skull Armored Bones, Necromancer,\n" +
                 "Ragged Caster, Diabolist, Giant Cursed Skull, Dungeon Slime");

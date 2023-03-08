@@ -1,11 +1,12 @@
 ﻿using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events {
     public class PirateCrewBanner : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("Pirate Crew Banner");
+            DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Placeable.Banners.Events.PirateCrewBanner_Name"));
             Tooltip.SetDefault(
                 "Nearby players get a bonus against: Parrot, Pirate Captain, Pirate Corsair, Pirate Crossbower, Pirate Deadeye, Pirate Deckhand");
         }
