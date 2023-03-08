@@ -2,6 +2,7 @@
 using System;
 using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.UI;
 
@@ -54,9 +55,12 @@ namespace QualityOfLifeRecipes.Items {
 
                 string name = Lang.GetItemNameValue(Type);
 
-                Main.NewText($"{name} has been removed from Quality of Life: Recipes. " +
-                                 $"Right-click to receive {string.Join(", ", replacements)}. ",
-                                 Color.Red);
+                Main.NewText(
+                    Language.GetTextValue(
+                        "Mods.QualityOfLifeRecipes.General.DeprecatedMessage",
+                        name,
+                        string.Join(", ", replacements)),
+                    Color.Red);
 
                 QualityOfLifeRecipesSystem.DeprecatedMessageShown[thisType] = true;
             }
