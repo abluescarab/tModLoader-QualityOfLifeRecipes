@@ -30,8 +30,8 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Slimes {
 
         public override void AddRecipes() {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(Mod, "ElementalSlimeBanner");
-            recipe.AddIngredient(Mod, "SupremeSlimeBanner");
+            recipe.AddIngredient<ElementalSlimeBanner>();
+            recipe.AddIngredient<SupremeSlimeBanner>();
             recipe.AddTile(TileID.Loom);
             recipe.Register();
         }

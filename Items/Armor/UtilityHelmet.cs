@@ -47,8 +47,8 @@ namespace QualityOfLifeRecipes.Items.Armor {
 
         public override void AddRecipes() {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(Mod, "MiningGear");
-            recipe.AddIngredient(Mod, "OrangeTintedGoggles");
+            recipe.AddIngredient<MiningGear>();
+            recipe.AddIngredient<OrangeTintedGoggles>();
             recipe.AddTile(TileID.TinkerersWorkbench);
             recipe.Register();
         }

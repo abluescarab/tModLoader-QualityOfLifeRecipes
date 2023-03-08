@@ -32,7 +32,7 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Dungeon {
 
         public override void AddRecipes() {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(Mod, "SupremeDungeonBanner");
+            recipe.AddIngredient<SupremeDungeonBanner>();
             recipe.AddIngredient(ItemID.PaladinBanner);
             recipe.AddIngredient(ItemID.SkeletonCommandoBanner);
             recipe.AddIngredient(ItemID.SkeletonSniperBanner);
