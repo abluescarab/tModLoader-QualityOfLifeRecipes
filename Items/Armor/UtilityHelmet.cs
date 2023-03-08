@@ -7,7 +7,7 @@ namespace QualityOfLifeRecipes.Items.Armor {
     [AutoloadEquip(EquipType.Head)]
     public class UtilityHelmet : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Armor.UtilityHelmet_Name}");
+            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Armor.UtilityHelmet}");
             Tooltip.SetDefault(
                 "{$ItemTooltip.HunterPotion}" + "\n" +
                 "{$ItemTooltip.TrapsightPotion}" + "\n" +

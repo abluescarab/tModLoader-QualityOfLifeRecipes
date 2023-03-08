@@ -6,7 +6,7 @@ using Terraria.ModLoader;
 namespace QualityOfLifeRecipes.Items.Placeable.Banners.Slimes {
     public class SupremeSlimeBanner : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.Slimes.SupremeSlimeBanner_Name}");
+            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.Slimes.SupremeSlimeBanner}");
             Tooltip.SetDefault(
                 "{$CommonItemTooltip.BannerBonus}\n" +
                 "{$NPCName.GreenSlime}, {$NPCName.BlueSlime}, {$NPCName.PurpleSlime}, {$NPCName.RedSlime},\n" +

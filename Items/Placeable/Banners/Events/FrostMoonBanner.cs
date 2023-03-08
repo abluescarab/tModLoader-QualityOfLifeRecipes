@@ -6,7 +6,7 @@ using Terraria.ModLoader;
 namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events {
     public class FrostMoonBanner : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.FrostMoonBanner_Name}");
+            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.FrostMoonBanner}");
             Tooltip.SetDefault(
                 "{$CommonItemTooltip.BannerBonus}\n" +
                 "{$NPCName.PresentMimic}, {$NPCName.Flocko}, {$NPCName.GingerbreadMan}, {$NPCName.ZombieElf},\n" +

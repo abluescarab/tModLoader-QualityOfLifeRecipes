@@ -6,7 +6,7 @@ using Terraria.ModLoader;
 namespace QualityOfLifeRecipes.Items.Accessories {
     public class SweetStarVeil : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Accessories.SweetStarVeil_Name}");
+            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Accessories.SweetStarVeil}");
             Tooltip.SetDefault(
                 "{$ItemTooltip.SweetheartNecklace}" + "\n" +
                 "{$ItemTooltip.StarVeil}");

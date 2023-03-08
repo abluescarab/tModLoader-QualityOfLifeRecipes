@@ -10,7 +10,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         };
 
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Accessories.LavaOrb_Name}");
+            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Accessories.LavaOrb}");
             Tooltip.SetDefault(
                 "{$ItemTooltip.LavaCharm}" + "\n" +
                 "{$ItemTooltip.ObsidianRose}");

@@ -12,7 +12,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         }
 
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Accessories.AtomicCloudBoots_Name}");
+            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Accessories.AtomicCloudBoots}");
             Tooltip.SetDefault(
                 "{$ItemTooltip.TerrasparkBoots}" + "\n" +
                 "{$ItemTooltip.MasterNinjaGear}" + "\n" +

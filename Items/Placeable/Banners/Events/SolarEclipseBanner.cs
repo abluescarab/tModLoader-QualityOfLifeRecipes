@@ -6,7 +6,7 @@ using Terraria.ModLoader;
 namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events {
     public class SolarEclipseBanner : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.SolarEclipseBanner_Name}");
+            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.SolarEclipseBanner}");
             Tooltip.SetDefault(
                 "{$CommonItemTooltip.BannerBonus}\n" +
                 "{$NPCName.Frankenstein}, {$NPCName.SwampThing}, {$NPCName.Vampire}, {$NPCName.CreatureFromTheDeep},\n" +

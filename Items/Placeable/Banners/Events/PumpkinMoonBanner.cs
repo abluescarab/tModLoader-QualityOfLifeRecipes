@@ -6,7 +6,7 @@ using Terraria.ModLoader;
 namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events {
     public class PumpkinMoonBanner : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.PumpkinMoonBanner_Name}");
+            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.PumpkinMoonBanner}");
             Tooltip.SetDefault(
                 "{$CommonItemTooltip.BannerBonus}\n" +
                 "{$NPCName.Scarecrow1}, {$NPCName.Splinterling}, {$NPCName.Hellhound}, {$NPCName.Poltergeist},\n" +

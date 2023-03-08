@@ -6,7 +6,7 @@ using Terraria.ModLoader;
 namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events {
     public class PirateCrewBanner : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.PirateCrewBanner_Name}");
+            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.PirateCrewBanner}");
             Tooltip.SetDefault(
                 "{$CommonItemTooltip.BannerBonus}\n" +
                 "{$NPCName.Parrot}, {$NPCName.PirateCaptain}, {$NPCName.PirateCorsair}, {$NPCName.PirateCrossbower},\n" +

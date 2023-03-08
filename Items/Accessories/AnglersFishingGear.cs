@@ -1,13 +1,12 @@
 ﻿using Terraria;
 using Terraria.ID;
-using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Accessories {
     [AutoloadEquip(EquipType.Back)]
     public class AnglersFishingGear : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Accessories.AnglersFishingGear_Name}");
+            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Accessories.AnglersFishingGear}");
             Tooltip.SetDefault("{$ItemTooltip.AnglerTackleBag}");
         }
 

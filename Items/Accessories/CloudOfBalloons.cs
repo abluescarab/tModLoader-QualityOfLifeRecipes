@@ -6,7 +6,7 @@ using Terraria.ModLoader;
 namespace QualityOfLifeRecipes.Items.Accessories {
     public class CloudOfBalloons : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Accessories.CloudOfBalloons_Name}");
+            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Accessories.CloudOfBalloons}");
             Tooltip.SetDefault(
                 "{$Mods.QualityOfLifeRecipes.General.JumpSixTimes}" + "\n" +
                 "{$ItemTooltip.ShinyRedBalloon}" + "\n" +

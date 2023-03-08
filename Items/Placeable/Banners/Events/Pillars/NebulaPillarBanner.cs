@@ -6,7 +6,7 @@ using Terraria.ModLoader;
 namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events.Pillars {
     public class NebulaPillarBanner : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.Pillars.NebulaPillarBanner_Name}");
+            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.Pillars.NebulaPillarBanner}");
             Tooltip.SetDefault(
                 "{$CommonItemTooltip.BannerBonus}\n" +
                 "{$NPCName.NebulaHeadcrab}, {$NPCName.NebulaBeast}, {$NPCName.NebulaBrain}, {$NPCName.NebulaSoldier}");

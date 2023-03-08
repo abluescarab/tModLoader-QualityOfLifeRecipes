@@ -7,64 +7,64 @@ Mods: {
 		}
 
 		Accessories: {
-			AnglersFishingGear_Name: Angler's Fishing Gear
-			AtomicCloudBoots_Name: Atomic Cloud Boots
-			AtomicNinjaBoots_Name: Atomic Ninja Boots
-			BunchOfBalloons_Name: Bunch of Balloons
-			CloudOfBalloons_Name: Cloud of Balloons
-			CloudOfFrogshoeBalloons_Name: Cloud of Frogshoe Balloons
-			CyberneticMiningMultiTool_Name: Cybernetic Mining Multi-Tool
-			ElementalBoots_Name: Elemental Boots
-			ElementalNinjaBoots_Name: Elemental Ninja Boots
-			Frogshoe_Name: Frogshoe
-			HeavyDutyToolbox_Name: Heavy-Duty Toolbox
-			LavaOrb_Name: Lava Orb
-			LifeforceBracelet_Name: Lifeforce Bracelet
-			SweetStarVeil_Name: Sweet Star Veil
+			AnglersFishingGear: Angler's Fishing Gear
+			AtomicCloudBoots: Atomic Cloud Boots
+			AtomicNinjaBoots: Atomic Ninja Boots
+			BunchOfBalloons: Bunch of Balloons
+			CloudOfBalloons: Cloud of Balloons
+			CloudOfFrogshoeBalloons: Cloud of Frogshoe Balloons
+			CyberneticMiningMultiTool: Cybernetic Mining Multi-Tool
+			ElementalBoots: Elemental Boots
+			ElementalNinjaBoots: Elemental Ninja Boots
+			Frogshoe: Frogshoe
+			HeavyDutyToolbox: Heavy-Duty Toolbox
+			LavaOrb: Lava Orb
+			LifeforceBracelet: Lifeforce Bracelet
+			SweetStarVeil: Sweet Star Veil
 		}
 
 		Armor: {
-			CavingGear_Name: Caving Gear
-			MiningGear_Name: Mining Gear
-			OrangeTintedGoggles_Name: Oranged-Tinted Goggles
-			UtilityHelmet_Name: Utility Helmet
+			CavingGear: Caving Gear
+			MiningGear: Mining Gear
+			OrangeTintedGoggles: Oranged-Tinted Goggles
+			UtilityHelmet: Utility Helmet
 		}
 
 		Placeable: {
-			AlterationStation_Name: Alteration Station
+			AlterationStation: Alteration Station
 			AlterationStation_Tooltip: Transmutes ore and block varieties
 
 			Banners: {
-				UndeadBanner_Name: Undead Banner
+				UndeadBanner: Undead Banner
 
 				Dungeon: {
-					DungeonBanner_Name: Dungeon Banner
-					SupremeDungeonBanner_Name: Supreme Dungeon Banner
-					UltimateDungeonBanner_Name: Ultimate Dungeon Banner
+					DungeonBanner: Dungeon Banner
+					SupremeDungeonBanner: Supreme Dungeon Banner
+					UltimateDungeonBanner: Ultimate Dungeon Banner
 				}
 
 				Events: {
-					FrostMoonBanner_Name: Frost Moon Banner
-					GoblinArmyBanner_Name: Goblin Army Banner
-					MartianMadnessBanner_Name: Martian Madness Banner
-					PirateCrewBanner_Name: Pirate Crew Banner
-					PumpkinMoonBanner_Name: Pumpkin Moon Banner
-					SolarEclipseBanner_Name: Solar Eclipse Banner
-					SupremeSolarEclipseBanner_Name: Supreme Solar Eclipse Banner
-					UltimateSolarEclipseBanner_Name: Ultimate Solar Eclipse Banner
+					FrostMoonBanner: Frost Moon Banner
+					GoblinArmyBanner: Goblin Army Banner
+					MartianMadnessBanner: Martian Madness Banner
+					PirateCrewBanner: Pirate Crew Banner
+					PumpkinMoonBanner: Pumpkin Moon Banner
+					SolarEclipseBanner: Solar Eclipse Banner
+					SupremeSolarEclipseBanner: Supreme Solar Eclipse Banner
+					UltimateSolarEclipseBanner: Ultimate Solar Eclipse Banner
 
 					Pillars: {
-						NebulaPillarBanner_Name: Nebula Pillar Banner
-						SolarPillarBanner_Name: Solar Pillar Banner
-						StardustPillarBanner_Name: Stardust Pillar Banner
-						VortexPillarBanner_Name: Vortex Pillar Banner
+						NebulaPillarBanner: Nebula Pillar Banner
+						SolarPillarBanner: Solar Pillar Banner
+						StardustPillarBanner: Stardust Pillar Banner
+						VortexPillarBanner: Vortex Pillar Banner
 					}
 				}
 
 				Slimes: {
-					ElementalSlimeBanner_Name: Elemental Slime Banner
-					SupremeSlimeBanner_Name: Supreme Slime Banner
-					UltimateSlimeBanner_Name: Ultimate Slime Banner
+					ElementalSlimeBanner: Elemental Slime Banner
+					SupremeSlimeBanner: Supreme Slime Banner
+					UltimateSlimeBanner: Ultimate Slime Banner
 				}
 			}
 		}

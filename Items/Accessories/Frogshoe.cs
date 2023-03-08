@@ -6,7 +6,7 @@ using Terraria.ModLoader;
 namespace QualityOfLifeRecipes.Items.Accessories {
     public class Frogshoe : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Accessories.Frogshoe_Name}");
+            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Accessories.Frogshoe}");
             Tooltip.SetDefault(
                 "{$ItemTooltip.FrogLeg}" + "\n" +
                 "{$ItemTooltip.LuckyHorseshoe}");

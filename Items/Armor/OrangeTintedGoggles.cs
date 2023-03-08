@@ -7,7 +7,7 @@ namespace QualityOfLifeRecipes.Items.Armor {
     [AutoloadEquip(EquipType.Head)]
     public class OrangeTintedGoggles : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Armor.OrangeTintedGoggles_Name}");
+            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Armor.OrangeTintedGoggles}");
             Tooltip.SetDefault(
                 "{$ItemTooltip.HunterPotion}" + "\n" +
                 "{$ItemTooltip.TrapsightPotion}");
