@@ -7,9 +7,9 @@ using Terraria.ModLoader;
 using Terraria.ObjectData;
 
 namespace QualityOfLifeRecipes.Tiles.Banners {
-    public abstract class BaseBannerTile<I, T> : ModTile
-        where I : BaseBannerItem<I, T>
-        where T : BaseBannerTile<I, T> {
+    public abstract class BannerTile<I, T> : ModTile
+        where I : BannerItem<I, T>
+        where T : BannerTile<I, T> {
         protected abstract string Translation { get; }
         protected abstract int[] NPCs { get; }
 
