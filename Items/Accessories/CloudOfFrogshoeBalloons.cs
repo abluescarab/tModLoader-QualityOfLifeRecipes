@@ -6,11 +6,12 @@ using Terraria.ModLoader;
 namespace QualityOfLifeRecipes.Items.Accessories {
     public class CloudOfFrogshoeBalloons : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("Cloud of Frogshoe Balloons");
+            DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Accessories.CloudOfFrogshoeBalloons_Name"));
             Tooltip.SetDefault(
                 Language.GetTextValue("ItemTooltip.FrogLeg") + "\n" +
                 Language.GetTextValue("ItemTooltip.LuckyHorseshoe") + "\n" +
-                "Sextuple jump and increases jump height\n" +
+                Language.GetTextValue("Mods.QualityOfLifeRecipes.General.JumpSixTimes") + "\n" +
+                Language.GetTextValue("ItemTooltip.ShinyRedBalloon") + "\n" +
                 Language.GetTextValue("ItemTooltip.HoneyComb"));
         }
 

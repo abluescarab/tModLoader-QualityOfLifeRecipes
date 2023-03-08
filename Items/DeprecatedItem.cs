@@ -44,7 +44,7 @@ namespace QualityOfLifeRecipes.Items {
         public sealed override void UpdateInventory(Player player) {
             Type thisType = GetType();
 
-            if(QualityOfLifeRecipesSystem.DeprecatedMessageShown.ContainsKey(thisType) 
+            if(QualityOfLifeRecipesSystem.DeprecatedMessageShown.ContainsKey(thisType)
                 && !QualityOfLifeRecipesSystem.DeprecatedMessageShown[thisType]) {
                 string[] replacements = new string[Replacements.Length];
 
@@ -52,8 +52,8 @@ namespace QualityOfLifeRecipes.Items {
                     replacements[i] = Replacements[i].GetDisplayName();
                 }
 
-                string name = Lang.GetItemNameValue(Type); 
-                
+                string name = Lang.GetItemNameValue(Type);
+
                 Main.NewText($"{name} has been removed from Quality of Life: Recipes. " +
                                  $"Right-click to receive {string.Join(", ", replacements)}. ",
                                  Color.Red);

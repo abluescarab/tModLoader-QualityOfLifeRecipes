@@ -12,14 +12,15 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         }
 
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("Atomic Cloud Boots");
+            DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Accessories.AtomicCloudBoots_Name"));
             Tooltip.SetDefault(
                 Language.GetTextValue("ItemTooltip.TerrasparkBoots") + "\n" +
                 Language.GetTextValue("ItemTooltip.MasterNinjaGear") + "\n" +
                 Language.GetTextValue("ItemTooltip.FlowerBoots") + "\n" +
                 Language.GetTextValue("ItemTooltip.FrogLeg") + "\n" +
                 Language.GetTextValue("ItemTooltip.LuckyHorseshoe") + "\n" +
-                "Sextuple jump and increases jump height\n" +
+                Language.GetTextValue("Mods.QualityOfLifeRecipes.General.JumpSixTimes") + "\n" +
+                Language.GetTextValue("ItemTooltip.ShinyRedBalloon") + "\n" +
                 Language.GetTextValue("ItemTooltip.HoneyComb"));
         }
 

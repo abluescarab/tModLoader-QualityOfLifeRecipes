@@ -6,7 +6,7 @@ using Terraria.ModLoader;
 namespace QualityOfLifeRecipes.Items.Accessories {
     public class LifeforceBracelet : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("Lifeforce Bracelet");
+            DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Accessories.LifeforceBracelet_Name"));
             Tooltip.SetDefault(
                 Language.GetTextValue("ItemTooltip.CharmofMyths") + "\n" +
                 Language.GetTextValue("ItemTooltip.ManaRegenerationBand"));

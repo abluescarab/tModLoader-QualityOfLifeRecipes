@@ -7,7 +7,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
     [AutoloadEquip(EquipType.Back)]
     public class AnglersFishingGear : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("Angler's Fishing Gear");
+            DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Accessories.AnglersFishingGear_Name"));
             Tooltip.SetDefault(
                 Language.GetTextValue("ItemTooltip.AnglerTackleBag") + "\n" +
                 Language.GetTextValue("ItemTooltip.AnglerHat"));
@@ -25,7 +25,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
             player.accTackleBox = true;
             player.fishingSkill += 25;
         }
-        
+
         public override void AddRecipes() {
             Recipe recipe = CreateRecipe();
             recipe.AddIngredient(ItemID.AnglerTackleBag);

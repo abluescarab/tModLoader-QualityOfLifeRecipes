@@ -1,12 +1,13 @@
 ﻿using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Placeable {
     public class AlterationStation : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("Alteration Station");
-            Tooltip.SetDefault("Transmutes ore and block varieties");
+            DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Placeable.AlterationStation_Name"));
+            Tooltip.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Placeable.AlterationStation_Tooltip"));
         }
 
         public override void SetDefaults() {

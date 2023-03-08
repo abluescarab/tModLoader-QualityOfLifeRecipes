@@ -7,7 +7,7 @@ using Terraria.ModLoader;
 namespace QualityOfLifeRecipes.Items.Accessories {
     public class CyberneticMiningMultiTool : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("Cybernetic Mining Multi-Tool");
+            DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Accessories.CyberneticMiningMultiTool_Name"));
             Tooltip.SetDefault(
                 Language.GetTextValue("ItemTooltip.HunterPotion") + "\n" +
                 Language.GetTextValue("ItemTooltip.TrapsightPotion") + "\n" +

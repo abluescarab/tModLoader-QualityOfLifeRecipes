@@ -9,7 +9,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         };
 
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("Elemental Boots");
+            DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Accessories.ElementalBoots_Name"));
             Tooltip.SetDefault(
                 Language.GetTextValue("ItemTooltip.FrostsparkBoots") + "\n" +
                 Language.GetTextValue("ItemTooltip.LavaWaders"));
