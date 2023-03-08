@@ -1,11 +1,12 @@
-﻿using Terraria;
+﻿using QualityOfLifeRecipes.Tiles.Banners;
+using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Placeable.Banners {
-    public abstract class BaseBanner<I, T> : ModItem 
-        where I : Items.Placeable.Banners.BaseBanner<I, T>
-        where T : Tiles.Banners.BaseBanner<I, T> {
+    public abstract class BaseBannerItem<I, T> : ModItem 
+        where I : BaseBannerItem<I, T>
+        where T : BaseBannerTile<I, T> {
         protected abstract string DisplayNameTranslation { get; }
         protected abstract string TooltipTranslation { get; }
         protected abstract int SellPrice { get; }

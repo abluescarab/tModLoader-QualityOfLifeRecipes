@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using QualityOfLifeRecipes.Items.Placeable.Banners;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
@@ -6,9 +7,9 @@ using Terraria.ModLoader;
 using Terraria.ObjectData;
 
 namespace QualityOfLifeRecipes.Tiles.Banners {
-    public abstract class BaseBanner<I, T> : ModTile
-        where I : Items.Placeable.Banners.BaseBanner<I, T>
-        where T : Tiles.Banners.BaseBanner<I, T> {
+    public abstract class BaseBannerTile<I, T> : ModTile
+        where I : BaseBannerItem<I, T>
+        where T : BaseBannerTile<I, T> {
         protected abstract string Translation { get; }
         protected abstract int[] NPCs { get; }
 
