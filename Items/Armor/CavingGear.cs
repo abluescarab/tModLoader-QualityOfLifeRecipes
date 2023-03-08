@@ -7,7 +7,7 @@ namespace QualityOfLifeRecipes.Items.Armor {
     [AutoloadEquip(EquipType.Head)]
     public class CavingGear : ModItem {
         public override void SetStaticDefaults() {
-            DisplayName.SetDefault("Caving Gear");
+            DisplayName.SetDefault(Language.GetTextValue("Mods.QualityOfLifeRecipes.Armor.CavingGear_Name"));
             Tooltip.SetDefault(
                 Language.GetTextValue("ItemTooltip.NightVisionHelmet") + "\n" +
                 Language.GetTextValue("ItemTooltip.SpelunkerPotion"));
