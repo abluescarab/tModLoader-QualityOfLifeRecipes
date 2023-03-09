@@ -3,7 +3,6 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Accessories {
-    // TODO: deprecate?
     public class CelestialFlowerCuffs : ModItem {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault("Celestial Flower Cuffs");
