@@ -4,7 +4,6 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Accessories {
-    // TODO: add icon
     public class CloudOfHorseshoeBalloons : AccessoryItem {
         protected override AccessoryEffect[] Effects => new AccessoryEffect[] {
             AccessoryEffect.FartInABalloon,
