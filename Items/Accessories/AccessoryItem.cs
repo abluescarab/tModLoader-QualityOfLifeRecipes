@@ -5,15 +5,15 @@ using Terraria.ID;
 namespace QualityOfLifeRecipes.Items.Accessories {
     public abstract class AccessoryItem : BaseItem {
         protected enum AccessoryEffect {
-            TerrasparkBoots,
             BundleOfBalloons,
-            MasterNinjaGear,
-            FrogFlipper,
-            LuckyHorseshoe,
-            SharkronBalloon,
             FartInABalloon,
+            FlowerBoots,
+            FrogFlipper,
             HoneyBalloon,
-            FlowerBoots
+            LuckyHorseshoe,
+            MasterNinjaGear,
+            SharkronBalloon,
+            TerrasparkBoots,
         }
 
         private readonly Item flowerBoots = null;
@@ -51,6 +51,39 @@ namespace QualityOfLifeRecipes.Items.Accessories {
 
         protected virtual void ApplyEffect(AccessoryEffect effect, Player player) {
             switch(effect) {
+                case AccessoryEffect.BundleOfBalloons:
+                    player.hasJumpOption_Cloud = true;
+                    player.hasJumpOption_Sandstorm = true;
+                    player.hasJumpOption_Blizzard = true;
+                    player.jumpBoost = true;
+                    break;
+                case AccessoryEffect.FartInABalloon:
+                    player.hasJumpOption_Fart = true;
+                    player.jumpBoost = true;
+                    break;
+                case AccessoryEffect.FrogFlipper:
+                    player.autoJump = true;
+                    player.jumpSpeedBoost += 1.6f;
+                    player.extraFall += 10;
+                    player.accFlipper = true;
+                    break;
+                case AccessoryEffect.HoneyBalloon:
+                    player.jumpBoost = true;
+                    player.honeyCombItem = Item;
+                    break;
+                case AccessoryEffect.LuckyHorseshoe:
+                    player.noFallDmg = true;
+                    //player.hasLuck_LuckyHorseshoe = true; // 1.4.4 only
+                    break;
+                case AccessoryEffect.MasterNinjaGear:
+                    player.blackBelt = true;
+                    player.dashType = 1;
+                    player.spikedBoots = 2;
+                    break;
+                case AccessoryEffect.SharkronBalloon:
+                    player.jumpBoost = true;
+                    player.hasJumpOption_Sail = true;
+                    break;
                 case AccessoryEffect.TerrasparkBoots:
                     player.waterWalk = true;
                     player.fireWalk = true;
@@ -60,39 +93,6 @@ namespace QualityOfLifeRecipes.Items.Accessories {
                     player.rocketBoots = (player.vanityRocketBoots = 4);
                     player.moveSpeed += 0.08f;
                     player.iceSkate = true;
-                    break;
-                case AccessoryEffect.BundleOfBalloons:
-                    player.hasJumpOption_Cloud = true;
-                    player.hasJumpOption_Sandstorm = true;
-                    player.hasJumpOption_Blizzard = true;
-                    player.jumpBoost = true;
-                    break;
-                case AccessoryEffect.MasterNinjaGear:
-                    player.blackBelt = true;
-                    player.dashType = 1;
-                    player.spikedBoots = 2;
-                    break;
-                case AccessoryEffect.FrogFlipper:
-                    player.autoJump = true;
-                    player.jumpSpeedBoost += 1.6f;
-                    player.extraFall += 10;
-                    player.accFlipper = true;
-                    break;
-                case AccessoryEffect.SharkronBalloon:
-                    player.jumpBoost = true;
-                    player.hasJumpOption_Sail = true;
-                    break;
-                case AccessoryEffect.FartInABalloon:
-                    player.hasJumpOption_Fart = true;
-                    player.jumpBoost = true;
-                    break;
-                case AccessoryEffect.HoneyBalloon:
-                    player.jumpBoost = true;
-                    player.honeyCombItem = Item;
-                    break;
-                case AccessoryEffect.LuckyHorseshoe:
-                    player.noFallDmg = true;
-                    //player.hasLuck_LuckyHorseshoe = true; // 1.4.4 only
                     break;
             }
         }
