@@ -23,7 +23,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         protected override int CraftingStation => TileID.TinkerersWorkbench;
 
         public AccessoryItem() {
-            if(Array.IndexOf(Effects, AccessoryEffect.FlowerBoots) > -1) {
+            if(Effects != null && Array.IndexOf(Effects, AccessoryEffect.FlowerBoots) > -1) {
                 flowerBoots = new Item(ItemID.FlowerBoots);
             }
         }
