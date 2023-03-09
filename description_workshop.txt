@@ -8,7 +8,7 @@
     [*]Adds Alteration Station to convert between ore/block types
     [*]New banners and combined banners
     [*]New combined accessories
-    [*]New mining helmets
+    [*]New mining helmet
 [/list]
 
 [b]New items:[/b]
@@ -21,10 +21,7 @@
 
 [i]New armor:[/i]
 [list]
-    [*]Orange-Tinted Goggles (Hunter Potion and Dangersense Potion)
-    [*]Caving Gear (Night Vision Helmet, Spelunker Potion)
-    [*]Mining Gear (Caving Gear, Mining Helmet)
-    [*]Utility Helmet (Orange-Tinted Goggles, Mining Gear)
+    [*]Utility Helmet (Ultrabright Helmet, Hunter Potion, Dangersense Potion, Spelunker Potion)
 [/list]
 
 [i]New accessories:[/i]
@@ -33,15 +30,13 @@
     [*]Celestial Flower Cuffs (Celestial Cuffs, Mana Flower)
     [*]Cybernetic Mining Multi Tool (convert Utility Helmet to accessory)
     [*]Heavy-Duty Toolbox (Toolbox, Toolbelt)
-    [*]Lava Orb (Lava Charm, Obsidian Rose)
     [*]Lifeforce Bracelet (Charm of Myths, Mana Regeneration Band)
     [*]Sweet Star Veil (Star Veil, Sweetheart Necklace)
-    [*]Frogshoe (Frog Leg, Lucky Horseshoe)
     [*]Bunch of Balloons (Fart in a Balloon, Honey Balloon, Sharkron Balloon, Honey Comb)
     [*]Cloud of Balloons (Bunch of Balloons, Bundle of Balloons)
-    [*]Cloud of Frogshoe Balloons (Frogshoe, Cloud of Balloons)
-    [*]Elemental Boots (Frostspark Boots, Lava Waders)
-    [*]Elemental Ninja Boots (Elemental Boots, Master Ninja Gear)
+    [*]Cloud of Horseshoe Balloons (Horseshoe, Cloud of Balloons)
+    [*]Ninja Frog Gear (Frog Flipper, Master Ninja Gear)
+    [*]Elemental Ninja Boots (Ninja Frog Gear, Terraspark Boots)
     [*]Atomic Ninja Boots (Elemental Ninja Boots, Flower Boots)
     [*]Atomic Cloud Boots (Atomic Ninja Boots, Cloud of Frogshoe Balloons)
 [/list]
@@ -53,6 +48,18 @@
 * PyroSalamander for suggesting the Cybernetic Utility Helmet
 
 [b]Changelog[/b]
+v1.9.0  2023-03-09
+* Added Cloud of Horseshoe Balloons
+* Replaced Cloud of Frogshoe Balloons in recipes with Cloud of Horseshoe Balloons
+* Deprecated Cloud of Frogshoe Balloons (right-click to receive base components)
+* Replaced Caving Gear in recipes with Ultrabright Helmet
+* Deprecated Mining Gear (right-click to receive base components)
+* Deprecated Orange-Tinted Goggles (right-click to receive base components)
+* Deprecated Caving Gear (right-click to receive base components)
+* Added Ninja Frog Gear
+* Deprecated Frogshoe (right-click to receive base components)
+* Fixed Sweet Star Veil defense
+
 v1.8.0  2023-03-07
 * Improved banner tooltips
 * Added translation files/vanilla translations (translators welcome!)

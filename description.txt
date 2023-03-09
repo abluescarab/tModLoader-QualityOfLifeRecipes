@@ -1,4 +1,4 @@
-﻿Quality of Life: Recipes adds a ton of new recipes intended to combined accessories and improved quality of life.
+﻿Quality of Life: Recipes adds a ton of new recipes intended to combine accessories and improved quality of life.
 
 This mod intends to recreate, add to, and improve the recipes introduced by Quality of Life.
 
@@ -11,6 +11,18 @@ Visit the mod homepage to see the included recipes.
 * PyroSalamander for suggesting the Cybernetic Utility Helmet
 
 [Changelog]
+v1.9.0  2023-03-09
+* Added Cloud of Horseshoe Balloons
+* Replaced Cloud of Frogshoe Balloons in recipes with Cloud of Horseshoe Balloons
+* Deprecated Cloud of Frogshoe Balloons (right-click to receive base components)
+* Replaced Caving Gear in recipes with Ultrabright Helmet
+* Deprecated Mining Gear (right-click to receive base components)
+* Deprecated Orange-Tinted Goggles (right-click to receive base components)
+* Deprecated Caving Gear (right-click to receive base components)
+* Added Ninja Frog Gear
+* Deprecated Frogshoe (right-click to receive base components)
+* Fixed Sweet Star Veil defense
+
 v1.8.0  2023-03-07
 * Improved banner tooltips
 * Added translation files/vanilla translations (translators welcome!)
