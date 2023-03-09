@@ -1,6 +1,5 @@
 ﻿using Terraria;
 using Terraria.ID;
-using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Accessories {
     public class BunchOfBalloons : AccessoryItem {
