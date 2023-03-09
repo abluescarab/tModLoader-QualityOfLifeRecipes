@@ -13,11 +13,11 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners {
         protected override int SellPrice => Item.sellPrice(0, 0, 5, 0);
         
         protected override int Rarity => ItemRarityID.Green;
-        
-        protected override int[] Ingredients => new int[] {
-            ItemID.ZombieBanner,
-            ItemID.RaincoatZombieBanner,
-            ItemID.DemonEyeBanner
+
+        protected override Ingredient[] Ingredients => new Ingredient[] {
+                new(ItemID.ZombieBanner),
+                new(ItemID.RaincoatZombieBanner),
+                new(ItemID.DemonEyeBanner)
         };
     }
 }

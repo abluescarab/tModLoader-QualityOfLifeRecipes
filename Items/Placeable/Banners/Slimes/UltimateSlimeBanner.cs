@@ -1,5 +1,4 @@
 ﻿using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Placeable.Banners.Slimes {
@@ -15,9 +14,9 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Slimes {
 
         protected override int SellPrice => Item.sellPrice(0, 0, 35, 0);
 
-        protected override int[] Ingredients => new int[] {
-            ModContent.ItemType<ElementalSlimeBanner>(),
-            ModContent.ItemType<SupremeSlimeBanner>()
+        protected override Ingredient[] Ingredients => new Ingredient[] {
+            new(ModContent.ItemType<ElementalSlimeBanner>()),
+            new(ModContent.ItemType<SupremeSlimeBanner>())
         };
     }
 }

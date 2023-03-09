@@ -16,15 +16,15 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events.SolarEclipse {
 
         protected override int SellPrice => Item.sellPrice(0, 0, 30, 0);
 
-        protected override int[] Ingredients => new int[] {
-            ModContent.ItemType<SolarEclipseBanner>(),
-            ItemID.EyezorBanner,
-            ItemID.ReaperBanner,
-            ItemID.ButcherBanner,
-            ItemID.DeadlySphereBanner,
-            ItemID.DrManFlyBanner,
-            ItemID.NailheadBanner,
-            ItemID.PsychoBanner
+        protected override Ingredient[] Ingredients => new Ingredient[] {
+            new(ModContent.ItemType<SolarEclipseBanner>()),
+            new(ItemID.EyezorBanner),
+            new(ItemID.ReaperBanner),
+            new(ItemID.ButcherBanner),
+            new(ItemID.DeadlySphereBanner),
+            new(ItemID.DrManFlyBanner),
+            new(ItemID.NailheadBanner),
+            new(ItemID.PsychoBanner),
         };
     }
 }

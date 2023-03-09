@@ -14,15 +14,15 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Dungeon {
 
         protected override int SellPrice => Item.sellPrice(0, 0, 25, 0);
 
-        protected override int[] Ingredients => new int[] {
-            ItemID.DungeonSlimeBanner,
-            ItemID.BlueArmoredBonesBanner,
-            ItemID.RustyArmoredBonesBanner,
-            ItemID.HellArmoredBonesBanner,
-            ItemID.NecromancerBanner,
-            ItemID.RaggedCasterBanner,
-            ItemID.DiablolistBanner,
-            ItemID.GiantCursedSkullBanner
+        protected override Ingredient[] Ingredients => new Ingredient[] {
+            new(ItemID.DungeonSlimeBanner),
+            new(ItemID.BlueArmoredBonesBanner),
+            new(ItemID.RustyArmoredBonesBanner),
+            new(ItemID.HellArmoredBonesBanner),
+            new(ItemID.NecromancerBanner),
+            new(ItemID.RaggedCasterBanner),
+            new(ItemID.DiablolistBanner),
+            new(ItemID.GiantCursedSkullBanner),
         };
     }
 }

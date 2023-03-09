@@ -13,12 +13,12 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events {
 
         protected override int SellPrice => Item.sellPrice(0, 0, 12, 0);
 
-        protected override int[] Ingredients => new int[] {
-            ItemID.ScarecrowBanner,
-            ItemID.SplinterlingBanner,
-            ItemID.HellhoundBanner,
-            ItemID.PoltergeistBanner,
-            ItemID.HeadlessHorsemanBanner
+        protected override Ingredient[] Ingredients => new Ingredient[] {
+            new(ItemID.ScarecrowBanner),
+            new(ItemID.SplinterlingBanner),
+            new(ItemID.HellhoundBanner),
+            new(ItemID.PoltergeistBanner),
+            new(ItemID.HeadlessHorsemanBanner),
         };
     }
 }

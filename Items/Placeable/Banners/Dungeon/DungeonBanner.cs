@@ -12,10 +12,10 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Dungeon {
 
         protected override int SellPrice => Item.sellPrice(0, 0, 10, 0);
 
-        protected override int[] Ingredients => new int[] {
-            ItemID.AngryBonesBanner,
-            ItemID.SkeletonMageBanner,
-            ItemID.CursedSkullBanner
+        protected override Ingredient[] Ingredients => new Ingredient[] {
+            new(ItemID.AngryBonesBanner),
+            new(ItemID.SkeletonMageBanner),
+            new(ItemID.CursedSkullBanner),
         };
     }
 }
