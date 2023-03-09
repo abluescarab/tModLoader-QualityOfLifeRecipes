@@ -13,8 +13,6 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events.Pillars {
 
         protected override int SellPrice => Item.sellPrice(0, 0, 15, 0);
 
-        protected override int Rarity => ItemRarityID.Green;
-
         protected override int[] Ingredients => new int[] {
             ItemID.SolarCoriteBanner,
             ItemID.SolarCrawltipedeBanner,

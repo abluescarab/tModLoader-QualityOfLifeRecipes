@@ -18,6 +18,8 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners {
             Tooltip.SetDefault(TooltipTranslation);
         }
 
+        protected override int Rarity => ItemRarityID.Green;
+
         public sealed override void SetDefaults() {
             Item.value = SellPrice;
             Item.rare = Rarity;
