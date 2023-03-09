@@ -2,7 +2,6 @@
 using Terraria.ID;
 
 namespace QualityOfLifeRecipes.Items.Accessories {
-    // TODO: add icon
     public class NinjaFrogGear : AccessoryItem {
         protected override AccessoryEffect[] Effects => new AccessoryEffect[] {
             AccessoryEffect.FrogFlipper,
