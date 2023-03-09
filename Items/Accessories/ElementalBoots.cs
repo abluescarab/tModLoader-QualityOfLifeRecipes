@@ -1,6 +1,5 @@
 ﻿using Terraria;
 using Terraria.ID;
-using Terraria.Localization;
 
 namespace QualityOfLifeRecipes.Items.Accessories {
     public class ElementalBoots : DeprecatedItem {

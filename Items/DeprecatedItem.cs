@@ -66,9 +66,17 @@ namespace QualityOfLifeRecipes.Items {
             }
         }
 
+        public sealed override void UpdateArmorSet(Player player) { }
+
+        public sealed override void UpdateEquip(Player player) { }
+
         public sealed override void UpdateAccessory(Player player, bool hideVisual) { }
 
         public sealed override void AddRecipes() { }
+
+        public sealed override bool IsArmorSet(Item head, Item body, Item legs) {
+            return false;
+        }
 
         protected void Replace(Player player) {
             if(Replacements == null || Replacements.Length == 0) {

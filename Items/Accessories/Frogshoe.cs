@@ -1,10 +1,13 @@
 ﻿using Terraria;
 using Terraria.ID;
-using Terraria.Localization;
-using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Accessories {
-    public class Frogshoe : ModItem {
+    public class Frogshoe : DeprecatedItem {
+        protected override ReplacementItem[] Replacements => new ReplacementItem[] {
+            new ReplacementItem(ItemID.FrogLeg),
+            new ReplacementItem(ItemID.LuckyHorseshoe)
+        };
+
         public override void SetStaticDefaults() {
             DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Accessories.Frogshoe}");
             Tooltip.SetDefault(
@@ -16,23 +19,6 @@ namespace QualityOfLifeRecipes.Items.Accessories {
             Item.value = Item.sellPrice(0, 2, 0, 0);
             Item.rare = ItemRarityID.Green;
             Item.accessory = true;
-        }
-
-        public override void UpdateAccessory(Player player, bool hideVisual) {
-            // frog leg
-            player.autoJump = true;
-            player.jumpSpeedBoost += 2.4f;
-            player.extraFall += 15;
-            // lucky horseshoe
-            player.noFallDmg = true;
-        }
-
-        public override void AddRecipes() {
-            Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.FrogLeg);
-            recipe.AddIngredient(ItemID.LuckyHorseshoe);
-            recipe.AddTile(TileID.TinkerersWorkbench);
-            recipe.Register();
         }
     }
 }
