@@ -1,39 +1,34 @@
 ﻿using Terraria;
 using Terraria.ID;
-using Terraria.Localization;
-using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Accessories {
-    public class SweetStarVeil : ModItem {
-        public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Accessories.SweetStarVeil}");
-            Tooltip.SetDefault(
-                "{$ItemTooltip.SweetheartNecklace}" + "\n" +
-                "{$ItemTooltip.StarVeil}");
-        }
+    public class SweetStarVeil : AccessoryItem {
+        protected override AccessoryEffect[] Effects => null;
 
-        public override void SetDefaults() {
-            Item.value = Item.sellPrice(0, 4, 0, 0);
-            Item.rare = ItemRarityID.Lime;
-            Item.defense = 4;
-            Item.accessory = true;
-        }
+        protected override string DisplayNameTranslation => 
+            "{$Mods.QualityOfLifeRecipes.Accessories.SweetStarVeil}";
+
+        protected override string TooltipTranslation =>
+            "{$ItemTooltip.SweetheartNecklace}" + "\n" +
+                "{$ItemTooltip.StarVeil}";
+
+        protected override int SellPrice => Item.sellPrice(0, 4, 0, 0);
+
+        protected override int Rarity => ItemRarityID.Lime;
+
+        protected override Ingredient[] Ingredients => new Ingredient[] {
+            new(ItemID.SweetheartNecklace),
+            new(ItemID.StarVeil),
+        };
 
         public override void UpdateAccessory(Player player, bool hideVisual) {
             // star veil
             player.starCloakItem = Item;
             player.longInvince = true;
+            player.starCloakItem_starVeilOverrideItem = Item;
             // sweetheart necklace
             player.honeyCombItem = Item;
             player.panic = true;
-        }
-
-        public override void AddRecipes() {
-            Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.SweetheartNecklace);
-            recipe.AddIngredient(ItemID.StarVeil);
-            recipe.AddTile(TileID.TinkerersWorkbench);
-            recipe.Register();
         }
     }
 }

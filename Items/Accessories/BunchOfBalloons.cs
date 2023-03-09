@@ -3,40 +3,29 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Accessories {
-    public class BunchOfBalloons : ModItem {
-        public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Accessories.BunchOfBalloons}");
-            Tooltip.SetDefault(
-                "{$Mods.QualityOfLifeRecipes.General.JumpThreeTimes}" + "\n" +
+    public class BunchOfBalloons : AccessoryItem {
+        protected override AccessoryEffect[] Effects => new AccessoryEffect[] {
+            AccessoryEffect.FartInABalloon,
+            AccessoryEffect.HoneyBalloon,
+            AccessoryEffect.SharkronBalloon
+        };
+
+        protected override string DisplayNameTranslation =>
+            "{$Mods.QualityOfLifeRecipes.Accessories.BunchOfBalloons}";
+
+        protected override string TooltipTranslation =>
+            "{$Mods.QualityOfLifeRecipes.General.JumpThreeTimes}" + "\n" +
                 "{$ItemTooltip.ShinyRedBalloon}" + "\n" +
-                "{$ItemTooltip.HoneyComb}");
-        }
+                "{$ItemTooltip.HoneyComb}";
 
-        public override void SetDefaults() {
-            Item.value = Item.sellPrice(0, 8, 0, 0);
-            Item.rare = ItemRarityID.Pink;
-            Item.accessory = true;
-        }
+        protected override int SellPrice => Item.sellPrice(0, 8, 0, 0);
 
-        public override void UpdateAccessory(Player player, bool hideVisual) {
-            player.jumpBoost = true;
+        protected override int Rarity => ItemRarityID.Pink;
 
-            // fart in a balloon
-            player.hasJumpOption_Fart = true;
-            // honey balloon
-            player.jumpBoost = true;
-            player.honeyCombItem = Item;
-            // sharkron balloon
-            player.hasJumpOption_Sail = true;
-        }
-
-        public override void AddRecipes() {
-            Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.FartInABalloon);
-            recipe.AddIngredient(ItemID.HoneyBalloon);
-            recipe.AddIngredient(ItemID.SharkronBalloon);
-            recipe.AddTile(TileID.TinkerersWorkbench);
-            recipe.Register();
-        }
+        protected override Ingredient[] Ingredients => new Ingredient[] {
+            new(ItemID.FartInABalloon),
+            new(ItemID.HoneyBalloon),
+            new(ItemID.SharkronBalloon),
+        };
     }
 }

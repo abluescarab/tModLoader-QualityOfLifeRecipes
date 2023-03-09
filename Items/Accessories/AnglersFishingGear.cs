@@ -4,33 +4,31 @@ using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Accessories {
     [AutoloadEquip(EquipType.Back)]
-    public class AnglersFishingGear : ModItem {
-        public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Accessories.AnglersFishingGear}");
-            Tooltip.SetDefault("{$ItemTooltip.AnglerTackleBag}");
-        }
+    public class AnglersFishingGear : AccessoryItem {
+        protected override AccessoryEffect[] Effects => null;
 
-        public override void SetDefaults() {
-            Item.value = Item.sellPrice(0, 7, 0, 0);
-            Item.rare = ItemRarityID.LightRed;
-            Item.accessory = true;
-        }
+        protected override string DisplayNameTranslation =>
+            "{$Mods.QualityOfLifeRecipes.Accessories.AnglersFishingGear}";
+
+        protected override string TooltipTranslation =>
+            "{$ItemTooltip.AnglerTackleBag}";
+
+        protected override int SellPrice => Item.sellPrice(0, 7, 0, 0);
+
+        protected override int Rarity => ItemRarityID.LightRed;
+
+        protected override Ingredient[] Ingredients => new Ingredient[] {
+            new(ItemID.AnglerTackleBag),
+            new(ItemID.AnglerHat),
+            new(ItemID.AnglerPants),
+            new(ItemID.AnglerVest),
+        };
 
         public override void UpdateAccessory(Player player, bool hideVisual) {
             // angler tackle bag + angler armor
             player.accFishingLine = true;
             player.accTackleBox = true;
             player.fishingSkill += 25;
-        }
-
-        public override void AddRecipes() {
-            Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.AnglerTackleBag);
-            recipe.AddIngredient(ItemID.AnglerHat);
-            recipe.AddIngredient(ItemID.AnglerPants);
-            recipe.AddIngredient(ItemID.AnglerVest);
-            recipe.AddTile(TileID.TinkerersWorkbench);
-            recipe.Register();
         }
     }
 }

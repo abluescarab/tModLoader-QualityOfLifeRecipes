@@ -1,46 +1,31 @@
 ﻿using Terraria;
 using Terraria.ID;
-using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Accessories {
-    public class CloudOfBalloons : ModItem {
-        public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Accessories.CloudOfBalloons}");
-            Tooltip.SetDefault(
-                "{$Mods.QualityOfLifeRecipes.General.JumpSixTimes}" + "\n" +
+    public class CloudOfBalloons : AccessoryItem {
+        protected override AccessoryEffect[] Effects => new AccessoryEffect[] {
+            AccessoryEffect.FartInABalloon,
+            AccessoryEffect.HoneyBalloon,
+            AccessoryEffect.SharkronBalloon,
+            AccessoryEffect.BundleOfBalloons
+        };
+
+        protected override string DisplayNameTranslation =>
+            "{$Mods.QualityOfLifeRecipes.Accessories.CloudOfBalloons}";
+
+        protected override string TooltipTranslation =>
+            "{$Mods.QualityOfLifeRecipes.General.JumpSixTimes}" + "\n" +
                 "{$ItemTooltip.ShinyRedBalloon}" + "\n" +
-                "{$ItemTooltip.HoneyComb}");
-        }
+                "{$ItemTooltip.HoneyComb}";
 
-        public override void SetDefaults() {
-            Item.value = Item.sellPrice(0, 11, 0, 0);
-            Item.rare = ItemRarityID.Cyan;
-            Item.accessory = true;
-        }
+        protected override int SellPrice => Item.sellPrice(0, 11, 0, 0);
 
-        public override void UpdateAccessory(Player player, bool hideVisual) {
-            player.jumpBoost = true;
+        protected override int Rarity => ItemRarityID.Cyan;
 
-            // fart in a balloon
-            player.hasJumpOption_Fart = true;
-            // honey balloon
-            player.jumpBoost = true;
-            player.honeyCombItem = Item;
-            // sharkron balloon
-            player.hasJumpOption_Sail = true;
-            // bundle of balloons
-            player.hasJumpOption_Cloud = true;
-            player.hasJumpOption_Sandstorm = true;
-            player.hasJumpOption_Blizzard = true;
-        }
-
-        public override void AddRecipes() {
-            Recipe recipe = CreateRecipe();
-            recipe.AddIngredient<BunchOfBalloons>();
-            recipe.AddIngredient(ItemID.BundleofBalloons);
-            recipe.AddTile(TileID.TinkerersWorkbench);
-            recipe.Register();
-        }
+        protected override Ingredient[] Ingredients => new Ingredient[] {
+            new(ModContent.ItemType<BunchOfBalloons>()),
+            new(ItemID.BundleofBalloons),
+        };
     }
 }

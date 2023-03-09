@@ -1,82 +1,41 @@
 ﻿using Terraria;
 using Terraria.ID;
-using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Accessories {
-    public class AtomicCloudBoots : ModItem {
-        private readonly Item flowerBoots;
+    public class AtomicCloudBoots : AccessoryItem {
+        protected override AccessoryEffect[] Effects => new AccessoryEffect[] {
+            AccessoryEffect.TerrasparkBoots,
+            AccessoryEffect.FrogFlipper,
+            AccessoryEffect.MasterNinjaGear,
+            AccessoryEffect.FlowerBoots,
+            AccessoryEffect.FartInABalloon,
+            AccessoryEffect.HoneyBalloon,
+            AccessoryEffect.SharkronBalloon,
+            AccessoryEffect.BundleOfBalloons,
+            AccessoryEffect.LuckyHorseshoe
+        };
 
-        public AtomicCloudBoots() {
-            flowerBoots = new Item(ItemID.FlowerBoots);
-        }
+        protected override string DisplayNameTranslation =>
+            "{$Mods.QualityOfLifeRecipes.Accessories.AtomicCloudBoots}";
 
-        public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Accessories.AtomicCloudBoots}");
-            Tooltip.SetDefault(
-                "{$ItemTooltip.TerrasparkBoots}" + "\n" +
+        protected override string TooltipTranslation =>
+            "{$ItemTooltip.TerrasparkBoots}" + "\n" +
+                "{$ItemTooltip.FrogFlipper}" + "\n" +
                 "{$ItemTooltip.MasterNinjaGear}" + "\n" +
                 "{$ItemTooltip.FlowerBoots}" + "\n" +
-                "{$ItemTooltip.FrogLeg}" + "\n" +
                 "{$ItemTooltip.LuckyHorseshoe}" + "\n" +
                 "{$Mods.QualityOfLifeRecipes.General.JumpSixTimes}" + "\n" +
                 "{$ItemTooltip.ShinyRedBalloon}" + "\n" +
-                "{$ItemTooltip.HoneyComb}");
-        }
+                "{$ItemTooltip.HoneyComb}";
 
-        public override void SetDefaults() {
-            Item.value = Item.sellPrice(0, 42, 0, 0);
-            Item.rare = ItemRarityID.Purple;
-            Item.accessory = true;
-        }
+        protected override int SellPrice => Item.sellPrice(0, 42, 0, 0);
 
-        public override void UpdateAccessory(Player player, bool hideVisual) {
-            // terraspark boots
-            player.waterWalk = true;
-            player.fireWalk = true;
-            player.lavaMax += 420;
-            player.lavaRose = true;
-            player.accRunSpeed = 6.75f;
-            player.rocketBoots = (player.vanityRocketBoots = 4);
-            player.moveSpeed += 0.08f;
-            player.iceSkate = true;
-            // master ninja gear
-            player.blackBelt = true;
-            player.dash = 1;
-            player.spikedBoots = 2;
-            // frog leg
-            player.autoJump = true;
-            player.jumpSpeedBoost += 2.4f;
-            player.extraFall += 15;
-            // lucky horseshoe
-            player.noFallDmg = true;
+        protected override int Rarity => ItemRarityID.Purple;
 
-            player.jumpBoost = true;
-
-            // fart in a balloon
-            player.hasJumpOption_Fart = true;
-            // honey balloon
-            player.jumpBoost = true;
-            player.honeyCombItem = Item;
-            // sharkron balloon
-            player.hasJumpOption_Sail = true;
-            // bundle of balloons
-            player.hasJumpOption_Cloud = true;
-            player.hasJumpOption_Sandstorm = true;
-            player.hasJumpOption_Blizzard = true;
-        }
-
-        public override void UpdateEquip(Player player) {
-            // flower boots
-            player.VanillaUpdateEquip(flowerBoots);
-        }
-
-        public override void AddRecipes() {
-            Recipe recipe = CreateRecipe();
-            recipe.AddIngredient<AtomicNinjaBoots>();
-            recipe.AddIngredient<CloudOfFrogshoeBalloons>();
-            recipe.AddTile(TileID.TinkerersWorkbench);
-            recipe.Register();
-        }
+        protected override Ingredient[] Ingredients => new Ingredient[] {
+            new(ModContent.ItemType<AtomicNinjaBoots>()),
+            new(ModContent.ItemType<CloudOfHorseshoeBalloons>()),
+        };
     }
 }

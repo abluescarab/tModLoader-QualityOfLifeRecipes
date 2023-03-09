@@ -1,38 +1,33 @@
 ﻿using Terraria;
 using Terraria.ID;
-using Terraria.Localization;
-using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Accessories {
-    public class LifeforceBracelet : ModItem {
-        public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Accessories.LifeforceBracelet}");
-            Tooltip.SetDefault(
-                "{$ItemTooltip.CharmofMyths}" + "\n" +
-                "{$ItemTooltip.ManaRegenerationBand}");
-        }
+    public class LifeforceBracelet : AccessoryItem {
+        protected override AccessoryEffect[] Effects => null;
 
-        public override void SetDefaults() {
-            Item.value = Item.sellPrice(0, 5, 0, 0);
-            Item.rare = ItemRarityID.Lime;
-            Item.accessory = true;
-        }
+        protected override string DisplayNameTranslation =>
+            "{$Mods.QualityOfLifeRecipes.Accessories.LifeforceBracelet}";
+
+        protected override string TooltipTranslation =>
+            "{$ItemTooltip.CharmofMyths}" + "\n" +
+                "{$ItemTooltip.ManaRegenerationBand}";
+
+        protected override int SellPrice => Item.sellPrice(0, 5, 0, 0);
+
+        protected override int Rarity => ItemRarityID.Lime;
+
+        protected override Ingredient[] Ingredients => new Ingredient[] {
+            new(ItemID.CharmofMyths),
+            new(ItemID.ManaRegenerationBand),
+        };
 
         public override void UpdateAccessory(Player player, bool hideVisual) {
             // charm of myths
             player.pStone = true;
             // mana regeneration band
             player.statManaMax2 += 20;
-            player.manaRegenDelayBonus++;
+            player.manaRegenDelayBonus++; // += 1f in 1.4.4
             player.manaRegenBonus += 25;
-        }
-
-        public override void AddRecipes() {
-            Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.CharmofMyths);
-            recipe.AddIngredient(ItemID.ManaRegenerationBand);
-            recipe.AddTile(TileID.TinkerersWorkbench);
-            recipe.Register();
         }
     }
 }
