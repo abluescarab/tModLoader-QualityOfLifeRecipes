@@ -6,8 +6,8 @@ namespace QualityOfLifeRecipes.Items.Armor {
     [AutoloadEquip(EquipType.Head)]
     public class MiningGear : DeprecatedItem {
         protected override ReplacementItem[] Replacements => new ReplacementItem[] {
-            new ReplacementItem(ItemID.MiningHelmet),
-            new ReplacementItem(ItemID.UltrabrightHelmet)
+            new ReplacementItem(ItemID.UltrabrightHelmet),
+            new ReplacementItem(ItemID.SpelunkerPotion, 20)
         };
 
         public override void SetStaticDefaults() {
