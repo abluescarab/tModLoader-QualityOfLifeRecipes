@@ -14,18 +14,20 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events {
 
         protected override int SellPrice => Item.sellPrice(0, 0, 25, 0);
 
-        protected override Ingredient[] Ingredients => new Ingredient[] {
-            new(ItemID.ScutlixBanner),
-            new(ItemID.MartianScutlixGunnerBanner),
-            new(ItemID.MartianWalkerBanner),
-            new(ItemID.MartianDroneBanner),
-            new(ItemID.MartianTeslaTurretBanner),
-            new(ItemID.MartianGigazapperBanner),
-            new(ItemID.MartianEngineerBanner),
-            new(ItemID.MartianOfficerBanner),
-            new(ItemID.MartianRaygunnerBanner),
-            new(ItemID.MartianGreyGruntBanner),
-            new(ItemID.MartianBrainscramblerBanner),
-        };
+        public override void AddRecipes() {
+            AddRecipe(
+                new(ItemID.ScutlixBanner),
+                new(ItemID.MartianScutlixGunnerBanner),
+                new(ItemID.MartianWalkerBanner),
+                new(ItemID.MartianDroneBanner),
+                new(ItemID.MartianTeslaTurretBanner),
+                new(ItemID.MartianGigazapperBanner),
+                new(ItemID.MartianEngineerBanner),
+                new(ItemID.MartianOfficerBanner),
+                new(ItemID.MartianRaygunnerBanner),
+                new(ItemID.MartianGreyGruntBanner),
+                new(ItemID.MartianBrainscramblerBanner)
+            );
+        }
     }
 }

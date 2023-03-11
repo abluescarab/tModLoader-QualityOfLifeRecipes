@@ -20,10 +20,12 @@ namespace QualityOfLifeRecipes.Items.Accessories {
 
         protected override int Rarity => ItemRarityID.Lime;
 
-        protected override Ingredient[] Ingredients => new Ingredient[] {
-            new(ModContent.ItemType<UtilityHelmet>()),
-            new(ItemID.Nanites, 20)
-        };
+        public override void AddRecipes() {
+            AddRecipe(
+                new(ModContent.ItemType<UtilityHelmet>()),
+                new(ItemID.Nanites, 20)
+            );
+        }
 
         public override void UpdateAccessory(Player player, bool hideVisual) {
             UtilityHelmet.ApplyEffects(player);

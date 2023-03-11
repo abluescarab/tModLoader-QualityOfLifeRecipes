@@ -14,9 +14,11 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Slimes {
 
         protected override int SellPrice => Item.sellPrice(0, 0, 35, 0);
 
-        protected override Ingredient[] Ingredients => new Ingredient[] {
-            new(ModContent.ItemType<ElementalSlimeBanner>()),
-            new(ModContent.ItemType<SupremeSlimeBanner>())
-        };
+        public override void AddRecipes() {
+            AddRecipe(
+                new(ModContent.ItemType<ElementalSlimeBanner>()),
+                new(ModContent.ItemType<SupremeSlimeBanner>())
+            );
+        }
     }
 }

@@ -33,9 +33,11 @@ namespace QualityOfLifeRecipes.Items.Accessories {
 
         protected override int Rarity => ItemRarityID.Purple;
 
-        protected override Ingredient[] Ingredients => new Ingredient[] {
-            new(ModContent.ItemType<AtomicNinjaBoots>()),
-            new(ModContent.ItemType<CloudOfHorseshoeBalloons>()),
-        };
+        public override void AddRecipes() {
+            AddRecipe(
+                new(ModContent.ItemType<AtomicNinjaBoots>()),
+                new(ModContent.ItemType<CloudOfHorseshoeBalloons>())
+            );
+        }
     }
 }

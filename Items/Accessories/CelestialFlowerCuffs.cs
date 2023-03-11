@@ -16,10 +16,12 @@ namespace QualityOfLifeRecipes.Items.Accessories {
 
         protected override int Rarity => ItemRarityID.LightPurple;
 
-        protected override Ingredient[] Ingredients => new Ingredient[] {
-            new(ItemID.CelestialCuffs),
-            new(ItemID.ManaFlower),
-        };
+        public override void AddRecipes() {
+            AddRecipe(
+                new(ItemID.CelestialCuffs),
+                new(ItemID.ManaFlower)
+            );
+        }
 
         public override void UpdateAccessory(Player player, bool hideVisual) {
             // celestial cuffs

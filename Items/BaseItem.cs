@@ -17,8 +17,6 @@ namespace QualityOfLifeRecipes.Items {
         protected abstract string TooltipTranslation { get; }
         protected abstract int SellPrice { get; }
         protected abstract int Rarity { get; }
-        protected abstract Ingredient[] Ingredients { get; }
-        protected abstract int CraftingStation { get; }
 
         public override void SetStaticDefaults() {
             DisplayName.SetDefault(DisplayNameTranslation);
@@ -30,14 +28,14 @@ namespace QualityOfLifeRecipes.Items {
             Item.rare = Rarity;
         }
 
-        public override void AddRecipes() {
+        protected void AddRecipe(int craftingStation, params Ingredient[] ingredients) {
             Recipe recipe = CreateRecipe();
 
-            foreach(Ingredient ingredient in Ingredients) {
+            foreach(Ingredient ingredient in ingredients) {
                 recipe.AddIngredient(ingredient.ID, ingredient.Stack);
             }
 
-            recipe.AddTile(CraftingStation);
+            recipe.AddTile(craftingStation);
             recipe.Register();
         }
     }

@@ -17,14 +17,16 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Dungeon {
 
         protected override int SellPrice => Item.sellPrice(0, 0, 35, 0);
 
-        protected override Ingredient[] Ingredients => new Ingredient[] {
-            new(ModContent.ItemType<SupremeDungeonBanner>()),
-            new(ItemID.PaladinBanner),
-            new(ItemID.SkeletonCommandoBanner),
-            new(ItemID.SkeletonSniperBanner),
-            new(ItemID.TacticalSkeletonBanner),
-            new(ItemID.BoneLeeBanner),
-            new(ItemID.DungeonSpiritBanner),
-        };
+        public override void AddRecipes() {
+            AddRecipe(
+                new(ModContent.ItemType<SupremeDungeonBanner>()),
+                new(ItemID.PaladinBanner),
+                new(ItemID.SkeletonCommandoBanner),
+                new(ItemID.SkeletonSniperBanner),
+                new(ItemID.TacticalSkeletonBanner),
+                new(ItemID.BoneLeeBanner),
+                new(ItemID.DungeonSpiritBanner)
+            );
+        }
     }
 }

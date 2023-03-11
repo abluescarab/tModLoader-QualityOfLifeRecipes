@@ -19,18 +19,19 @@ namespace QualityOfLifeRecipes.Items.Armor {
 
         protected override int Rarity => ItemRarityID.LightPurple;
 
-        protected override Ingredient[] Ingredients => new Ingredient[] {
-            new(ItemID.UltrabrightHelmet),
-            new(ItemID.HunterPotion, 20),
-            new(ItemID.TrapsightPotion, 20),
-            new(ItemID.SpelunkerPotion, 20)
-        };
-
-        protected override int CraftingStation => TileID.TinkerersWorkbench;
-
         public override void SetDefaults() {
             base.SetDefaults();
             Item.defense = 4;
+        }
+
+        public override void AddRecipes() {
+            AddRecipe(
+                TileID.TinkerersWorkbench,
+                new(ItemID.UltrabrightHelmet),
+                new(ItemID.HunterPotion, 20),
+                new(ItemID.TrapsightPotion, 20),
+                new(ItemID.SpelunkerPotion, 20)
+            );
         }
 
         public override void UpdateEquip(Player player) {

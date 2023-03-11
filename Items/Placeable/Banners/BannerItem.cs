@@ -7,8 +7,11 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners {
     public abstract class BannerItem<I, T> : BaseItem 
         where I : BannerItem<I, T>
         where T : BannerTile<I, T> {
-        protected override int CraftingStation => TileID.Loom;
         protected override int Rarity => ItemRarityID.Green;
+
+        protected void AddRecipe(params Ingredient[] ingredients) {
+            AddRecipe(TileID.Loom, ingredients);
+        }
 
         public sealed override void SetDefaults() {
             base.SetDefaults();

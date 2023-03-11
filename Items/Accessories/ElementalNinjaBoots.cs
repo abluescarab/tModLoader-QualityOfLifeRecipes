@@ -22,9 +22,11 @@ namespace QualityOfLifeRecipes.Items.Accessories {
 
         protected override int Rarity => ItemRarityID.Cyan;
 
-        protected override Ingredient[] Ingredients => new Ingredient[] {
-            new(ItemID.TerrasparkBoots),
-            new(ModContent.ItemType<NinjaFrogGear>()),
-        };
+        public override void AddRecipes() {
+            AddRecipe(
+                new(ItemID.TerrasparkBoots),
+                new(ModContent.ItemType<NinjaFrogGear>())
+            );
+        }
     }
 }

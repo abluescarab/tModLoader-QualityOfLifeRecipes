@@ -23,9 +23,11 @@ namespace QualityOfLifeRecipes.Items.Accessories {
 
         protected override int Rarity => ItemRarityID.Cyan;
 
-        protected override Ingredient[] Ingredients => new Ingredient[] {
-            new(ModContent.ItemType<BunchOfBalloons>()),
-            new(ItemID.BundleofBalloons),
-        };
+        public override void AddRecipes() {
+            AddRecipe(
+                new(ModContent.ItemType<BunchOfBalloons>()),
+                new(ItemID.BundleofBalloons)
+            );
+        }
     }
 }

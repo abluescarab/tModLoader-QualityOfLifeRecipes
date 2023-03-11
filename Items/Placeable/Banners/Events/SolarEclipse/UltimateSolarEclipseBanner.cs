@@ -16,9 +16,11 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events.SolarEclipse {
 
         protected override int SellPrice => Item.sellPrice(0, 0, 35, 0);
 
-        protected override Ingredient[] Ingredients => new Ingredient[] {
-            new(ModContent.ItemType<SupremeSolarEclipseBanner>()),
-            new(ItemID.MothronBanner)
-        };
+        public override void AddRecipes() {
+            AddRecipe(
+                new(ModContent.ItemType<SupremeSolarEclipseBanner>()),
+                new(ItemID.MothronBanner)
+            );
+        }
     }
 }

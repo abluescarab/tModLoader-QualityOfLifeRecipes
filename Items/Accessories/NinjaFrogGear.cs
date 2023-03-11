@@ -19,9 +19,17 @@ namespace QualityOfLifeRecipes.Items.Accessories {
 
         protected override int Rarity => ItemRarityID.Yellow;
 
-        protected override Ingredient[] Ingredients => new Ingredient[] {
-            new(ItemID.FrogFlipper),
-            new(ItemID.MasterNinjaGear)
-        };
+        public override void AddRecipes() {
+            AddRecipe(
+                new(ItemID.FrogFlipper),
+                new(ItemID.MasterNinjaGear)
+            );
+
+            AddRecipe(
+                new(ItemID.FrogGear),
+                new(ItemID.Tabi),
+                new(ItemID.BlackBelt)
+            );
+        }
     }
 }

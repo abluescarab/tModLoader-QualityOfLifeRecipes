@@ -13,13 +13,15 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners.Slimes {
 
         protected override int SellPrice => Item.sellPrice(0, 0, 15, 0);
 
-        protected override Ingredient[] Ingredients => new Ingredient[] {
-            new(ItemID.SandSlimeBanner),
-            new(ItemID.IceSlimeBanner),
-            new(ItemID.SpikedIceSlimeBanner),
-            new(ItemID.JungleSlimeBanner),
-            new(ItemID.SpikedJungleSlimeBanner),
-            new(ItemID.LavaSlimeBanner),
-        };
+        public override void AddRecipes() {
+            AddRecipe(
+                new(ItemID.SandSlimeBanner),
+                new(ItemID.IceSlimeBanner),
+                new(ItemID.SpikedIceSlimeBanner),
+                new(ItemID.JungleSlimeBanner),
+                new(ItemID.SpikedJungleSlimeBanner),
+                new(ItemID.LavaSlimeBanner)
+            );
+        }
     }
 }

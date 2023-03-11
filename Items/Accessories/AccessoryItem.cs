@@ -20,8 +20,6 @@ namespace QualityOfLifeRecipes.Items.Accessories {
 
         protected abstract AccessoryEffect[] Effects { get; }
 
-        protected override int CraftingStation => TileID.TinkerersWorkbench;
-
         public AccessoryItem() {
             if(Effects != null && Array.IndexOf(Effects, AccessoryEffect.FlowerBoots) > -1) {
                 flowerBoots = new Item(ItemID.FlowerBoots);
@@ -31,6 +29,10 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         public override void SetDefaults() {
             base.SetDefaults();
             Item.accessory = true;
+        }
+
+        protected void AddRecipe(params Ingredient[] ingredients) {
+            AddRecipe(TileID.TinkerersWorkbench, ingredients);
         }
 
         public override void UpdateAccessory(Player player, bool hideVisual) {

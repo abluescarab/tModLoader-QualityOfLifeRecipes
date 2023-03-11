@@ -6,18 +6,20 @@ namespace QualityOfLifeRecipes.Items.Placeable.Banners {
         protected override string DisplayNameTranslation =>
             "{$Mods.QualityOfLifeRecipes.Placeable.Banners.Undead.UndeadBanner}";
 
-        protected override string TooltipTranslation => 
+        protected override string TooltipTranslation =>
             "{$CommonItemTooltip.BannerBonus}\n" +
                 "{$NPCName.Zombie}, {$NPCName.ZombieRaincoat}, {$NPCName.DemonEye}";
-        
+
         protected override int SellPrice => Item.sellPrice(0, 0, 5, 0);
-        
+
         protected override int Rarity => ItemRarityID.Green;
 
-        protected override Ingredient[] Ingredients => new Ingredient[] {
+        public override void AddRecipes() {
+            AddRecipe(
                 new(ItemID.ZombieBanner),
                 new(ItemID.RaincoatZombieBanner),
                 new(ItemID.DemonEyeBanner)
-        };
+            );
+        }
     }
 }

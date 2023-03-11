@@ -17,12 +17,14 @@ namespace QualityOfLifeRecipes.Items.Accessories {
 
         protected override int Rarity => ItemRarityID.LightRed;
 
-        protected override Ingredient[] Ingredients => new Ingredient[] {
-            new(ItemID.AnglerTackleBag),
-            new(ItemID.AnglerHat),
-            new(ItemID.AnglerPants),
-            new(ItemID.AnglerVest),
-        };
+        public override void AddRecipes() {
+            AddRecipe(
+                new(ItemID.AnglerTackleBag),
+                new(ItemID.AnglerHat),
+                new(ItemID.AnglerPants),
+                new(ItemID.AnglerVest)
+            );
+        }
 
         public override void UpdateAccessory(Player player, bool hideVisual) {
             // angler tackle bag + angler armor

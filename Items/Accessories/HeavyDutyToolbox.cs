@@ -16,10 +16,12 @@ namespace QualityOfLifeRecipes.Items.Accessories {
 
         protected override int Rarity => ItemRarityID.LightRed;
 
-        protected override Ingredient[] Ingredients => new Ingredient[] {
-            new(ItemID.Toolbox),
-            new(ItemID.Toolbelt),
-        };
+        public override void AddRecipes() {
+            AddRecipe(
+                new(ItemID.Toolbox),
+                new(ItemID.Toolbelt)
+            );
+        }
 
         public override void UpdateAccessory(Player player, bool hideVisual) {
             // toolbox

@@ -21,10 +21,12 @@ namespace QualityOfLifeRecipes.Items.Accessories {
 
         protected override int Rarity => ItemRarityID.Pink;
 
-        protected override Ingredient[] Ingredients => new Ingredient[] {
-            new(ItemID.FartInABalloon),
-            new(ItemID.HoneyBalloon),
-            new(ItemID.SharkronBalloon),
-        };
+        public override void AddRecipes() {
+            AddRecipe(
+                new(ItemID.FartInABalloon),
+                new(ItemID.HoneyBalloon),
+                new(ItemID.SharkronBalloon)
+            );
+        }
     }
 }
