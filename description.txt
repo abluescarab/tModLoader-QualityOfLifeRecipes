@@ -11,6 +11,10 @@ Visit the mod homepage to see the included recipes.
 * PyroSalamander for suggesting the Cybernetic Utility Helmet
 
 [Changelog]
+v1.10.0 2023-03-23
+* Added Hands-Free Mining Multi-Tool
+* Added Lavaproof Fishing Gear
+
 v1.9.1  2023-03-11
 * Added Ninja Frog Gear recipe: Frog Gear, Tabi, Black Belt
 
