@@ -4,37 +4,37 @@ using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Accessories {
     [AutoloadEquip(EquipType.Back)]
-    public class AnglersFishingGear : AccessoryItem {
+    public class LavaproofFishingGear : AccessoryItem {
         protected override AccessoryEffect[] Effects => null;
 
         protected override string DisplayNameTranslation =>
-            "{$Mods.QualityOfLifeRecipes.Accessories.AnglersFishingGear}";
+            "{$Mods.QualityOfLifeRecipes.Accessories.LavaproofFishingGear}";
 
         protected override string TooltipTranslation =>
-            "{$ItemTooltip.AnglerTackleBag}";
+            "{$ItemTooltip.LavaproofTackleBag}";
 
-        protected override int SellPrice => Item.sellPrice(0, 7, 0, 0);
+        protected override int SellPrice => Item.sellPrice(0, 9, 0, 0);
 
         protected override int Rarity => ItemRarityID.LightRed;
 
         public override void AddRecipes() {
             AddRecipe(
-                new(ItemID.AnglerTackleBag),
+                new(ModContent.ItemType<AnglersFishingGear>()),
+                new(ItemID.LavaFishingHook)
+            );
+
+            AddRecipe(
+                new(ItemID.LavaproofTackleBag),
                 new(ItemID.AnglerHat),
                 new(ItemID.AnglerPants),
                 new(ItemID.AnglerVest)
             );
         }
 
-        public static void ApplyEffects(Player player) {
-            // angler tackle bag + angler armor
-            player.accFishingLine = true;
-            player.accTackleBox = true;
-            player.fishingSkill += 25;
-        }
-
         public override void UpdateAccessory(Player player, bool hideVisual) {
-            ApplyEffects(player);
+            AnglersFishingGear.ApplyEffects(player);
+            // lavaproof fishing hook
+            player.accLavaFishing = true;
         }
     }
 }
