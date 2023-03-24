@@ -27,8 +27,10 @@
 [i]New accessories:[/i]
 [list]
     [*]Angler's Fishing Gear (Angler Tackle Bag, Angler outfit)
+    [*]Lavaproof Fishing Gear (Angler's Fishing Gear, Lavaproof Fishing Hook)
     [*]Celestial Flower Cuffs (Celestial Cuffs, Mana Flower)
-    [*]Cybernetic Mining Multi Tool (convert Utility Helmet to accessory)
+    [*]Cybernetic Mining Multi-Tool (convert Utility Helmet to accessory)
+    [*]Hands-Free Mining Multi-Tool (Cybernetic Mining Multi-Tool works from inventory)
     [*]Heavy-Duty Toolbox (Toolbox, Toolbelt)
     [*]Lifeforce Bracelet (Charm of Myths, Mana Regeneration Band)
     [*]Sweet Star Veil (Star Veil, Sweetheart Necklace)
