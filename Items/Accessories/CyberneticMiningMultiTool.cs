@@ -27,8 +27,12 @@ namespace QualityOfLifeRecipes.Items.Accessories {
             );
         }
 
-        public override void UpdateAccessory(Player player, bool hideVisual) {
+        public static void ApplyEffects(Player player) {
             UtilityHelmet.ApplyEffects(player);
+        }
+
+        public override void UpdateAccessory(Player player, bool hideVisual) {
+            ApplyEffects(player);
         }
     }
 }
