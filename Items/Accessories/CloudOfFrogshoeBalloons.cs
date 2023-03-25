@@ -13,10 +13,10 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Accessories.CloudOfFrogshoeBalloons}");
             Tooltip.SetDefault(
-                "{$ItemTooltip.FrogLeg}" + "\n" +
-                "{$ItemTooltip.LuckyHorseshoe}" + "\n" +
-                "{$Mods.QualityOfLifeRecipes.General.JumpSixTimes}" + "\n" +
-                "{$ItemTooltip.ShinyRedBalloon}" + "\n" +
+                "{$ItemTooltip.FrogLeg}\n" +
+                "{$ItemTooltip.LuckyHorseshoe}\n" +
+                "{$Mods.QualityOfLifeRecipes.General.JumpSixTimes}\n" +
+                "{$ItemTooltip.ShinyRedBalloon}\n" +
                 "{$ItemTooltip.HoneyComb}");
         }
 

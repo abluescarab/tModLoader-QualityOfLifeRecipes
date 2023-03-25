@@ -9,7 +9,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
             "{$Mods.QualityOfLifeRecipes.Accessories.LifeforceBracelet}";
 
         protected override string TooltipTranslation =>
-            "{$ItemTooltip.CharmofMyths}" + "\n" +
+            "{$ItemTooltip.CharmofMyths}\n" +
                 "{$ItemTooltip.ManaRegenerationBand}";
 
         protected override int SellPrice => Item.sellPrice(0, 5, 0, 0);

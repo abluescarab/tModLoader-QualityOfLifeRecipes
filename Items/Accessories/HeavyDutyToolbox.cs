@@ -9,7 +9,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
             "{$Mods.QualityOfLifeRecipes.Accessories.HeavyDutyToolbox}";
 
         protected override string TooltipTranslation =>
-            "{$ItemTooltip.Toolbox}" + "\n" +
+            "{$ItemTooltip.Toolbox}\n" +
                 "{$ItemTooltip.Toolbelt}";
 
         protected override int SellPrice => Item.sellPrice(0, 3, 0, 0);

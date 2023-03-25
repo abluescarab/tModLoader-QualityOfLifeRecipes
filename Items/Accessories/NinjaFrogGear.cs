@@ -12,7 +12,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
             "{$Mods.QualityOfLifeRecipes.Accessories.NinjaFrogGear}";
 
         protected override string TooltipTranslation =>
-            "{$ItemTooltip.FrogFlipper}" + "\n" +
+            "{$ItemTooltip.FrogFlipper}\n" +
             "{$ItemTooltip.MasterNinjaGear}";
 
         protected override int SellPrice => Item.sellPrice(0, 0, 12, 0);

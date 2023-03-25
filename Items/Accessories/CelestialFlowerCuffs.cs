@@ -9,7 +9,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
             "{$Mods.QualityOfLifeRecipes.Accessories.CelestialFlowerCuffs}";
 
         protected override string TooltipTranslation =>
-            "{$ItemTooltip.CelestialCuffs}" + "\n" +
+            "{$ItemTooltip.CelestialCuffs}\n" +
                 "{$ItemTooltip.ManaFlower}";
 
         protected override int SellPrice => Item.sellPrice(0, 5, 0, 0);

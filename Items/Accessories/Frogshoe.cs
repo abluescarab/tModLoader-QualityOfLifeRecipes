@@ -11,7 +11,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Accessories.Frogshoe}");
             Tooltip.SetDefault(
-                "{$ItemTooltip.FrogLeg}" + "\n" +
+                "{$ItemTooltip.FrogLeg}\n" +
                 "{$ItemTooltip.LuckyHorseshoe}");
         }
 

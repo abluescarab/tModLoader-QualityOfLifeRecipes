@@ -15,8 +15,8 @@ namespace QualityOfLifeRecipes.Items.Accessories {
             "{$Mods.QualityOfLifeRecipes.Accessories.CloudOfBalloons}";
 
         protected override string TooltipTranslation =>
-            "{$Mods.QualityOfLifeRecipes.General.JumpSixTimes}" + "\n" +
-                "{$ItemTooltip.ShinyRedBalloon}" + "\n" +
+            "{$Mods.QualityOfLifeRecipes.General.JumpSixTimes}\n" +
+                "{$ItemTooltip.ShinyRedBalloon}\n" +
                 "{$ItemTooltip.HoneyComb}";
 
         protected override int SellPrice => Item.sellPrice(0, 11, 0, 0);

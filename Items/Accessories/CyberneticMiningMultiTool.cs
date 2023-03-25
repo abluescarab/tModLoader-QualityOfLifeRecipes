@@ -11,9 +11,9 @@ namespace QualityOfLifeRecipes.Items.Accessories {
             "{$Mods.QualityOfLifeRecipes.Accessories.CyberneticMiningMultiTool}";
 
         protected override string TooltipTranslation =>
-            "{$ItemTooltip.UltrabrightHelmet}" + "\n" +
-            "{$ItemTooltip.HunterPotion}" + "\n" +
-            "{$ItemTooltip.TrapsightPotion}" + "\n" +
+            "{$ItemTooltip.UltrabrightHelmet}\n" +
+            "{$ItemTooltip.HunterPotion}\n" +
+            "{$ItemTooltip.TrapsightPotion}\n" +
             "{$ItemTooltip.SpelunkerPotion}";
 
         protected override int SellPrice => Item.sellPrice(0, 15, 0, 0);

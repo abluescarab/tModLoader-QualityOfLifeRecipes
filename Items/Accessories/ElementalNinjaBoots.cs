@@ -15,8 +15,8 @@ namespace QualityOfLifeRecipes.Items.Accessories {
             "{$Mods.QualityOfLifeRecipes.Accessories.ElementalNinjaBoots}";
 
         protected override string TooltipTranslation =>
-            "{$ItemTooltip.TerrasparkBoots}" + "\n" +
-            "{$ItemTooltip.FrogFlipper}" + "\n" +
+            "{$ItemTooltip.TerrasparkBoots}\n" +
+            "{$ItemTooltip.FrogFlipper}\n" +
             "{$ItemTooltip.MasterNinjaGear}\n" +
             "{$ItemTooltip.Magiluminescence}";
 
