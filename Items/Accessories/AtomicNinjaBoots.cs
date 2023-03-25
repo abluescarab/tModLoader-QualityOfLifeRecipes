@@ -8,6 +8,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
             AccessoryEffect.TerrasparkBoots,
             AccessoryEffect.FrogFlipper,
             AccessoryEffect.MasterNinjaGear,
+            AccessoryEffect.Magiluminescence,
             AccessoryEffect.FlowerBoots
         };
 
@@ -15,10 +16,11 @@ namespace QualityOfLifeRecipes.Items.Accessories {
             "{$Mods.QualityOfLifeRecipes.Accessories.AtomicNinjaBoots}";
 
         protected override string TooltipTranslation =>
-            "{$ItemTooltip.TerrasparkBoots}" + "\n" +
-                "{$ItemTooltip.FrogFlipper}" + "\n" +
-                "{$ItemTooltip.MasterNinjaGear}" + "\n" +
-                "{$ItemTooltip.FlowerBoots}";
+            "{$ItemTooltip.TerrasparkBoots}\n" +
+            "{$ItemTooltip.FrogFlipper}\n" +
+            "{$ItemTooltip.MasterNinjaGear}\n" +
+            "{$ItemTooltip.Magiluminescence}\n" +
+            "{$ItemTooltip.FlowerBoots}";
 
         protected override int SellPrice => Item.sellPrice(0, 29, 0, 0);
 

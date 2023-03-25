@@ -8,6 +8,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
             AccessoryEffect.TerrasparkBoots,
             AccessoryEffect.FrogFlipper,
             AccessoryEffect.MasterNinjaGear,
+            AccessoryEffect.Magiluminescence,
             AccessoryEffect.FlowerBoots,
             AccessoryEffect.FartInABalloon,
             AccessoryEffect.HoneyBalloon,
@@ -20,14 +21,15 @@ namespace QualityOfLifeRecipes.Items.Accessories {
             "{$Mods.QualityOfLifeRecipes.Accessories.AtomicCloudBoots}";
 
         protected override string TooltipTranslation =>
-            "{$ItemTooltip.TerrasparkBoots}" + "\n" +
-                "{$ItemTooltip.FrogFlipper}" + "\n" +
-                "{$ItemTooltip.MasterNinjaGear}" + "\n" +
-                "{$ItemTooltip.FlowerBoots}" + "\n" +
-                "{$ItemTooltip.LuckyHorseshoe}" + "\n" +
-                "{$Mods.QualityOfLifeRecipes.General.JumpSixTimes}" + "\n" +
-                "{$ItemTooltip.ShinyRedBalloon}" + "\n" +
-                "{$ItemTooltip.HoneyComb}";
+            "{$ItemTooltip.TerrasparkBoots}\n" +
+            "{$ItemTooltip.FrogFlipper}\n" +
+            "{$ItemTooltip.MasterNinjaGear}\n" +
+            "{$ItemTooltip.Magiluminescence}\n" +
+            "{$ItemTooltip.FlowerBoots}\n" +
+            "{$ItemTooltip.LuckyHorseshoe}\n" +
+            "{$Mods.QualityOfLifeRecipes.General.JumpSixTimes}\n" +
+            "{$ItemTooltip.ShinyRedBalloon}\n" +
+            "{$ItemTooltip.HoneyComb}";
 
         protected override int SellPrice => Item.sellPrice(0, 42, 0, 0);
 

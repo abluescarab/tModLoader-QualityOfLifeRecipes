@@ -3,31 +3,29 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Accessories {
-    public class ElementalNinjaBoots : AccessoryItem {
+    public class EnchantedNinjaFrogGear : AccessoryItem {
         protected override AccessoryEffect[] Effects => new AccessoryEffect[] {
-            AccessoryEffect.TerrasparkBoots,
             AccessoryEffect.FrogFlipper,
             AccessoryEffect.MasterNinjaGear,
             AccessoryEffect.Magiluminescence
         };
 
         protected override string DisplayNameTranslation =>
-            "{$Mods.QualityOfLifeRecipes.Accessories.ElementalNinjaBoots}";
+            "{$Mods.QualityOfLifeRecipes.Accessories.EnchantedNinjaFrogGear}";
 
         protected override string TooltipTranslation =>
-            "{$ItemTooltip.TerrasparkBoots}" + "\n" +
-            "{$ItemTooltip.FrogFlipper}" + "\n" +
+            "{$ItemTooltip.FrogFlipper}\n" +
             "{$ItemTooltip.MasterNinjaGear}\n" +
             "{$ItemTooltip.Magiluminescence}";
 
-        protected override int SellPrice => Item.sellPrice(0, 25, 0, 0);
+        protected override int SellPrice => Item.sellPrice(0, 0, 13, 0);
 
-        protected override int Rarity => ItemRarityID.Cyan;
+        protected override int Rarity => ItemRarityID.Yellow;
 
         public override void AddRecipes() {
             AddRecipe(
-                new(ItemID.TerrasparkBoots),
-                new(ModContent.ItemType<EnchantedNinjaFrogGear>())
+                new(ModContent.ItemType<NinjaFrogGear>()),
+                new(ItemID.Magiluminescence)
             );
         }
     }

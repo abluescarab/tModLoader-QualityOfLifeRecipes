@@ -38,7 +38,8 @@
     [*]Cloud of Balloons (Bunch of Balloons, Bundle of Balloons)
     [*]Cloud of Horseshoe Balloons (Horseshoe, Cloud of Balloons)
     [*]Ninja Frog Gear (Frog Flipper, Master Ninja Gear)
-    [*]Elemental Ninja Boots (Ninja Frog Gear, Terraspark Boots)
+    [*]Enchanted Ninja Frog Gear (Ninja Frog Gear, Magiluminescence)
+    [*]Elemental Ninja Boots (Enchanted Ninja Frog Gear, Terraspark Boots)
     [*]Atomic Ninja Boots (Elemental Ninja Boots, Flower Boots)
     [*]Atomic Cloud Boots (Atomic Ninja Boots, Cloud of Frogshoe Balloons)
 [/list]
@@ -50,6 +51,10 @@
 * PyroSalamander for suggesting the Cybernetic Utility Helmet
 
 [b]Changelog[/b]
+v1.11.0 2023-03-25
+* Added Enchanted Ninja Frog Gear
+* Magiluminescence effects added to movement accessory path
+
 v1.10.0 2023-03-23
 * Added Hands-Free Mining Multi-Tool
 * Added Lavaproof Fishing Gear

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Xna.Framework;
+using System;
 using Terraria;
 using Terraria.ID;
 
@@ -11,6 +12,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
             FrogFlipper,
             HoneyBalloon,
             LuckyHorseshoe,
+            Magiluminescence,
             MasterNinjaGear,
             SharkronBalloon,
             TerrasparkBoots,
@@ -76,6 +78,21 @@ namespace QualityOfLifeRecipes.Items.Accessories {
                 case AccessoryEffect.LuckyHorseshoe:
                     player.noFallDmg = true;
                     //player.hasLuck_LuckyHorseshoe = true; // 1.4.4 only
+                    break;
+                case AccessoryEffect.Magiluminescence:
+                    player.hasMagiluminescence = true;
+                    player.MountedCenter.ToTileCoordinates();
+                    DelegateMethods.v3_1 = new Vector3(0.9f, 0.8f, 0.5f);
+                    Utils.PlotTileLine(
+                        player.Center, 
+                        player.Center + player.velocity * 6f, 
+                        20f, 
+                        new Utils.TileActionAttempt(DelegateMethods.CastLightOpen));
+                    Utils.PlotTileLine(
+                        player.Left, 
+                        player.Right, 
+                        20f, 
+                        new Utils.TileActionAttempt(DelegateMethods.CastLightOpen));
                     break;
                 case AccessoryEffect.MasterNinjaGear:
                     player.blackBelt = true;
