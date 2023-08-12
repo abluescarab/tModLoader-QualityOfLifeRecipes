@@ -2,9 +2,6 @@
 
 namespace QualityOfLifeRecipes.Tiles.Banners.Events {
     public class GoblinArmyBanner : BannerTile<Items.Placeable.Banners.Events.GoblinArmyBanner, GoblinArmyBanner> {
-        protected override string Translation =>
-            "{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.GoblinArmyBanner}";
-
         protected override int[] NPCs => new int[] {
             NPCID.GoblinArcher,
             NPCID.GoblinPeon,

@@ -2,9 +2,6 @@
 
 namespace QualityOfLifeRecipes.Tiles.Banners {
     public class UndeadBanner : BannerTile<Items.Placeable.Banners.UndeadBanner, UndeadBanner> {
-        protected override string Translation => 
-            "{$Mods.QualityOfLifeRecipes.Placeable.Banners.Undead.UndeadBanner}";
-        
         protected override int[] NPCs => new int[] {
             // zombie
             NPCID.Zombie,

@@ -11,13 +11,6 @@ namespace QualityOfLifeRecipes.Items.Armor {
             new ReplacementItem(ItemID.TrapsightPotion, 20),
         };
 
-        public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Armor.OrangeTintedGoggles}");
-            Tooltip.SetDefault(
-                "{$ItemTooltip.HunterPotion}" + "\n" +
-                "{$ItemTooltip.TrapsightPotion}");
-        }
-
         public override void SetDefaults() {
             Item.value = Item.sellPrice(0, 1, 0, 0);
             Item.rare = ItemRarityID.Green;

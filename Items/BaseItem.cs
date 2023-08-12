@@ -13,15 +13,8 @@ namespace QualityOfLifeRecipes.Items {
             }
         }
 
-        protected abstract string DisplayNameTranslation { get; }
-        protected abstract string TooltipTranslation { get; }
         protected abstract int SellPrice { get; }
         protected abstract int Rarity { get; }
-
-        public override void SetStaticDefaults() {
-            DisplayName.SetDefault(DisplayNameTranslation);
-            Tooltip.SetDefault(TooltipTranslation);
-        }
 
         public override void SetDefaults() {
             Item.value = SellPrice;

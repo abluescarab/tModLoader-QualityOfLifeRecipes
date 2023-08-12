@@ -8,9 +8,6 @@ using Terraria.ObjectData;
 namespace QualityOfLifeRecipes.Tiles {
     public class AlterationStation : ModTile {
         public override void SetStaticDefaults() {
-            ModTranslation translation = CreateMapEntryName();
-            translation.SetDefault("{$Mods.QualityOfLifeRecipes.Placeable.AlterationStation}");
-
             Main.tileSolidTop[Type] = true;
             Main.tileFrameImportant[Type] = true;
             Main.tileNoAttach[Type] = true;
@@ -22,7 +19,7 @@ namespace QualityOfLifeRecipes.Tiles {
             TileObjectData.newTile.CopyFrom(TileObjectData.Style3x3);
 
             AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTable);
-            AddMapEntry(new Color(100, 100, 100), translation);
+            AddMapEntry(new Color(100, 100, 100), ModContent.GetInstance<Items.Placeable.AlterationStation>().DisplayName);
 
             DustType = DustID.TreasureSparkle;
             TileID.Sets.DisableSmartCursor[Type] = true;

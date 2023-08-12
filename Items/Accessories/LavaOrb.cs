@@ -8,13 +8,6 @@ namespace QualityOfLifeRecipes.Items.Accessories {
             new ReplacementItem(ItemID.ObsidianRose, prefix: Item.prefix)
         };
 
-        public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Accessories.LavaOrb}");
-            Tooltip.SetDefault(
-                "{$ItemTooltip.LavaCharm}\n" +
-                "{$ItemTooltip.ObsidianRose}");
-        }
-
         public override void SetDefaults() {
             Item.value = Item.sellPrice(0, 10, 0, 0);
             Item.rare = ItemRarityID.LightRed;

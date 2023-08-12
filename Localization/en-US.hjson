@@ -6,75 +6,444 @@ Mods: {
 			JumpSixTimes: Allows the holder to sextuple jump
 		}
 
-		Accessories: {
-			AnglersFishingGear: Angler's Fishing Gear
-			AtomicCloudBoots: Atomic Cloud Boots
-			AtomicNinjaBoots: Atomic Ninja Boots
-			BunchOfBalloons: Bunch of Balloons
-			CelestialFlowerCuffs: Celestial Flower Cuffs
-			CloudOfBalloons: Cloud of Balloons
-			CloudOfHorseshoeBalloons: Cloud of Horseshoe Balloons
-			CloudOfFrogshoeBalloons: Cloud of Frogshoe Balloons
-			CyberneticMiningMultiTool: Cybernetic Mining Multi-Tool
-			ElementalBoots: Elemental Boots
-			ElementalNinjaBoots: Elemental Ninja Boots
-			EnchantedNinjaFrogGear: Enchanted Ninja Frog Gear
-			Frogshoe: Frogshoe
-			HandsFreeMiningMultiTool: Hands-Free Mining Multi-Tool
-			HandsFreeMiningMultiTool_Tooltip: "'Look Ma, no hands!'"
-			HeavyDutyToolbox: Heavy-Duty Toolbox
-			LavaOrb: Lava Orb
-			LavaproofFishingGear: Lavaproof Fishing Gear
-			LifeforceBracelet: Lifeforce Bracelet
-			NinjaFrogGear: Ninja Frog Gear
-			SweetStarVeil: Sweet Star Veil
-		}
+		Items: {
+			AnglersFishingGear: {
+				DisplayName: Angler's Fishing Gear
+				Tooltip: "{$ItemTooltip.AnglerTackleBag}"
+			}
 
-		Armor: {
-			CavingGear: Caving Gear
-			MiningGear: Mining Gear
-			OrangeTintedGoggles: Oranged-Tinted Goggles
-			UtilityHelmet: Utility Helmet
-		}
+			AtomicCloudBoots: {
+				DisplayName: Atomic Cloud Boots
+				Tooltip:
+					'''
+					{$ItemTooltip.TerrasparkBoots}
+					{$ItemTooltip.FrogFlipper}
+					{$ItemTooltip.MasterNinjaGear}
+					{$ItemTooltip.Magiluminescence}
+					{$ItemTooltip.FlowerBoots}
+					{$ItemTooltip.LuckyHorseshoe}
+					{$Mods.QualityOfLifeRecipes.General.JumpSixTimes}
+					{$ItemTooltip.ShinyRedBalloon}
+					{$ItemTooltip.HoneyComb}
+					'''
+			}
 
-		Placeable: {
-			AlterationStation: Alteration Station
-			AlterationStation_Tooltip: Transmutes ore and block varieties
+			AtomicNinjaBoots: {
+				DisplayName: Atomic Ninja Boots
+				Tooltip:
+					'''
+					{$ItemTooltip.TerrasparkBoots}
+					{$ItemTooltip.FrogFlipper}
+					{$ItemTooltip.MasterNinjaGear}
+					{$ItemTooltip.Magiluminescence}
+					{$ItemTooltip.FlowerBoots}
+					'''
+			}
 
-			Banners: {
-				Undead: {
-					UndeadBanner: Undead Banner
-				}
-				
-				Dungeon: {
-					DungeonBanner: Dungeon Banner
-					SupremeDungeonBanner: Supreme Dungeon Banner
-					UltimateDungeonBanner: Ultimate Dungeon Banner
-				}
+			BunchOfBalloons: {
+				DisplayName: Bunch of Balloons
+				Tooltip:
+					'''
+					{$Mods.QualityOfLifeRecipes.General.JumpThreeTimes}
+					{$ItemTooltip.ShinyRedBalloon}
+					{$ItemTooltip.HoneyComb}
+					'''
+			}
 
-				Events: {
-					FrostMoonBanner: Frost Moon Banner
-					GoblinArmyBanner: Goblin Army Banner
-					MartianMadnessBanner: Martian Madness Banner
-					PirateCrewBanner: Pirate Crew Banner
-					PumpkinMoonBanner: Pumpkin Moon Banner
-					SolarEclipseBanner: Solar Eclipse Banner
-					SupremeSolarEclipseBanner: Supreme Solar Eclipse Banner
-					UltimateSolarEclipseBanner: Ultimate Solar Eclipse Banner
+			CelestialFlowerCuffs: {
+				DisplayName: Celestial Flower Cuffs
+				Tooltip:
+					'''
+					{$ItemTooltip.CelestialCuffs}
+					{$ItemTooltip.ManaFlower}
+					'''
+			}
 
-					Pillars: {
-						NebulaPillarBanner: Nebula Pillar Banner
-						SolarPillarBanner: Solar Pillar Banner
-						StardustPillarBanner: Stardust Pillar Banner
-						VortexPillarBanner: Vortex Pillar Banner
-					}
-				}
+			CloudOfBalloons: {
+				DisplayName: Cloud of Balloons
+				Tooltip:
+					'''
+					{$Mods.QualityOfLifeRecipes.General.JumpSixTimes}
+					{$ItemTooltip.ShinyRedBalloon}
+					{$ItemTooltip.HoneyComb}
+					'''
+			}
 
-				Slimes: {
-					ElementalSlimeBanner: Elemental Slime Banner
-					SupremeSlimeBanner: Supreme Slime Banner
-					UltimateSlimeBanner: Ultimate Slime Banner
-				}
+			CloudOfFrogshoeBalloons: {
+				DisplayName: Cloud of Frogshoe Balloons
+				Tooltip:
+					'''
+					{$ItemTooltip.FrogLeg}
+					{$ItemTooltip.LuckyHorseshoe}
+					{$Mods.QualityOfLifeRecipes.General.JumpSixTimes}
+					{$ItemTooltip.ShinyRedBalloon}
+					{$ItemTooltip.HoneyComb}
+					'''
+			}
+
+			CloudOfHorseshoeBalloons: {
+				DisplayName: Cloud of Horseshoe Balloons
+				Tooltip:
+					'''
+					{$Mods.QualityOfLifeRecipes.General.JumpSixTimes}
+					{$ItemTooltip.LuckyHorseshoe}
+					{$ItemTooltip.ShinyRedBalloon}
+					{$ItemTooltip.HoneyComb}
+					'''
+			}
+
+			CyberneticMiningMultiTool: {
+				DisplayName: Cybernetic Mining Multi-Tool
+				Tooltip:
+					'''
+					{$ItemTooltip.UltrabrightHelmet}
+					{$ItemTooltip.HunterPotion}
+					{$ItemTooltip.TrapsightPotion}
+					{$ItemTooltip.SpelunkerPotion}
+					'''
+			}
+
+			ElementalBoots: {
+				DisplayName: Elemental Boots
+				Tooltip:
+					'''
+					{$ItemTooltip.FrostsparkBoots}
+					{$ItemTooltip.LavaWaders}
+					'''
+			}
+
+			ElementalNinjaBoots: {
+				DisplayName: Elemental Ninja Boots
+				Tooltip:
+					'''
+					{$ItemTooltip.TerrasparkBoots}
+					{$ItemTooltip.FrogFlipper}
+					{$ItemTooltip.MasterNinjaGear}
+					{$ItemTooltip.Magiluminescence}
+					'''
+			}
+
+			EnchantedNinjaFrogGear: {
+				DisplayName: Enchanted Ninja Frog Gear
+				Tooltip:
+					'''
+					{$ItemTooltip.FrogFlipper}
+					{$ItemTooltip.MasterNinjaGear}
+					{$ItemTooltip.Magiluminescence}
+					'''
+			}
+
+			Frogshoe: {
+				DisplayName: Frogshoe
+				Tooltip:
+					'''
+					{$ItemTooltip.FrogLeg}
+					{$ItemTooltip.LuckyHorseshoe}
+					'''
+			}
+
+			HandsFreeMiningMultiTool: {
+				DisplayName: Hands-Free Mining Multi-Tool
+				Tooltip:
+					'''
+					{$ItemTooltip.UltrabrightHelmet}
+					{$ItemTooltip.HunterPotion}
+					{$ItemTooltip.TrapsightPotion}
+					{$ItemTooltip.SpelunkerPotion}
+					'Look Ma, no hands!'
+					'''
+			}
+
+			HeavyDutyToolbox: {
+				DisplayName: Heavy-Duty Toolbox
+				Tooltip:
+					'''
+					{$ItemTooltip.Toolbox}
+					{$ItemTooltip.Toolbelt}
+					'''
+			}
+
+			LavaOrb: {
+				DisplayName: Lava Orb
+				Tooltip:
+					'''
+					{$ItemTooltip.LavaCharm}
+					{$ItemTooltip.ObsidianRose}
+					'''
+			}
+
+			LavaproofFishingGear: {
+				DisplayName: Lavaproof Fishing Gear
+				Tooltip: "{$ItemTooltip.LavaproofTackleBag}"
+			}
+
+			LifeforceBracelet: {
+				DisplayName: Lifeforce Bracelet
+				Tooltip:
+					'''
+					{$ItemTooltip.CharmofMyths}
+					{$ItemTooltip.ManaRegenerationBand}
+					'''
+			}
+
+			NinjaFrogGear: {
+				DisplayName: Ninja Frog Gear
+				Tooltip:
+					'''
+					{$ItemTooltip.FrogFlipper}
+					{$ItemTooltip.MasterNinjaGear}
+					'''
+			}
+
+			SweetStarVeil: {
+				DisplayName: Sweet Star Veil
+				Tooltip:
+					'''
+					{$ItemTooltip.SweetheartNecklace}
+					{$ItemTooltip.StarVeil}
+					'''
+			}
+
+			CavingGear: {
+				DisplayName: Caving Gear
+				Tooltip:
+					'''
+					{$ItemTooltip.NightVisionHelmet}
+					{$ItemTooltip.SpelunkerPotion}
+					'''
+			}
+
+			MiningGear: {
+				DisplayName: Mining Gear
+				Tooltip:
+					'''
+					{$ItemTooltip.NightVisionHelmet}
+					{$ItemTooltip.SpelunkerPotion}
+					{$ItemTooltip.MiningHelmet}
+					'''
+			}
+
+			OrangeTintedGoggles: {
+				DisplayName: Orange-Tinted Goggles
+				Tooltip:
+					'''
+					{$ItemTooltip.HunterPotion}
+					{$ItemTooltip.TrapsightPotion}
+					'''
+			}
+
+			UtilityHelmet: {
+				DisplayName: Utility Helmet
+				Tooltip:
+					'''
+					{$ItemTooltip.UltrabrightHelmet}
+					{$ItemTooltip.HunterPotion}
+					{$ItemTooltip.TrapsightPotion}
+					{$ItemTooltip.SpelunkerPotion}
+					'''
+			}
+
+			AlterationStation: {
+				DisplayName: Alteration Station
+				Tooltip: Transmutes ore and block varieties
+			}
+
+			DungeonBanner: {
+				DisplayName: Dungeon Banner
+				Tooltip:
+					'''
+					{$CommonItemTooltip.BannerBonus}
+					{$NPCName.AngryBones}, {$NPCName.DarkCaster}, {$NPCName.CursedSkull}
+					'''
+			}
+
+			SupremeDungeonBanner: {
+				DisplayName: Supreme Dungeon Banner
+				Tooltip:
+					'''
+					{$CommonItemTooltip.BannerBonus}
+					{$NPCName.AngryBones}, {$NPCName.DarkCaster}, {$NPCName.CursedSkull}, {$NPCName.RustyArmoredBonesAxe},
+					{$NPCName.BlueArmoredBones}, {$NPCName.HellArmoredBones}, {$NPCName.Necromancer}, {$NPCName.RaggedCaster},
+					{$NPCName.DiabolistRed}, {$NPCName.GiantCursedSkull}, {$NPCName.DungeonSlime}
+					'''
+			}
+
+			UltimateDungeonBanner: {
+				DisplayName: Ultimate Dungeon Banner
+				Tooltip:
+					'''
+					{$CommonItemTooltip.BannerBonus}
+					{$NPCName.AngryBones}, {$NPCName.DarkCaster}, {$NPCName.CursedSkull}, {$NPCName.RustyArmoredBonesAxe},
+					{$NPCName.BlueArmoredBones}, {$NPCName.HellArmoredBones}, {$NPCName.Necromancer}, {$NPCName.RaggedCaster},
+					{$NPCName.DiabolistRed}, {$NPCName.GiantCursedSkull}, {$NPCName.DungeonSlime}, {$NPCName.Paladin},
+					{$NPCName.SkeletonCommando}, {$NPCName.SkeletonSniper}, {$NPCName.TacticalSkeleton}, {$NPCName.BoneLee},
+					{$NPCName.DungeonSpirit}
+					'''
+			}
+
+			FrostMoonBanner: {
+				DisplayName: Frost Moon Banner
+				Tooltip:
+					'''
+					{$CommonItemTooltip.BannerBonus}
+					{$NPCName.PresentMimic}, {$NPCName.Flocko}, {$NPCName.GingerbreadMan}, {$NPCName.ZombieElf},
+					{$NPCName.ElfArcher}, {$NPCName.Nutcracker}, {$NPCName.Yeti}, {$NPCName.ElfCopter},
+					{$NPCName.Krampus}
+					'''
+			}
+
+			GoblinArmyBanner: {
+				DisplayName: Goblin Army Banner
+				Tooltip:
+					'''
+					{$CommonItemTooltip.BannerBonus}
+					{$NPCName.GoblinArcher}, {$NPCName.GoblinPeon}, {$NPCName.GoblinSorcerer}, {$NPCName.GoblinThief},
+					{$NPCName.GoblinWarrior}
+					'''
+			}
+
+			MartianMadnessBanner: {
+				DisplayName: Martian Madness Banner
+				Tooltip:
+					'''
+					{$CommonItemTooltip.BannerBonus}
+					{$NPCName.Scutlix}, {$NPCName.MartianTurret}, {$NPCName.GigaZapper}, {$NPCName.RayGunner},
+					{$NPCName.GrayGrunt}, {$NPCName.BrainScrambler}, {$NPCName.MartianWalker}, {$NPCName.MartianDrone},
+					{$NPCName.MartianEngineer}, {$NPCName.MartianOfficer}
+					'''
+			}
+
+			NebulaPillarBanner: {
+				DisplayName: Nebula Pillar Banner
+				Tooltip:
+					'''
+					{$CommonItemTooltip.BannerBonus}
+					{$NPCName.NebulaHeadcrab}, {$NPCName.NebulaBeast}, {$NPCName.NebulaBrain}, {$NPCName.NebulaSoldier}
+					'''
+			}
+
+			SolarPillarBanner: {
+				DisplayName: Solar Pillar Banner
+				Tooltip:
+					'''
+					{$CommonItemTooltip.BannerBonus}
+					{$NPCName.SolarCorite}, {$NPCName.SolarCrawltipedeHead}, {$NPCName.SolarDrakomire}, {$NPCName.SolarDrakomireRider},
+					{$NPCName.SolarSolenian}, {$NPCName.SolarSroller}
+					'''
+			}
+
+			StardustPillarBanner: {
+				DisplayName: Stardust Pillar Banner
+				Tooltip:
+					'''
+					{$CommonItemTooltip.BannerBonus}
+					{$NPCName.StardustCellBig}, {$NPCName.StardustJellyfishBig}, {$NPCName.StardustSpiderBig}, {$NPCName.StardustWormHead},
+					{$NPCName.StardustSoldier}
+					'''
+			}
+
+			VortexPillarBanner: {
+				DisplayName: Vortex Pillar Banner
+				Tooltip:
+					'''
+					{$CommonItemTooltip.BannerBonus}
+					{$NPCName.VortexRifleman}, {$NPCName.VortexSoldier}, {$NPCName.VortexHornetQueen}, {$NPCName.VortexHornet},
+					{$NPCName.VortexLarva}
+					'''
+			}
+
+			PirateCrewBanner: {
+				DisplayName: Pirate Crew Banner
+				Tooltip:
+					'''
+					{$CommonItemTooltip.BannerBonus}
+					{$NPCName.Parrot}, {$NPCName.PirateCaptain}, {$NPCName.PirateCorsair}, {$NPCName.PirateCrossbower},
+					{$NPCName.PirateDeadeye}, {$NPCName.PirateDeckhand}
+					'''
+			}
+
+			PumpkinMoonBanner: {
+				DisplayName: Pumpkin Moon Banner
+				Tooltip:
+					'''
+					{$CommonItemTooltip.BannerBonus}
+					{$NPCName.Scarecrow1}, {$NPCName.Splinterling}, {$NPCName.Hellhound}, {$NPCName.Poltergeist},
+					{$NPCName.HeadlessHorseman}
+					'''
+			}
+
+			SolarEclipseBanner: {
+				DisplayName: Solar Eclipse Banner
+				Tooltip:
+					'''
+					{$CommonItemTooltip.BannerBonus}
+					{$NPCName.Frankenstein}, {$NPCName.SwampThing}, {$NPCName.Vampire}, {$NPCName.CreatureFromTheDeep},
+					{$NPCName.Fritz}, {$NPCName.ThePossessed}
+					'''
+			}
+
+			SupremeSolarEclipseBanner: {
+				DisplayName: Supreme Solar Eclipse Banner
+				Tooltip:
+					'''
+					{$CommonItemTooltip.BannerBonus}
+					{$NPCName.Frankenstein}, {$NPCName.SwampThing}, {$NPCName.Vampire}, {$NPCName.CreatureFromTheDeep},
+					{$NPCName.Fritz}, {$NPCName.ThePossessed} {$NPCName.Eyezor}, {$NPCName.Reaper},
+					{$NPCName.Butcher}, {$NPCName.DeadlySphere}, {$NPCName.DrManFly}, {$NPCName.Nailhead},
+					{$NPCName.Psycho}
+					'''
+			}
+
+			UltimateSolarEclipseBanner: {
+				DisplayName: Ultimate Solar Eclipse Banner
+				Tooltip:
+					'''
+					{$CommonItemTooltip.BannerBonus}
+					{$NPCName.Frankenstein}, {$NPCName.SwampThing}, {$NPCName.Vampire}, {$NPCName.CreatureFromTheDeep},
+					{$NPCName.Fritz}, {$NPCName.ThePossessed}, {$NPCName.Eyezor}, {$NPCName.Reaper},
+					{$NPCName.Butcher}, {$NPCName.DeadlySphere}, {$NPCName.DrManFly}, {$NPCName.Nailhead},
+					{$NPCName.Psycho}, {$NPCName.Mothron}
+					'''
+			}
+
+			ElementalSlimeBanner: {
+				DisplayName: Elemental Slime Banner
+				Tooltip:
+					'''
+					{$CommonItemTooltip.BannerBonus}
+					{$NPCName.SandSlime}, {$NPCName.IceSlime}, {$NPCName.JungleSlime}, {$NPCName.LavaSlime},
+					{$NPCName.SlimeSpiked}
+					'''
+			}
+
+			SupremeSlimeBanner: {
+				DisplayName: Supreme Slime Banner
+				Tooltip:
+					'''
+					{$CommonItemTooltip.BannerBonus}
+					{$NPCName.GreenSlime}, {$NPCName.BlueSlime}, {$NPCName.PurpleSlime}, {$NPCName.RedSlime},
+					{$NPCName.YellowSlime}, {$NPCName.BlackSlime}
+					'''
+			}
+
+			UltimateSlimeBanner: {
+				DisplayName: Ultimate Slime Banner
+				Tooltip:
+					'''
+					{$CommonItemTooltip.BannerBonus}
+					{$NPCName.SandSlime}, {$NPCName.IceSlime}, {$NPCName.JungleSlime}, {$NPCName.LavaSlime},
+					{$NPCName.SlimeSpiked}, {$NPCName.GreenSlime}, {$NPCName.BlueSlime}, {$NPCName.PurpleSlime},
+					{$NPCName.RedSlime}, {$NPCName.YellowSlime}, {$NPCName.BlackSlime}
+					'''
+			}
+
+			UndeadBanner: {
+				DisplayName: Undead Banner
+				Tooltip:
+					'''
+					{$CommonItemTooltip.BannerBonus}
+					{$NPCName.Zombie}, {$NPCName.ZombieRaincoat}, {$NPCName.DemonEye}
+					'''
 			}
 		}
 	}

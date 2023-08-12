@@ -2,8 +2,6 @@
 
 namespace QualityOfLifeRecipes.Tiles.Banners.Dungeon {
     public class DungeonBanner : BannerTile<Items.Placeable.Banners.Dungeon.DungeonBanner, DungeonBanner> {
-        protected override string Translation => "{$Mods.QualityOfLifeRecipes.Placeable.Banners.Dungeon.DungeonBanner}";
-
         protected override int[] NPCs => new int[] {
             // angry bones
             NPCID.AngryBones,

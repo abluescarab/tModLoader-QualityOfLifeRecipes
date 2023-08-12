@@ -10,13 +10,6 @@ namespace QualityOfLifeRecipes.Items.Armor {
             new ReplacementItem(ItemID.SpelunkerPotion, 20)
         };
 
-        public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Armor.CavingGear}");
-            Tooltip.SetDefault(
-                "{$ItemTooltip.NightVisionHelmet}" + "\n" +
-                "{$ItemTooltip.SpelunkerPotion}");
-        }
-
         public override void SetDefaults() {
             Item.value = Item.sellPrice(0, 3, 0, 0);
             Item.rare = ItemRarityID.LightRed;

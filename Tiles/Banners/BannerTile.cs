@@ -10,7 +10,6 @@ namespace QualityOfLifeRecipes.Tiles.Banners {
     public abstract class BannerTile<I, T> : ModTile
         where I : BannerItem<I, T>
         where T : BannerTile<I, T> {
-        protected abstract string Translation { get; }
         protected abstract int[] NPCs { get; }
 
         public sealed override void SetStaticDefaults() {
@@ -23,9 +22,7 @@ namespace QualityOfLifeRecipes.Tiles.Banners {
             TileObjectData.newTile.CoordinateHeights = new int[] { 16, 16, 12 };
             TileObjectData.newTile.StyleHorizontal = true;
 
-            ModTranslation translation = CreateMapEntryName();
-            translation.SetDefault(Translation);
-            AddMapEntry(new Color(200, 200, 200), translation);
+            AddMapEntry(new Color(200, 200, 200), ModContent.GetInstance<I>().DisplayName);
 
             TileID.Sets.DisableSmartCursor[Type] = true;
 

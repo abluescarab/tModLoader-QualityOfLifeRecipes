@@ -51,6 +51,9 @@
 * PyroSalamander for suggesting the Cybernetic Utility Helmet
 
 [b]Changelog[/b]
+v1.11.1 2023-08-11
+* Updated for tModLoader v1.4.4
+
 v1.11.0 2023-03-25
 * Added Enchanted Ninja Frog Gear
 * Magiluminescence effects added to movement accessory path

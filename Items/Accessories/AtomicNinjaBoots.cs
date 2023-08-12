@@ -12,18 +12,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
             AccessoryEffect.FlowerBoots
         };
 
-        protected override string DisplayNameTranslation =>
-            "{$Mods.QualityOfLifeRecipes.Accessories.AtomicNinjaBoots}";
-
-        protected override string TooltipTranslation =>
-            "{$ItemTooltip.TerrasparkBoots}\n" +
-            "{$ItemTooltip.FrogFlipper}\n" +
-            "{$ItemTooltip.MasterNinjaGear}\n" +
-            "{$ItemTooltip.Magiluminescence}\n" +
-            "{$ItemTooltip.FlowerBoots}";
-
         protected override int SellPrice => Item.sellPrice(0, 29, 0, 0);
-
         protected override int Rarity => ItemRarityID.Purple;
 
         public override void AddRecipes() {

@@ -6,15 +6,6 @@ using Terraria.ModLoader;
 namespace QualityOfLifeRecipes.Items.Armor {
     [AutoloadEquip(EquipType.Head)]
     public class UtilityHelmet : BaseItem {
-        protected override string DisplayNameTranslation =>
-            "{$Mods.QualityOfLifeRecipes.Armor.UtilityHelmet}";
-
-        protected override string TooltipTranslation =>
-            "{$ItemTooltip.UltrabrightHelmet}" + "\n" +
-                "{$ItemTooltip.HunterPotion}" + "\n" +
-                "{$ItemTooltip.TrapsightPotion}" + "\n" +
-                "{$ItemTooltip.SpelunkerPotion}";
-
         protected override int SellPrice => Item.sellPrice(0, 8, 0, 0);
 
         protected override int Rarity => ItemRarityID.LightPurple;

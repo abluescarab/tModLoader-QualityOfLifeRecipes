@@ -10,16 +10,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
             AccessoryEffect.Magiluminescence
         };
 
-        protected override string DisplayNameTranslation =>
-            "{$Mods.QualityOfLifeRecipes.Accessories.EnchantedNinjaFrogGear}";
-
-        protected override string TooltipTranslation =>
-            "{$ItemTooltip.FrogFlipper}\n" +
-            "{$ItemTooltip.MasterNinjaGear}\n" +
-            "{$ItemTooltip.Magiluminescence}";
-
         protected override int SellPrice => Item.sellPrice(0, 0, 13, 0);
-
         protected override int Rarity => ItemRarityID.Yellow;
 
         public override void AddRecipes() {

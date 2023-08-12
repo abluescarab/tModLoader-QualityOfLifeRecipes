@@ -3,15 +3,6 @@ using Terraria.ID;
 
 namespace QualityOfLifeRecipes.Items.Placeable.Banners.Events {
     public class MartianMadnessBanner : BannerItem<MartianMadnessBanner, Tiles.Banners.Events.MartianMadnessBanner> {
-        protected override string DisplayNameTranslation =>
-            "{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.MartianMadnessBanner}";
-
-        protected override string TooltipTranslation =>
-            "{$CommonItemTooltip.BannerBonus}\n" +
-                "{$NPCName.Scutlix}, {$NPCName.MartianTurret}, {$NPCName.GigaZapper}, {$NPCName.RayGunner},\n" +
-                "{$NPCName.GrayGrunt}, {$NPCName.BrainScrambler}, {$NPCName.MartianWalker}, {$NPCName.MartianDrone},\n" +
-                "{$NPCName.MartianEngineer}, {$NPCName.MartianOfficer}";
-
         protected override int SellPrice => Item.sellPrice(0, 0, 25, 0);
 
         public override void AddRecipes() {

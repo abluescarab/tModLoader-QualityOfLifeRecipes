@@ -8,13 +8,6 @@ namespace QualityOfLifeRecipes.Items.Accessories {
             new ReplacementItem(ItemID.LuckyHorseshoe)
         };
 
-        public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Accessories.Frogshoe}");
-            Tooltip.SetDefault(
-                "{$ItemTooltip.FrogLeg}\n" +
-                "{$ItemTooltip.LuckyHorseshoe}");
-        }
-
         public override void SetDefaults() {
             Item.value = Item.sellPrice(0, 2, 0, 0);
             Item.rare = ItemRarityID.Green;

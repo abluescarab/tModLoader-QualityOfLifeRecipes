@@ -2,9 +2,6 @@
 
 namespace QualityOfLifeRecipes.Tiles.Banners.Slimes {
     public class UltimateSlimeBanner : BannerTile<Items.Placeable.Banners.Slimes.UltimateSlimeBanner, UltimateSlimeBanner> {
-        protected override string Translation =>
-            "{$Mods.QualityOfLifeRecipes.Placeable.Banners.Slimes.UltimateSlimeBanner}";
-
         protected override int[] NPCs => new int[] {
             NPCID.SandSlime,
             NPCID.IceSlime,

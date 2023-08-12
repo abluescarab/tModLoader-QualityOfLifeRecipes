@@ -12,17 +12,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
             AccessoryEffect.LuckyHorseshoe
         };
 
-        protected override string DisplayNameTranslation => 
-            "{$Mods.QualityOfLifeRecipes.Accessories.CloudOfHorseshoeBalloons}";
-
-        protected override string TooltipTranslation =>
-            "{$Mods.QualityOfLifeRecipes.General.JumpSixTimes}\n" +
-                "{$ItemTooltip.LuckyHorseshoe}\n" +
-                "{$ItemTooltip.ShinyRedBalloon}\n" +
-                "{$ItemTooltip.HoneyComb}";
-
         protected override int SellPrice => Item.sellPrice(0, 12, 0, 0);
-
         protected override int Rarity => ItemRarityID.Cyan;
 
         public override void AddRecipes() {

@@ -11,16 +11,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
             AccessoryEffect.BundleOfBalloons
         };
 
-        protected override string DisplayNameTranslation =>
-            "{$Mods.QualityOfLifeRecipes.Accessories.CloudOfBalloons}";
-
-        protected override string TooltipTranslation =>
-            "{$Mods.QualityOfLifeRecipes.General.JumpSixTimes}\n" +
-                "{$ItemTooltip.ShinyRedBalloon}\n" +
-                "{$ItemTooltip.HoneyComb}";
-
         protected override int SellPrice => Item.sellPrice(0, 11, 0, 0);
-
         protected override int Rarity => ItemRarityID.Cyan;
 
         public override void AddRecipes() {

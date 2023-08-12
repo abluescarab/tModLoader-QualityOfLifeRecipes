@@ -12,16 +12,16 @@ namespace QualityOfLifeRecipes {
         private const string GroupGoldBar = "QOLR:GoldBar";
         private const string GroupIronBar = "QOLR:IronBar";
 
-        public static Dictionary<Type, bool> DeprecatedMessageShown = new Dictionary<Type, bool>();
+        public static Dictionary<Type, bool> DeprecatedMessageShown = new();
 
         public override void AddRecipeGroups() {
             string any = Language.GetText("LegacyMisc.37").Value;
 
-            RecipeGroup goldCrown = new RecipeGroup(() => any + Language.GetText("ItemName.GoldCrown"),
+            RecipeGroup goldCrown = new(() => any + Language.GetText("ItemName.GoldCrown"),
                 ItemID.GoldCrown, ItemID.PlatinumCrown);
-            RecipeGroup goldBar = new RecipeGroup(() => any + " " + Language.GetText("ItemName.GoldBar"),
+            RecipeGroup goldBar = new(() => any + " " + Language.GetText("ItemName.GoldBar"),
                 ItemID.GoldBar, ItemID.PlatinumBar);
-            RecipeGroup ironBar = new RecipeGroup(() => any + " " + Language.GetText("ItemName.IronBar"),
+            RecipeGroup ironBar = new(() => any + " " + Language.GetText("ItemName.IronBar"),
                 ItemID.IronBar, ItemID.LeadBar);
 
             RecipeGroup.RegisterGroup(GroupGoldCrown, goldCrown);

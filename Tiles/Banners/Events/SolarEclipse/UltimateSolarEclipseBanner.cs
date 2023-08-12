@@ -2,9 +2,6 @@
 
 namespace QualityOfLifeRecipes.Tiles.Banners.Events.SolarEclipse {
     public class UltimateSolarEclipseBanner : BannerTile<Items.Placeable.Banners.Events.SolarEclipse.UltimateSolarEclipseBanner, UltimateSolarEclipseBanner> {
-        protected override string Translation =>
-            "{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.UltimateSolarEclipseBanner}";
-
         protected override int[] NPCs => new int[] {
             NPCID.Frankenstein,
             NPCID.SwampThing,

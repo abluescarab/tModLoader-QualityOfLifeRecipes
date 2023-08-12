@@ -6,15 +6,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
     [AutoloadEquip(EquipType.Back)]
     public class AnglersFishingGear : AccessoryItem {
         protected override AccessoryEffect[] Effects => null;
-
-        protected override string DisplayNameTranslation =>
-            "{$Mods.QualityOfLifeRecipes.Accessories.AnglersFishingGear}";
-
-        protected override string TooltipTranslation =>
-            "{$ItemTooltip.AnglerTackleBag}";
-
         protected override int SellPrice => Item.sellPrice(0, 7, 0, 0);
-
         protected override int Rarity => ItemRarityID.LightRed;
 
         public override void AddRecipes() {

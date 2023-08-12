@@ -2,9 +2,6 @@
 
 namespace QualityOfLifeRecipes.Tiles.Banners.Events {
     public class PumpkinMoonBanner : BannerTile<Items.Placeable.Banners.Events.PumpkinMoonBanner, PumpkinMoonBanner> {
-        protected override string Translation =>
-            "{$Mods.QualityOfLifeRecipes.Placeable.Banners.Events.PumpkinMoonBanner}";
-
         protected override int[] NPCs => new int[] {
             NPCID.Scarecrow1,
             NPCID.Scarecrow2,

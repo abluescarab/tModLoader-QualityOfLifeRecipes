@@ -4,16 +4,7 @@ using Terraria.ID;
 namespace QualityOfLifeRecipes.Items.Accessories {
     public class CelestialFlowerCuffs : AccessoryItem {
         protected override AccessoryEffect[] Effects => null;
-
-        protected override string DisplayNameTranslation =>
-            "{$Mods.QualityOfLifeRecipes.Accessories.CelestialFlowerCuffs}";
-
-        protected override string TooltipTranslation =>
-            "{$ItemTooltip.CelestialCuffs}\n" +
-                "{$ItemTooltip.ManaFlower}";
-
         protected override int SellPrice => Item.sellPrice(0, 5, 0, 0);
-
         protected override int Rarity => ItemRarityID.LightPurple;
 
         public override void AddRecipes() {

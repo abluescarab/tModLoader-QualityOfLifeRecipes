@@ -4,16 +4,7 @@ using Terraria.ID;
 namespace QualityOfLifeRecipes.Items.Accessories {
     public class SweetStarVeil : AccessoryItem {
         protected override AccessoryEffect[] Effects => null;
-
-        protected override string DisplayNameTranslation => 
-            "{$Mods.QualityOfLifeRecipes.Accessories.SweetStarVeil}";
-
-        protected override string TooltipTranslation =>
-            "{$ItemTooltip.SweetheartNecklace}\n" +
-                "{$ItemTooltip.StarVeil}";
-
         protected override int SellPrice => Item.sellPrice(0, 4, 0, 0);
-
         protected override int Rarity => ItemRarityID.Lime;
 
         public override void AddRecipes() {

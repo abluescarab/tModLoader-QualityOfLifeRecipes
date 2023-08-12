@@ -49,7 +49,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
 
         public override void UpdateEquip(Player player) {
             if(flowerBoots != null) {
-                player.VanillaUpdateEquip(flowerBoots);
+                player.GrantArmorBenefits(flowerBoots);
             }
         }
 
@@ -65,6 +65,9 @@ namespace QualityOfLifeRecipes.Items.Accessories {
                     player.hasJumpOption_Fart = true;
                     player.jumpBoost = true;
                     break;
+                case AccessoryEffect.FlowerBoots:
+                    player.flowerBoots = true;
+                    break;
                 case AccessoryEffect.FrogFlipper:
                     player.autoJump = true;
                     player.jumpSpeedBoost += 1.6f;
@@ -77,21 +80,21 @@ namespace QualityOfLifeRecipes.Items.Accessories {
                     break;
                 case AccessoryEffect.LuckyHorseshoe:
                     player.noFallDmg = true;
-                    //player.hasLuck_LuckyHorseshoe = true; // 1.4.4 only
+                    player.hasLuck_LuckyHorseshoe = true;
                     break;
                 case AccessoryEffect.Magiluminescence:
                     player.hasMagiluminescence = true;
                     player.MountedCenter.ToTileCoordinates();
                     DelegateMethods.v3_1 = new Vector3(0.9f, 0.8f, 0.5f);
                     Utils.PlotTileLine(
-                        player.Center, 
-                        player.Center + player.velocity * 6f, 
-                        20f, 
+                        player.Center,
+                        player.Center + player.velocity * 6f,
+                        20f,
                         new Utils.TileActionAttempt(DelegateMethods.CastLightOpen));
                     Utils.PlotTileLine(
-                        player.Left, 
-                        player.Right, 
-                        20f, 
+                        player.Left,
+                        player.Right,
+                        20f,
                         new Utils.TileActionAttempt(DelegateMethods.CastLightOpen));
                     break;
                 case AccessoryEffect.MasterNinjaGear:

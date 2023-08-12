@@ -10,14 +10,6 @@ namespace QualityOfLifeRecipes.Items.Armor {
             new ReplacementItem(ItemID.SpelunkerPotion, 20)
         };
 
-        public override void SetStaticDefaults() {
-            DisplayName.SetDefault("{$Mods.QualityOfLifeRecipes.Armor.MiningGear}");
-            Tooltip.SetDefault(
-                "{$ItemTooltip.NightVisionHelmet}" + "\n" +
-                "{$ItemTooltip.SpelunkerPotion}" + "\n" +
-                "{$ItemTooltip.MiningHelmet}");
-        }
-
         public override void SetDefaults() {
             Item.value = Item.sellPrice(0, 5, 0, 0);
             Item.rare = ItemRarityID.Pink;
