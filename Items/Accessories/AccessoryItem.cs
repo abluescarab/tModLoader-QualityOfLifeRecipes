@@ -2,6 +2,7 @@
 using System;
 using Terraria;
 using Terraria.ID;
+using Terraria.ModLoader;
 
 namespace QualityOfLifeRecipes.Items.Accessories {
     public abstract class AccessoryItem : BaseItem {
@@ -56,13 +57,13 @@ namespace QualityOfLifeRecipes.Items.Accessories {
         protected virtual void ApplyEffect(AccessoryEffect effect, Player player) {
             switch(effect) {
                 case AccessoryEffect.BundleOfBalloons:
-                    player.hasJumpOption_Cloud = true;
-                    player.hasJumpOption_Sandstorm = true;
-                    player.hasJumpOption_Blizzard = true;
+                    player.GetJumpState(ExtraJump.CloudInABottle).Enable();
+                    player.GetJumpState(ExtraJump.SandstormInABottle).Enable();
+                    player.GetJumpState(ExtraJump.BlizzardInABottle).Enable();
                     player.jumpBoost = true;
                     break;
                 case AccessoryEffect.FartInABalloon:
-                    player.hasJumpOption_Fart = true;
+                    player.GetJumpState(ExtraJump.FartInAJar).Enable();
                     player.jumpBoost = true;
                     break;
                 case AccessoryEffect.FlowerBoots:
@@ -72,7 +73,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
                     player.autoJump = true;
                     player.jumpSpeedBoost += 1.6f;
                     player.extraFall += 10;
-                    player.accFlipper = true;
+                    player.GetJumpState(ExtraJump.Flipper).Enable();
                     break;
                 case AccessoryEffect.HoneyBalloon:
                     player.jumpBoost = true;
@@ -104,7 +105,7 @@ namespace QualityOfLifeRecipes.Items.Accessories {
                     break;
                 case AccessoryEffect.SharkronBalloon:
                     player.jumpBoost = true;
-                    player.hasJumpOption_Sail = true;
+                    player.GetJumpState(ExtraJump.TsunamiInABottle).Enable();
                     break;
                 case AccessoryEffect.TerrasparkBoots:
                     player.waterWalk = true;
